@@ -1,11 +1,11 @@
 services:
   - type: web
-    name: plot360-platform
+    name: plot360
     env: docker
     dockerfilePath: Dockerfile
     dockerContext: .
     region: oregon
-    plan: standard
+    plan: free
     branch: main
     envVars:
       - key: APP_ENV

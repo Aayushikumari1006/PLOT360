@@ -18,8 +18,8 @@ ENV/
 htmlcov/
 *.log
 
-# Build Outputs (Generated on Render/Railway build step)
-dist/
+# Binaries
+cloudflared.exe
 
 # OS metadata
 .DS_Store
