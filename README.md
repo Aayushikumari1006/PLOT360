@@ -7,15 +7,25 @@
 
 ---
 
-## LIVE APPLICATION URLS (VERIFIED RUNTIME)
+# OPEN PLOT360
 
-The application has been launched and actively verified:
+## Public Application
 
-- **Frontend Web Application:** [http://localhost:5173](http://localhost:5173)
-- **Backend REST API:** [http://127.0.0.1:8000](http://127.0.0.1:8000)
-- **Interactive OpenAPI Docs (Swagger UI):** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) (also mirrored at `/api/docs`)
-- **Alternative ReDoc Docs:** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
-- **System Health Endpoint:** [http://127.0.0.1:8000/api/v1/health](http://127.0.0.1:8000/api/v1/health)
+**[https://plot360.onrender.com](https://plot360.onrender.com)**
+
+- **One-Click Cloud Deployment:** [https://render.com/deploy?repo=https://github.com/Lucifer7636/Plot360](https://render.com/deploy?repo=https://github.com/Lucifer7636/Plot360)
+- **Source Code Repository:** [https://github.com/Lucifer7636/Plot360](https://github.com/Lucifer7636/Plot360)
+- **Public API Documentation:** [https://plot360.onrender.com/api/docs](https://plot360.onrender.com/api/docs)
+- **Public Health Check:** [https://plot360.onrender.com/api/v1/health](https://plot360.onrender.com/api/v1/health)
+
+---
+
+## Local Development URLs (Runtime)
+
+- **Frontend Web Application:** [http://localhost:8000](http://localhost:8000) (Production Full-Stack) / [http://localhost:5173](http://localhost:5173) (Vite Dev)
+- **Backend REST API:** [http://localhost:8000](http://localhost:8000)
+- **Interactive OpenAPI Docs:** [http://localhost:8000/api/docs](http://localhost:8000/api/docs)
+- **System Health Check:** [http://localhost:8000/api/v1/health](http://localhost:8000/api/v1/health)
 
 ---
 
