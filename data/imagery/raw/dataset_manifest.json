@@ -1,0 +1,577 @@
+[
+  {
+    "region_id": "URB_01_CHD",
+    "location_name": "Chandigarh Urban Core",
+    "center_coordinates": {
+      "lat": 30.742,
+      "lng": 76.782
+    },
+    "landscape_type": "urban",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "URB_02_BLR",
+    "location_name": "Bengaluru Outer Ring Road",
+    "center_coordinates": {
+      "lat": 12.9279,
+      "lng": 77.6271
+    },
+    "landscape_type": "urban",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "URB_03_HYD",
+    "location_name": "Hyderabad HITEC City",
+    "center_coordinates": {
+      "lat": 17.4474,
+      "lng": 78.3762
+    },
+    "landscape_type": "urban",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "URB_04_PUN",
+    "location_name": "Pune Hinjawadi Tech Park",
+    "center_coordinates": {
+      "lat": 18.5913,
+      "lng": 73.7389
+    },
+    "landscape_type": "urban",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "URB_05_DEL",
+    "location_name": "Delhi Dwarka Sector 21",
+    "center_coordinates": {
+      "lat": 28.5524,
+      "lng": 77.0583
+    },
+    "landscape_type": "urban",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "AGR_01_PB",
+    "location_name": "Ludhiana Farmlands",
+    "center_coordinates": {
+      "lat": 30.901,
+      "lng": 75.8573
+    },
+    "landscape_type": "agricultural",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "AGR_02_HR",
+    "location_name": "Karnal Rice Belt",
+    "center_coordinates": {
+      "lat": 29.6857,
+      "lng": 76.9905
+    },
+    "landscape_type": "agricultural",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "AGR_03_UP",
+    "location_name": "Varanasi Gangetic Plains",
+    "center_coordinates": {
+      "lat": 25.3176,
+      "lng": 82.9739
+    },
+    "landscape_type": "agricultural",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "AGR_04_AP",
+    "location_name": "Guntur Delta Fields",
+    "center_coordinates": {
+      "lat": 16.3067,
+      "lng": 80.4365
+    },
+    "landscape_type": "agricultural",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "IND_01_GJ",
+    "location_name": "Sanand Industrial Estate",
+    "center_coordinates": {
+      "lat": 22.9868,
+      "lng": 72.3792
+    },
+    "landscape_type": "industrial",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "IND_02_TN",
+    "location_name": "Sriperumbudur Auto Hub",
+    "center_coordinates": {
+      "lat": 12.9699,
+      "lng": 79.9405
+    },
+    "landscape_type": "industrial",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "IND_03_MH",
+    "location_name": "Chakan MIDC Phase 2",
+    "center_coordinates": {
+      "lat": 18.7606,
+      "lng": 73.8636
+    },
+    "landscape_type": "industrial",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "ARD_01_RJ",
+    "location_name": "Jodhpur Thar Fringe",
+    "center_coordinates": {
+      "lat": 26.2389,
+      "lng": 73.0243
+    },
+    "landscape_type": "arid",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "ARD_02_GJ",
+    "location_name": "Kutch Bhuj Salt Marshes",
+    "center_coordinates": {
+      "lat": 23.242,
+      "lng": 69.6669
+    },
+    "landscape_type": "arid",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "ARD_03_KA",
+    "location_name": "Bellary Dry Deciduous",
+    "center_coordinates": {
+      "lat": 15.1394,
+      "lng": 76.9214
+    },
+    "landscape_type": "arid",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "CST_01_KL",
+    "location_name": "Kochi Backwaters",
+    "center_coordinates": {
+      "lat": 9.9312,
+      "lng": 76.2673
+    },
+    "landscape_type": "coastal",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "CST_02_OD",
+    "location_name": "Puri Coastal Plain",
+    "center_coordinates": {
+      "lat": 19.8135,
+      "lng": 85.8312
+    },
+    "landscape_type": "coastal",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "CST_03_TN",
+    "location_name": "Tuticorin Marine Sector",
+    "center_coordinates": {
+      "lat": 8.7642,
+      "lng": 78.1348
+    },
+    "landscape_type": "coastal",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "MTN_01_HP",
+    "location_name": "Shimla Valley Slopes",
+    "center_coordinates": {
+      "lat": 31.1048,
+      "lng": 77.1734
+    },
+    "landscape_type": "mountainous",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "MTN_02_UT",
+    "location_name": "Dehradun Foot-Hills",
+    "center_coordinates": {
+      "lat": 30.3165,
+      "lng": 78.0322
+    },
+    "landscape_type": "mountainous",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "FRS_01_MP",
+    "location_name": "Kanha Buffer Zone",
+    "center_coordinates": {
+      "lat": 22.3345,
+      "lng": 80.6115
+    },
+    "landscape_type": "forest",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "FRS_02_AS",
+    "location_name": "Kaziranga Fringe Corridor",
+    "center_coordinates": {
+      "lat": 26.5775,
+      "lng": 93.1711
+    },
+    "landscape_type": "forest",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  },
+  {
+    "region_id": "RUR_01_BR",
+    "location_name": "Muzaffarpur Rural Cluster",
+    "center_coordinates": {
+      "lat": 26.1209,
+      "lng": 85.3647
+    },
+    "landscape_type": "rural",
+    "t1_year": 2020,
+    "t1_file": "T1_2020.tif",
+    "t2_year": 2025,
+    "t2_file": "T2_2025.tif",
+    "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+    "source": "Google Earth Engine",
+    "bands": [
+      "B2",
+      "B3",
+      "B4",
+      "B8",
+      "B11",
+      "B12"
+    ],
+    "has_mask": false,
+    "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+  }
+]

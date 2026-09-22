@@ -1,0 +1,3212 @@
+{
+  "dataset_id": "DS-SENTINEL2-INDIA-V1",
+  "dataset_name": "Sentinel-2 Surface Reflectance India Harmonized (2020 & 2025)",
+  "dataset_version": "sentinel2-temporal-v1",
+  "validator_version": "1.0.0",
+  "generated_at": "2026-09-22T13:55:09.808709+00:00",
+  "source_root_configured": "PLOT360_Sentinel2_2020_2025",
+  "source_root_resolved": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025",
+  "dataset_fingerprint": "6f89292bc99e18c5cbf88fe62a5c0c0e19d37ef93328c409a5da9c0b76daede1",
+  "status": "VALIDATED",
+  "expected_inventory": {
+    "primary_rasters": 46,
+    "regions": 23,
+    "temporal_pairs": 23,
+    "years": [
+      2020,
+      2025
+    ]
+  },
+  "discovered_inventory": {
+    "total_source_files": 46,
+    "total_raster_files": 46,
+    "valid_rasters": 46,
+    "invalid_rasters": 0,
+    "production_observations": 46,
+    "test_observations": 0,
+    "unresolved_files": 0,
+    "non_raster_files": 0,
+    "observations_2020": 23,
+    "observations_2025": 23,
+    "complete_pairs": 23,
+    "missing_t1": 0,
+    "missing_t2": 0,
+    "duplicate_ambiguous_pairs": 0,
+    "supervised_mask_count": 0,
+    "has_supervised_masks": false,
+    "supervised_training_status": "LABEL_BLOCKED"
+  },
+  "crs_distribution": {
+    "EPSG:32643": 25,
+    "EPSG:32644": 7,
+    "EPSG:32642": 6,
+    "EPSG:32645": 6,
+    "EPSG:32646": 2
+  },
+  "resolution_distribution": {
+    "[10.0, 10.0]": 46
+  },
+  "band_summary": {
+    "6": 46
+  },
+  "temporal_pairs": [
+    {
+      "pair_id": "PAIR_AGR_01",
+      "region_id": "AGR_01",
+      "location_name": "Agricultural Zone 01",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_AGR_01_2020.tif",
+      "t2_file": "PLOT360_AGR_01_2025.tif",
+      "t1_sha256": "0c48e5f30a856e0f16fe3759228c4b8139b357861b2369343c986097901f0cda",
+      "t2_sha256": "3b22cdbbdf7b718079d6a965fdc30284a8e7d4804e55093961df783f9c827399",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_AGR_02",
+      "region_id": "AGR_02",
+      "location_name": "Agricultural Zone 02",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_AGR_02_2020.tif",
+      "t2_file": "PLOT360_AGR_02_2025.tif",
+      "t1_sha256": "0548ef1f1c6b61340c59ae5f284af457ecda1e868e6bc47d4a9d441c7e10e1bc",
+      "t2_sha256": "b3a3141d5ef34e6183cadfef1cdd5e3fd25fdb72c8968056b02a9466c3ebf4f7",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_AGR_03",
+      "region_id": "AGR_03",
+      "location_name": "Agricultural Zone 03",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_AGR_03_2020.tif",
+      "t2_file": "PLOT360_AGR_03_2025.tif",
+      "t1_sha256": "fa6cd7acb43af6b73ad8d31884cc302dbaa4dc21e19abc3e632840244ac3755c",
+      "t2_sha256": "508267fd024b420af17a773f19559a36b910b9b866c4e5a62945222bff821c76",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32644",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_ARD_01",
+      "region_id": "ARD_01",
+      "location_name": "Arid / Semi-Arid Zone 01",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_ARD_01_2020.tif",
+      "t2_file": "PLOT360_ARD_01_2025.tif",
+      "t1_sha256": "c160665b11a948d0160a6fabfc7fe6ebcf2a1c21e4d8c5598ed9b34651e27837",
+      "t2_sha256": "d1173df49e5b2bdebe03e703ac8e424f5ee1876ea1f87cc799ec62f0c757e7c9",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_ARD_02",
+      "region_id": "ARD_02",
+      "location_name": "Arid / Semi-Arid Zone 02",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_ARD_02_2020.tif",
+      "t2_file": "PLOT360_ARD_02_2025.tif",
+      "t1_sha256": "00138c8a09cc4ed3813a95ac024dcb88e230fc3c141652ffafdca857c8028922",
+      "t2_sha256": "a76cb87f5c4ef8af56d1346c545065c165578b999625794b981617937044ef1c",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_ARD_03",
+      "region_id": "ARD_03",
+      "location_name": "Arid / Semi-Arid Zone 03",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_ARD_03_2020.tif",
+      "t2_file": "PLOT360_ARD_03_2025.tif",
+      "t1_sha256": "7905dd7174123012b65c63f3d525d6be9e9df7b75c9e0618035c3ec19623b104",
+      "t2_sha256": "03a57cd85f2943dd2822a6575a2ee083ec7587dd25a3a21ce624ec075f6b052d",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32642",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_CST_01",
+      "region_id": "CST_01",
+      "location_name": "Coastal Zone 01",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_CST_01_2020.tif",
+      "t2_file": "PLOT360_CST_01_2025.tif",
+      "t1_sha256": "fa94220a577fbce8f773bf89488e2f78f7b7a16eed4f9601111671a5b9a9e5ac",
+      "t2_sha256": "bf1a5844e82c1d8de2bada32c4a463cf5fe52f59e90b582e29625cbceff3b7e2",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_CST_02",
+      "region_id": "CST_02",
+      "location_name": "Coastal Zone 02",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_CST_02_2020.tif",
+      "t2_file": "PLOT360_CST_02_2025.tif",
+      "t1_sha256": "4b91d534cb2ca1dd5cfa2ea89c19f2e741155723ac86b84bade9bef16ccf50d8",
+      "t2_sha256": "f98013c863a65a9a241a146906599c972842630d2eb87a4e2e2ead2bc5a6f1b1",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32645",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_CST_03",
+      "region_id": "CST_03",
+      "location_name": "Coastal Zone 03",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_CST_03_2020.tif",
+      "t2_file": "PLOT360_CST_03_2025.tif",
+      "t1_sha256": "8c378cd684e70dd076f93fe600d27a9fc2b91d4c4dcc930bedce8fce08827344",
+      "t2_sha256": "f4268dbdafd447d73a7d220a1035e7e1bb27ce06bb421c4c820a8faf561ca3c2",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32644",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_FOR_01",
+      "region_id": "FOR_01",
+      "location_name": "Forest Reserve Zone 01",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_FOR_01_2020.tif",
+      "t2_file": "PLOT360_FOR_01_2025.tif",
+      "t1_sha256": "2f28a875e8cae496bc2d64f85c7a637e7b5e76a92b13ae0c556c18dfbed92738",
+      "t2_sha256": "20107ac09b1322c8a8e7c18253b6179fb492c0d3085e50163556f43c6a42179b",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_FOR_02",
+      "region_id": "FOR_02",
+      "location_name": "Forest Reserve Zone 02",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_FOR_02_2020.tif",
+      "t2_file": "PLOT360_FOR_02_2025.tif",
+      "t1_sha256": "4b91d534cb2ca1dd5cfa2ea89c19f2e741155723ac86b84bade9bef16ccf50d8",
+      "t2_sha256": "f98013c863a65a9a241a146906599c972842630d2eb87a4e2e2ead2bc5a6f1b1",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32645",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_FOR_03",
+      "region_id": "FOR_03",
+      "location_name": "Forest Reserve Zone 03",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_FOR_03_2020.tif",
+      "t2_file": "PLOT360_FOR_03_2025.tif",
+      "t1_sha256": "1604ebf173421f155f2b2deb20c6e9d3398c97333887eb3bc9931bff1109605c",
+      "t2_sha256": "a64f71705df0f10c6ce31fdc684a3624de56aa01bebd6717bea5aee5ba51045b",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32646",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_IND_01",
+      "region_id": "IND_01",
+      "location_name": "Industrial Corridor 01",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_IND_01_2020.tif",
+      "t2_file": "PLOT360_IND_01_2025.tif",
+      "t1_sha256": "7905dd7174123012b65c63f3d525d6be9e9df7b75c9e0618035c3ec19623b104",
+      "t2_sha256": "03a57cd85f2943dd2822a6575a2ee083ec7587dd25a3a21ce624ec075f6b052d",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32642",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_IND_02",
+      "region_id": "IND_02",
+      "location_name": "Industrial Corridor 02",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_IND_02_2020.tif",
+      "t2_file": "PLOT360_IND_02_2025.tif",
+      "t1_sha256": "4371cec547d0ed50bc63796e55d85e15e9996f03b87d559fe9f362471a2202dc",
+      "t2_sha256": "cd9c1cc40eae8d77e0b14b6e6a362e53cdad7bebf34b82d5ae127c7ea49f57c2",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_IND_03",
+      "region_id": "IND_03",
+      "location_name": "Industrial Corridor 03",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_IND_03_2020.tif",
+      "t2_file": "PLOT360_IND_03_2025.tif",
+      "t1_sha256": "5d6cca3dc49b23e4a9fe397decf6045330e99ad347fa9335ce9c1a526cf6c81d",
+      "t2_sha256": "0ccb7b98645c3e1bed7e356a8ecc8f2fe5c35f4f5267d617f4838065b4b11f01",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32644",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_MTN_01",
+      "region_id": "MTN_01",
+      "location_name": "Mountain / Hill Terrain 01",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_MTN_01_2020.tif",
+      "t2_file": "PLOT360_MTN_01_2025.tif",
+      "t1_sha256": "77bd079c885fb18959b9995208d924271f4b97f527b6ad3f316912fc2e5fd5fb",
+      "t2_sha256": "8a46194e1c2f173b1586a2e29415f501e217154cc2e4f952b9cb16901f4b5e19",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_MTN_02",
+      "region_id": "MTN_02",
+      "location_name": "Mountain / Hill Terrain 02",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_MTN_02_2020.tif",
+      "t2_file": "PLOT360_MTN_02_2025.tif",
+      "t1_sha256": "0a0da7530317d449e50fe47840b49f50c9eb936a217bb7906014303e63ab4799",
+      "t2_sha256": "2eaf4916400bef70d9f3f8db5ef3ba406e3da18b15569ff2d2c7e193a610a7fb",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_RUR_01",
+      "region_id": "RUR_01",
+      "location_name": "Rural Settlement Zone 01",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_RUR_01_2020.tif",
+      "t2_file": "PLOT360_RUR_01_2025.tif",
+      "t1_sha256": "93a51e9ecb854563d834f58b89167741d176b4cffc114ee5db35e6e7038a9999",
+      "t2_sha256": "7b5a27fa1655388b22c71f8021724c1c9b85c2d49984aa1201dd00007b7e1759",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32645",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_RUR_02",
+      "region_id": "RUR_02",
+      "location_name": "Rural Settlement Zone 02",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_RUR_02_2020.tif",
+      "t2_file": "PLOT360_RUR_02_2025.tif",
+      "t1_sha256": "2f28a875e8cae496bc2d64f85c7a637e7b5e76a92b13ae0c556c18dfbed92738",
+      "t2_sha256": "20107ac09b1322c8a8e7c18253b6179fb492c0d3085e50163556f43c6a42179b",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_URB_01",
+      "region_id": "URB_01",
+      "location_name": "Urban Metropolitan Zone 01",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_URB_01_2020.tif",
+      "t2_file": "PLOT360_URB_01_2025.tif",
+      "t1_sha256": "fd2f6f21303f3294fcde7203fc75ed921d693d442b287b5ea0f3db953f0ae36e",
+      "t2_sha256": "ba93606a6a503bfea20e8c0f84118d52beca8cc1b08f01173a6cd760e6ede939",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_URB_02",
+      "region_id": "URB_02",
+      "location_name": "Urban Metropolitan Zone 02",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_URB_02_2020.tif",
+      "t2_file": "PLOT360_URB_02_2025.tif",
+      "t1_sha256": "19e3759f89434fc7059178d78363123780dec1a51fc93569f34f5007232020be",
+      "t2_sha256": "52232ee6f6a7a8763e619a23db9bebab562eb066ed52141882a08a43d9fe4dd7",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32642",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_URB_03",
+      "region_id": "URB_03",
+      "location_name": "Urban Metropolitan Zone 03",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_URB_03_2020.tif",
+      "t2_file": "PLOT360_URB_03_2025.tif",
+      "t1_sha256": "8bac4fd0d2cd03091f12e39458a09ff72c1f36fec484c2828b524de7b6891b39",
+      "t2_sha256": "a099a0995e30f574febe6c7c44a2dc8ce0a615d19c62bccc80b5e673587df1e2",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32643",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    },
+    {
+      "pair_id": "PAIR_URB_04",
+      "region_id": "URB_04",
+      "location_name": "Urban Metropolitan Zone 04",
+      "t1_year": 2020,
+      "t2_year": 2025,
+      "t1_file": "PLOT360_URB_04_2020.tif",
+      "t2_file": "PLOT360_URB_04_2025.tif",
+      "t1_sha256": "6eb9a9fae21b465f067f6e1e1395f699a1baa5ef1c84e11779b9a35806ccea76",
+      "t2_sha256": "1a55592c9f30463726cffc9a7d5a39a087bd8af33c7b160a5db8f727d5215ce4",
+      "source": "Google Earth Engine",
+      "satellite": "Sentinel-2",
+      "collection": "Sentinel-2 Surface Reflectance Harmonized",
+      "crs": "EPSG:32644",
+      "validation_status": "COMPLETE",
+      "has_mask": false,
+      "mask_file": null,
+      "dataset_version": "sentinel2-temporal-v1"
+    }
+  ],
+  "production_observations": [
+    {
+      "filename": "PLOT360_AGR_01_2020.tif",
+      "relative_path": "PLOT360_AGR_01_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_AGR_01_2020.tif",
+      "size_bytes": 15450584,
+      "sha256": "0c48e5f30a856e0f16fe3759228c4b8139b357861b2369343c986097901f0cda",
+      "classification": "PRODUCTION",
+      "region_id": "AGR_01",
+      "location_name": "Agricultural Zone 01",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        577000.0,
+        3413840.0,
+        586960.0,
+        3423830.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        577000.0,
+        0.0,
+        -10.0,
+        3423830.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_AGR_01_2025.tif",
+      "relative_path": "PLOT360_AGR_01_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_AGR_01_2025.tif",
+      "size_bytes": 14201031,
+      "sha256": "3b22cdbbdf7b718079d6a965fdc30284a8e7d4804e55093961df783f9c827399",
+      "classification": "PRODUCTION",
+      "region_id": "AGR_01",
+      "location_name": "Agricultural Zone 01",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        577000.0,
+        3413840.0,
+        586960.0,
+        3423830.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        577000.0,
+        0.0,
+        -10.0,
+        3423830.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_AGR_02_2020.tif",
+      "relative_path": "PLOT360_AGR_02_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_AGR_02_2020.tif",
+      "size_bytes": 5453366,
+      "sha256": "0548ef1f1c6b61340c59ae5f284af457ecda1e868e6bc47d4a9d441c7e10e1bc",
+      "classification": "PRODUCTION",
+      "region_id": "AGR_02",
+      "location_name": "Agricultural Zone 02",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 995,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        665390.0,
+        3396400.0,
+        675340.0,
+        3406390.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        665390.0,
+        0.0,
+        -10.0,
+        3406390.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_AGR_02_2025.tif",
+      "relative_path": "PLOT360_AGR_02_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_AGR_02_2025.tif",
+      "size_bytes": 5305494,
+      "sha256": "b3a3141d5ef34e6183cadfef1cdd5e3fd25fdb72c8968056b02a9466c3ebf4f7",
+      "classification": "PRODUCTION",
+      "region_id": "AGR_02",
+      "location_name": "Agricultural Zone 02",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 995,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        665390.0,
+        3396400.0,
+        675340.0,
+        3406390.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        665390.0,
+        0.0,
+        -10.0,
+        3406390.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_AGR_03_2020.tif",
+      "relative_path": "PLOT360_AGR_03_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_AGR_03_2020.tif",
+      "size_bytes": 16280656,
+      "sha256": "fa6cd7acb43af6b73ad8d31884cc302dbaa4dc21e19abc3e632840244ac3755c",
+      "classification": "PRODUCTION",
+      "region_id": "AGR_03",
+      "location_name": "Agricultural Zone 03",
+      "year": 2020,
+      "crs": "EPSG:32644",
+      "width": 997,
+      "height": 998,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        489680.0,
+        2964470.0,
+        499650.0,
+        2974450.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        489680.0,
+        0.0,
+        -10.0,
+        2974450.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_AGR_03_2025.tif",
+      "relative_path": "PLOT360_AGR_03_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_AGR_03_2025.tif",
+      "size_bytes": 16119670,
+      "sha256": "508267fd024b420af17a773f19559a36b910b9b866c4e5a62945222bff821c76",
+      "classification": "PRODUCTION",
+      "region_id": "AGR_03",
+      "location_name": "Agricultural Zone 03",
+      "year": 2025,
+      "crs": "EPSG:32644",
+      "width": 997,
+      "height": 998,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        489680.0,
+        2964470.0,
+        499650.0,
+        2974450.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        489680.0,
+        0.0,
+        -10.0,
+        2974450.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_ARD_01_2020.tif",
+      "relative_path": "PLOT360_ARD_01_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_ARD_01_2020.tif",
+      "size_bytes": 12970383,
+      "sha256": "c160665b11a948d0160a6fabfc7fe6ebcf2a1c21e4d8c5598ed9b34651e27837",
+      "classification": "PRODUCTION",
+      "region_id": "ARD_01",
+      "location_name": "Arid / Semi-Arid Zone 01",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 998,
+      "height": 998,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        297670.0,
+        2898660.0,
+        307650.0,
+        2908640.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        297670.0,
+        0.0,
+        -10.0,
+        2908640.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_ARD_01_2025.tif",
+      "relative_path": "PLOT360_ARD_01_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_ARD_01_2025.tif",
+      "size_bytes": 13099267,
+      "sha256": "d1173df49e5b2bdebe03e703ac8e424f5ee1876ea1f87cc799ec62f0c757e7c9",
+      "classification": "PRODUCTION",
+      "region_id": "ARD_01",
+      "location_name": "Arid / Semi-Arid Zone 01",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 998,
+      "height": 998,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        297670.0,
+        2898660.0,
+        307650.0,
+        2908640.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        297670.0,
+        0.0,
+        -10.0,
+        2908640.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_ARD_02_2020.tif",
+      "relative_path": "PLOT360_ARD_02_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_ARD_02_2020.tif",
+      "size_bytes": 15889335,
+      "sha256": "00138c8a09cc4ed3813a95ac024dcb88e230fc3c141652ffafdca857c8028922",
+      "classification": "PRODUCTION",
+      "region_id": "ARD_02",
+      "location_name": "Arid / Semi-Arid Zone 02",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        573200.0,
+        2971990.0,
+        583160.0,
+        2981960.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        573200.0,
+        0.0,
+        -10.0,
+        2981960.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_ARD_02_2025.tif",
+      "relative_path": "PLOT360_ARD_02_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_ARD_02_2025.tif",
+      "size_bytes": 16273705,
+      "sha256": "a76cb87f5c4ef8af56d1346c545065c165578b999625794b981617937044ef1c",
+      "classification": "PRODUCTION",
+      "region_id": "ARD_02",
+      "location_name": "Arid / Semi-Arid Zone 02",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        573200.0,
+        2971990.0,
+        583160.0,
+        2981960.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        573200.0,
+        0.0,
+        -10.0,
+        2981960.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_ARD_03_2020.tif",
+      "relative_path": "PLOT360_ARD_03_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_ARD_03_2020.tif",
+      "size_bytes": 16038184,
+      "sha256": "7905dd7174123012b65c63f3d525d6be9e9df7b75c9e0618035c3ec19623b104",
+      "classification": "PRODUCTION",
+      "region_id": "ARD_03",
+      "location_name": "Arid / Semi-Arid Zone 03",
+      "year": 2020,
+      "crs": "EPSG:32642",
+      "width": 996,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        861130.0,
+        2545480.0,
+        871090.0,
+        2555470.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        861130.0,
+        0.0,
+        -10.0,
+        2555470.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_ARD_03_2025.tif",
+      "relative_path": "PLOT360_ARD_03_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_ARD_03_2025.tif",
+      "size_bytes": 16037633,
+      "sha256": "03a57cd85f2943dd2822a6575a2ee083ec7587dd25a3a21ce624ec075f6b052d",
+      "classification": "PRODUCTION",
+      "region_id": "ARD_03",
+      "location_name": "Arid / Semi-Arid Zone 03",
+      "year": 2025,
+      "crs": "EPSG:32642",
+      "width": 996,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        861130.0,
+        2545480.0,
+        871090.0,
+        2555470.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        861130.0,
+        0.0,
+        -10.0,
+        2555470.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_CST_01_2020.tif",
+      "relative_path": "PLOT360_CST_01_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_CST_01_2020.tif",
+      "size_bytes": 15846442,
+      "sha256": "fa94220a577fbce8f773bf89488e2f78f7b7a16eed4f9601111671a5b9a9e5ac",
+      "classification": "PRODUCTION",
+      "region_id": "CST_01",
+      "location_name": "Coastal Zone 01",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 995,
+      "height": 996,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        639720.0,
+        1098510.0,
+        649670.0,
+        1108470.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        639720.0,
+        0.0,
+        -10.0,
+        1108470.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_CST_01_2025.tif",
+      "relative_path": "PLOT360_CST_01_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_CST_01_2025.tif",
+      "size_bytes": 1583494,
+      "sha256": "bf1a5844e82c1d8de2bada32c4a463cf5fe52f59e90b582e29625cbceff3b7e2",
+      "classification": "PRODUCTION",
+      "region_id": "CST_01",
+      "location_name": "Coastal Zone 01",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 995,
+      "height": 996,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        639720.0,
+        1098510.0,
+        649670.0,
+        1108470.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        639720.0,
+        0.0,
+        -10.0,
+        1108470.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_CST_02_2020.tif",
+      "relative_path": "PLOT360_CST_02_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_CST_02_2020.tif",
+      "size_bytes": 15606854,
+      "sha256": "4b91d534cb2ca1dd5cfa2ea89c19f2e741155723ac86b84bade9bef16ccf50d8",
+      "classification": "PRODUCTION",
+      "region_id": "CST_02",
+      "location_name": "Coastal Zone 02",
+      "year": 2020,
+      "crs": "EPSG:32645",
+      "width": 997,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        372280.0,
+        2239700.0,
+        382250.0,
+        2249670.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        372280.0,
+        0.0,
+        -10.0,
+        2249670.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_CST_02_2025.tif",
+      "relative_path": "PLOT360_CST_02_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_CST_02_2025.tif",
+      "size_bytes": 15336739,
+      "sha256": "f98013c863a65a9a241a146906599c972842630d2eb87a4e2e2ead2bc5a6f1b1",
+      "classification": "PRODUCTION",
+      "region_id": "CST_02",
+      "location_name": "Coastal Zone 02",
+      "year": 2025,
+      "crs": "EPSG:32645",
+      "width": 997,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        372280.0,
+        2239700.0,
+        382250.0,
+        2249670.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        372280.0,
+        0.0,
+        -10.0,
+        2249670.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_CST_03_2020.tif",
+      "relative_path": "PLOT360_CST_03_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_CST_03_2020.tif",
+      "size_bytes": 8147314,
+      "sha256": "8c378cd684e70dd076f93fe600d27a9fc2b91d4c4dcc930bedce8fce08827344",
+      "classification": "PRODUCTION",
+      "region_id": "CST_03",
+      "location_name": "Coastal Zone 03",
+      "year": 2020,
+      "crs": "EPSG:32644",
+      "width": 996,
+      "height": 996,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        421270.0,
+        1426730.0,
+        431230.0,
+        1436690.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        421270.0,
+        0.0,
+        -10.0,
+        1436690.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_CST_03_2025.tif",
+      "relative_path": "PLOT360_CST_03_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_CST_03_2025.tif",
+      "size_bytes": 9118547,
+      "sha256": "f4268dbdafd447d73a7d220a1035e7e1bb27ce06bb421c4c820a8faf561ca3c2",
+      "classification": "PRODUCTION",
+      "region_id": "CST_03",
+      "location_name": "Coastal Zone 03",
+      "year": 2025,
+      "crs": "EPSG:32644",
+      "width": 996,
+      "height": 996,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        421270.0,
+        1426730.0,
+        431230.0,
+        1436690.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        421270.0,
+        0.0,
+        -10.0,
+        1436690.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_FOR_01_2020.tif",
+      "relative_path": "PLOT360_FOR_01_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_FOR_01_2020.tif",
+      "size_bytes": 15569657,
+      "sha256": "2f28a875e8cae496bc2d64f85c7a637e7b5e76a92b13ae0c556c18dfbed92738",
+      "classification": "PRODUCTION",
+      "region_id": "FOR_01",
+      "location_name": "Forest Reserve Zone 01",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 998,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        741850.0,
+        2569350.0,
+        751810.0,
+        2579330.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        741850.0,
+        0.0,
+        -10.0,
+        2579330.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_FOR_01_2025.tif",
+      "relative_path": "PLOT360_FOR_01_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_FOR_01_2025.tif",
+      "size_bytes": 15532879,
+      "sha256": "20107ac09b1322c8a8e7c18253b6179fb492c0d3085e50163556f43c6a42179b",
+      "classification": "PRODUCTION",
+      "region_id": "FOR_01",
+      "location_name": "Forest Reserve Zone 01",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 998,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        741850.0,
+        2569350.0,
+        751810.0,
+        2579330.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        741850.0,
+        0.0,
+        -10.0,
+        2579330.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_FOR_02_2020.tif",
+      "relative_path": "PLOT360_FOR_02_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_FOR_02_2020.tif",
+      "size_bytes": 15606854,
+      "sha256": "4b91d534cb2ca1dd5cfa2ea89c19f2e741155723ac86b84bade9bef16ccf50d8",
+      "classification": "PRODUCTION",
+      "region_id": "FOR_02",
+      "location_name": "Forest Reserve Zone 02",
+      "year": 2020,
+      "crs": "EPSG:32645",
+      "width": 997,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        372280.0,
+        2239700.0,
+        382250.0,
+        2249670.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        372280.0,
+        0.0,
+        -10.0,
+        2249670.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_FOR_02_2025.tif",
+      "relative_path": "PLOT360_FOR_02_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_FOR_02_2025.tif",
+      "size_bytes": 15336739,
+      "sha256": "f98013c863a65a9a241a146906599c972842630d2eb87a4e2e2ead2bc5a6f1b1",
+      "classification": "PRODUCTION",
+      "region_id": "FOR_02",
+      "location_name": "Forest Reserve Zone 02",
+      "year": 2025,
+      "crs": "EPSG:32645",
+      "width": 997,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        372280.0,
+        2239700.0,
+        382250.0,
+        2249670.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        372280.0,
+        0.0,
+        -10.0,
+        2249670.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_FOR_03_2020.tif",
+      "relative_path": "PLOT360_FOR_03_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_FOR_03_2020.tif",
+      "size_bytes": 11569177,
+      "sha256": "1604ebf173421f155f2b2deb20c6e9d3398c97333887eb3bc9931bff1109605c",
+      "classification": "PRODUCTION",
+      "region_id": "FOR_03",
+      "location_name": "Forest Reserve Zone 03",
+      "year": 2020,
+      "crs": "EPSG:32646",
+      "width": 998,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        368690.0,
+        2887320.0,
+        378670.0,
+        2897290.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        368690.0,
+        0.0,
+        -10.0,
+        2897290.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_FOR_03_2025.tif",
+      "relative_path": "PLOT360_FOR_03_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_FOR_03_2025.tif",
+      "size_bytes": 15705241,
+      "sha256": "a64f71705df0f10c6ce31fdc684a3624de56aa01bebd6717bea5aee5ba51045b",
+      "classification": "PRODUCTION",
+      "region_id": "FOR_03",
+      "location_name": "Forest Reserve Zone 03",
+      "year": 2025,
+      "crs": "EPSG:32646",
+      "width": 998,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        368690.0,
+        2887320.0,
+        378670.0,
+        2897290.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        368690.0,
+        0.0,
+        -10.0,
+        2897290.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_IND_01_2020.tif",
+      "relative_path": "PLOT360_IND_01_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_IND_01_2020.tif",
+      "size_bytes": 16038184,
+      "sha256": "7905dd7174123012b65c63f3d525d6be9e9df7b75c9e0618035c3ec19623b104",
+      "classification": "PRODUCTION",
+      "region_id": "IND_01",
+      "location_name": "Industrial Corridor 01",
+      "year": 2020,
+      "crs": "EPSG:32642",
+      "width": 996,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        861130.0,
+        2545480.0,
+        871090.0,
+        2555470.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        861130.0,
+        0.0,
+        -10.0,
+        2555470.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_IND_01_2025.tif",
+      "relative_path": "PLOT360_IND_01_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_IND_01_2025.tif",
+      "size_bytes": 16037633,
+      "sha256": "03a57cd85f2943dd2822a6575a2ee083ec7587dd25a3a21ce624ec075f6b052d",
+      "classification": "PRODUCTION",
+      "region_id": "IND_01",
+      "location_name": "Industrial Corridor 01",
+      "year": 2025,
+      "crs": "EPSG:32642",
+      "width": 996,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        861130.0,
+        2545480.0,
+        871090.0,
+        2555470.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        861130.0,
+        0.0,
+        -10.0,
+        2555470.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_IND_02_2020.tif",
+      "relative_path": "PLOT360_IND_02_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_IND_02_2020.tif",
+      "size_bytes": 16198090,
+      "sha256": "4371cec547d0ed50bc63796e55d85e15e9996f03b87d559fe9f362471a2202dc",
+      "classification": "PRODUCTION",
+      "region_id": "IND_02",
+      "location_name": "Industrial Corridor 02",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 997,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        374340.0,
+        2043160.0,
+        384310.0,
+        2053130.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        374340.0,
+        0.0,
+        -10.0,
+        2053130.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_IND_02_2025.tif",
+      "relative_path": "PLOT360_IND_02_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_IND_02_2025.tif",
+      "size_bytes": 15943305,
+      "sha256": "cd9c1cc40eae8d77e0b14b6e6a362e53cdad7bebf34b82d5ae127c7ea49f57c2",
+      "classification": "PRODUCTION",
+      "region_id": "IND_02",
+      "location_name": "Industrial Corridor 02",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 997,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        374340.0,
+        2043160.0,
+        384310.0,
+        2053130.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        374340.0,
+        0.0,
+        -10.0,
+        2053130.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_IND_03_2020.tif",
+      "relative_path": "PLOT360_IND_03_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_IND_03_2020.tif",
+      "size_bytes": 8413683,
+      "sha256": "5d6cca3dc49b23e4a9fe397decf6045330e99ad347fa9335ce9c1a526cf6c81d",
+      "classification": "PRODUCTION",
+      "region_id": "IND_03",
+      "location_name": "Industrial Corridor 03",
+      "year": 2020,
+      "crs": "EPSG:32644",
+      "width": 997,
+      "height": 996,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        421280.0,
+        1432260.0,
+        431250.0,
+        1442220.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        421280.0,
+        0.0,
+        -10.0,
+        1442220.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_IND_03_2025.tif",
+      "relative_path": "PLOT360_IND_03_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_IND_03_2025.tif",
+      "size_bytes": 9578797,
+      "sha256": "0ccb7b98645c3e1bed7e356a8ecc8f2fe5c35f4f5267d617f4838065b4b11f01",
+      "classification": "PRODUCTION",
+      "region_id": "IND_03",
+      "location_name": "Industrial Corridor 03",
+      "year": 2025,
+      "crs": "EPSG:32644",
+      "width": 997,
+      "height": 996,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        421280.0,
+        1432260.0,
+        431250.0,
+        1442220.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        421280.0,
+        0.0,
+        -10.0,
+        1442220.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_MTN_01_2020.tif",
+      "relative_path": "PLOT360_MTN_01_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_MTN_01_2020.tif",
+      "size_bytes": 15883464,
+      "sha256": "77bd079c885fb18959b9995208d924271f4b97f527b6ad3f316912fc2e5fd5fb",
+      "classification": "PRODUCTION",
+      "region_id": "MTN_01",
+      "location_name": "Mountain / Hill Terrain 01",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        786600.0,
+        3352760.0,
+        796560.0,
+        3362750.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        786600.0,
+        0.0,
+        -10.0,
+        3362750.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_MTN_01_2025.tif",
+      "relative_path": "PLOT360_MTN_01_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_MTN_01_2025.tif",
+      "size_bytes": 16094240,
+      "sha256": "8a46194e1c2f173b1586a2e29415f501e217154cc2e4f952b9cb16901f4b5e19",
+      "classification": "PRODUCTION",
+      "region_id": "MTN_01",
+      "location_name": "Mountain / Hill Terrain 01",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        786600.0,
+        3352760.0,
+        796560.0,
+        3362750.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        786600.0,
+        0.0,
+        -10.0,
+        3362750.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_MTN_02_2020.tif",
+      "relative_path": "PLOT360_MTN_02_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_MTN_02_2020.tif",
+      "size_bytes": 16259615,
+      "sha256": "0a0da7530317d449e50fe47840b49f50c9eb936a217bb7906014303e63ab4799",
+      "classification": "PRODUCTION",
+      "region_id": "MTN_02",
+      "location_name": "Mountain / Hill Terrain 02",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        702310.0,
+        3438250.0,
+        712270.0,
+        3448240.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        702310.0,
+        0.0,
+        -10.0,
+        3448240.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_MTN_02_2025.tif",
+      "relative_path": "PLOT360_MTN_02_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_MTN_02_2025.tif",
+      "size_bytes": 16363837,
+      "sha256": "2eaf4916400bef70d9f3f8db5ef3ba406e3da18b15569ff2d2c7e193a610a7fb",
+      "classification": "PRODUCTION",
+      "region_id": "MTN_02",
+      "location_name": "Mountain / Hill Terrain 02",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        702310.0,
+        3438250.0,
+        712270.0,
+        3448240.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        702310.0,
+        0.0,
+        -10.0,
+        3448240.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_RUR_01_2020.tif",
+      "relative_path": "PLOT360_RUR_01_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_RUR_01_2020.tif",
+      "size_bytes": 15820511,
+      "sha256": "93a51e9ecb854563d834f58b89167741d176b4cffc114ee5db35e6e7038a9999",
+      "classification": "PRODUCTION",
+      "region_id": "RUR_01",
+      "location_name": "Rural Settlement Zone 01",
+      "year": 2020,
+      "crs": "EPSG:32645",
+      "width": 999,
+      "height": 998,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        307970.0,
+        2827060.0,
+        317960.0,
+        2837040.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        307970.0,
+        0.0,
+        -10.0,
+        2837040.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_RUR_01_2025.tif",
+      "relative_path": "PLOT360_RUR_01_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_RUR_01_2025.tif",
+      "size_bytes": 15533926,
+      "sha256": "7b5a27fa1655388b22c71f8021724c1c9b85c2d49984aa1201dd00007b7e1759",
+      "classification": "PRODUCTION",
+      "region_id": "RUR_01",
+      "location_name": "Rural Settlement Zone 01",
+      "year": 2025,
+      "crs": "EPSG:32645",
+      "width": 999,
+      "height": 998,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        307970.0,
+        2827060.0,
+        317960.0,
+        2837040.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        307970.0,
+        0.0,
+        -10.0,
+        2837040.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_RUR_02_2020.tif",
+      "relative_path": "PLOT360_RUR_02_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_RUR_02_2020.tif",
+      "size_bytes": 15569657,
+      "sha256": "2f28a875e8cae496bc2d64f85c7a637e7b5e76a92b13ae0c556c18dfbed92738",
+      "classification": "PRODUCTION",
+      "region_id": "RUR_02",
+      "location_name": "Rural Settlement Zone 02",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 998,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        741850.0,
+        2569350.0,
+        751810.0,
+        2579330.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        741850.0,
+        0.0,
+        -10.0,
+        2579330.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_RUR_02_2025.tif",
+      "relative_path": "PLOT360_RUR_02_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_RUR_02_2025.tif",
+      "size_bytes": 15532879,
+      "sha256": "20107ac09b1322c8a8e7c18253b6179fb492c0d3085e50163556f43c6a42179b",
+      "classification": "PRODUCTION",
+      "region_id": "RUR_02",
+      "location_name": "Rural Settlement Zone 02",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 998,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        741850.0,
+        2569350.0,
+        751810.0,
+        2579330.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        741850.0,
+        0.0,
+        -10.0,
+        2579330.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_URB_01_2020.tif",
+      "relative_path": "PLOT360_URB_01_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_URB_01_2020.tif",
+      "size_bytes": 15958783,
+      "sha256": "fd2f6f21303f3294fcde7203fc75ed921d693d442b287b5ea0f3db953f0ae36e",
+      "classification": "PRODUCTION",
+      "region_id": "URB_01",
+      "location_name": "Urban Metropolitan Zone 01",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 995,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        700420.0,
+        3172020.0,
+        710370.0,
+        3182010.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        700420.0,
+        0.0,
+        -10.0,
+        3182010.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_URB_01_2025.tif",
+      "relative_path": "PLOT360_URB_01_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_URB_01_2025.tif",
+      "size_bytes": 15148221,
+      "sha256": "ba93606a6a503bfea20e8c0f84118d52beca8cc1b08f01173a6cd760e6ede939",
+      "classification": "PRODUCTION",
+      "region_id": "URB_01",
+      "location_name": "Urban Metropolitan Zone 01",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 995,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        700420.0,
+        3172020.0,
+        710370.0,
+        3182010.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        700420.0,
+        0.0,
+        -10.0,
+        3182010.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_URB_02_2020.tif",
+      "relative_path": "PLOT360_URB_02_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_URB_02_2020.tif",
+      "size_bytes": 10787497,
+      "sha256": "19e3759f89434fc7059178d78363123780dec1a51fc93569f34f5007232020be",
+      "classification": "PRODUCTION",
+      "region_id": "URB_02",
+      "location_name": "Urban Metropolitan Zone 02",
+      "year": 2020,
+      "crs": "EPSG:32642",
+      "width": 997,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        903210.0,
+        2108760.0,
+        913180.0,
+        2118750.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        903210.0,
+        0.0,
+        -10.0,
+        2118750.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_URB_02_2025.tif",
+      "relative_path": "PLOT360_URB_02_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_URB_02_2025.tif",
+      "size_bytes": 11287261,
+      "sha256": "52232ee6f6a7a8763e619a23db9bebab562eb066ed52141882a08a43d9fe4dd7",
+      "classification": "PRODUCTION",
+      "region_id": "URB_02",
+      "location_name": "Urban Metropolitan Zone 02",
+      "year": 2025,
+      "crs": "EPSG:32642",
+      "width": 997,
+      "height": 999,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        903210.0,
+        2108760.0,
+        913180.0,
+        2118750.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        903210.0,
+        0.0,
+        -10.0,
+        2118750.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_URB_03_2020.tif",
+      "relative_path": "PLOT360_URB_03_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_URB_03_2020.tif",
+      "size_bytes": 16432823,
+      "sha256": "8bac4fd0d2cd03091f12e39458a09ff72c1f36fec484c2828b524de7b6891b39",
+      "classification": "PRODUCTION",
+      "region_id": "URB_03",
+      "location_name": "Urban Metropolitan Zone 03",
+      "year": 2020,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        776510.0,
+        1430440.0,
+        786470.0,
+        1440410.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        776510.0,
+        0.0,
+        -10.0,
+        1440410.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_URB_03_2025.tif",
+      "relative_path": "PLOT360_URB_03_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_URB_03_2025.tif",
+      "size_bytes": 16203608,
+      "sha256": "a099a0995e30f574febe6c7c44a2dc8ce0a615d19c62bccc80b5e673587df1e2",
+      "classification": "PRODUCTION",
+      "region_id": "URB_03",
+      "location_name": "Urban Metropolitan Zone 03",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 996,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        776510.0,
+        1430440.0,
+        786470.0,
+        1440410.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        776510.0,
+        0.0,
+        -10.0,
+        1440410.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_URB_04_2020.tif",
+      "relative_path": "PLOT360_URB_04_2020.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_URB_04_2020.tif",
+      "size_bytes": 16051651,
+      "sha256": "6eb9a9fae21b465f067f6e1e1395f699a1baa5ef1c84e11779b9a35806ccea76",
+      "classification": "PRODUCTION",
+      "region_id": "URB_04",
+      "location_name": "Urban Metropolitan Zone 04",
+      "year": 2020,
+      "crs": "EPSG:32644",
+      "width": 999,
+      "height": 997,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        227970.0,
+        1918910.0,
+        237960.0,
+        1928880.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        227970.0,
+        0.0,
+        -10.0,
+        1928880.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    },
+    {
+      "filename": "PLOT360_URB_04_2025.tif",
+      "relative_path": "PLOT360_URB_04_2025.tif",
+      "local_path": "D:\\Aayushi\\Plot360\\PLOT360_Sentinel2_2020_2025\\PLOT360_URB_04_2025.tif",
+      "size_bytes": 15398312,
+      "sha256": "1a55592c9f30463726cffc9a7d5a39a087bd8af33c7b160a5db8f727d5215ce4",
+      "classification": "PRODUCTION",
+      "region_id": "URB_04",
+      "location_name": "Urban Metropolitan Zone 04",
+      "year": 2025,
+      "crs": "EPSG:32643",
+      "width": 997,
+      "height": 998,
+      "count": 6,
+      "dtypes": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "pixel_size": [
+        10.0,
+        10.0
+      ],
+      "resolution": [
+        10.0,
+        10.0
+      ],
+      "bounds": [
+        865580.0,
+        1920530.0,
+        875550.0,
+        1930510.0
+      ],
+      "transform": [
+        10.0,
+        0.0,
+        865580.0,
+        0.0,
+        -10.0,
+        1930510.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nodata": null,
+      "band_descriptions": [
+        "B2",
+        "B3",
+        "B4",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "is_valid": true,
+      "validation_messages": []
+    }
+  ],
+  "test_observations": [],
+  "warnings": [
+    "Valid ground-truth change masks (0=unchanged, 1=changed) are not present in the dataset. Supervised change detection training is LABEL-BLOCKED per Section 18 & 27. Unsupervised/exploratory change detection and temporal evidence workflows remain fully active."
+  ],
+  "errors": []
+}

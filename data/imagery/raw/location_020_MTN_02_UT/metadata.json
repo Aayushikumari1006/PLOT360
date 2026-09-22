@@ -1,0 +1,25 @@
+{
+  "region_id": "MTN_02_UT",
+  "location_name": "Dehradun Foot-Hills",
+  "center_coordinates": {
+    "lat": 30.3165,
+    "lng": 78.0322
+  },
+  "landscape_type": "mountainous",
+  "t1_year": 2020,
+  "t1_file": "T1_2020.tif",
+  "t2_year": 2025,
+  "t2_file": "T2_2025.tif",
+  "satellite": "Sentinel-2 Surface Reflectance Harmonized",
+  "source": "Google Earth Engine",
+  "bands": [
+    "B2",
+    "B3",
+    "B4",
+    "B8",
+    "B11",
+    "B12"
+  ],
+  "has_mask": false,
+  "mask_note": "Ground truth masks unavailable. Supervised training requires verified masks."
+}

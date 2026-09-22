@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: plot360-platform
+    env: docker
+    dockerfilePath: Dockerfile
+    dockerContext: .
+    region: oregon
+    plan: standard
+    branch: main
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: 480
+      - key: VITE_API_BASE_URL
+        value: /api/v1
+      - key: HOST
+        value: 0.0.0.0

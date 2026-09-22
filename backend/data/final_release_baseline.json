@@ -1,0 +1,13 @@
+{
+  "frontend_file_count": 48,
+  "sentinel_file_count": 46,
+  "sentinel_source_tiff_copies": 0,
+  "backend_tests_total": 81,
+  "backend_tests_passed": 81,
+  "backend_tests_failed": 0,
+  "environment_configuration": "Development with SQLite spatial fallback / Production PostgreSQL PostGIS target",
+  "database_mode": "SQLite Development Fallback (sqlite:///./plot360_dev.db)",
+  "frontend_build_status": "SUCCESS",
+  "route_count": 48,
+  "timestamp": "2026-09-22T07:05:00+05:30"
+}
