@@ -15,7 +15,7 @@ RUN npm run build
 
 # ======================================================================
 # Stage 2: Python 3.13 Production Runtime (Unified Full-Stack)
-FROM python:3.13-slim AS production-runtime
+FROM python:3.12-slim AS production-runtime
 WORKDIR /app
 
 # System dependencies for GIS / GDAL / Rasterio
