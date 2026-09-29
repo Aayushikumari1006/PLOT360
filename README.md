@@ -224,9 +224,8 @@ GIS / Satellite Intelligence
 
 # 🌐 Live Application
 
-### **Coming Soon**
 
-**Live Demo:** __________________________________
+**Live Demo:** [Open PLOT360](https://plot360-i6nx.onrender.com/)
 
 ---
 
