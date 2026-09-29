@@ -172,10 +172,29 @@ def on_startup():
     logger.info(f"PLOT360 Backend operational — env={settings.APP_ENV}")
 
 
-# ── Serve Production Built Frontend ───────────────────────────────────────────
+# ── Serve Production Built Frontend ─────────────────────────────────────────
 dist_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "dist"))
+
+
 if os.path.isdir(dist_path):
-    app.mount("/", StaticFiles(directory=dist_path, html=True), name="static_frontend")
+    from starlette.responses import FileResponse
+    from starlette.exceptions import HTTPException as StarletteHTTPException
+
+    class SPAStaticFiles(StaticFiles):
+        async def get_response(self, path, scope):
+            try:
+                return await super().get_response(path, scope)
+            except StarletteHTTPException as exc:
+                if exc.status_code == 404:
+                    return FileResponse(os.path.join(dist_path, "index.html"))
+                raise
+
+    app.mount(
+        "/",
+        SPAStaticFiles(directory=dist_path, html=True),
+        name="static_frontend",
+    )
+
 else:
     @app.get("/", include_in_schema=False)
     def root():
