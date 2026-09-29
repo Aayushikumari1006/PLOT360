@@ -45,9 +45,9 @@ RUN mkdir -p /app/backend/data /app/backend/data/raw /app/backend/data/processed
 ENV PYTHONPATH=/app/backend
 ENV APP_ENV=production
 ENV HOST=0.0.0.0
-ENV PORT=8000
+ENV PORT=10000
 
-EXPOSE 8000
+EXPOSE 10000
 
 WORKDIR /app/backend
-CMD ["sh", "-c", "python scripts/seed_demo.py && python -m uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["sh", "-c", "python scripts/seed_demo.py && python -m uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-10000}"]
