@@ -4,7 +4,12 @@
  * silent token refresh, and graceful backend-offline detection.
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || (typeof window !== 'undefined' && window.location.port === '5173' ? 'http://localhost:8000/api/v1' : '/api/v1');
+const rawBaseUrl = import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = rawBaseUrl
+  ? rawBaseUrl.replace(/\/+$/, '')
+  : (typeof window !== 'undefined' && (window.location.port === '5173' || window.location.port === '5174')
+      ? 'http://localhost:8000/api/v1'
+      : '/api/v1');
 
 export const ErrorTypes = {
   BACKEND_UNAVAILABLE: 'BACKEND_UNAVAILABLE',
