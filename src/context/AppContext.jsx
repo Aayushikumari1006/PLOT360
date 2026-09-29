@@ -5,6 +5,16 @@ import { getNotifications, markNotificationRead as apiMarkRead, markAllNotificat
 import { login } from '../api/auth';
 import { submitFieldVerification } from '../api/ai';
 import { translate, SUPPORTED_LANGUAGES } from '../data/translations';
+import {
+  canAccessModule,
+  canViewFinancialLiabilities,
+  canViewBuildingDetails,
+  canViewInternalAiNotes,
+  canPerformOfficerWorkflows,
+  canResolveConflicts,
+  ROLES as RBAC_ROLES,
+  ROLE_LABELS
+} from '../utils/rbac';
 
 const AppContext = createContext();
 
@@ -37,10 +47,94 @@ export function AppProvider({ children }) {
   const selectedLocation = currentLocation.name;
   const [selectedJurisdiction, setSelectedJurisdiction] = useState(currentLocation.jurisdiction);
 
+  // Synchronize parcels with backend (primary repository state)
+  const [backendParcels, setBackendParcels] = useState(DEMO_PARCELS);
+
   // Active Parcel (P-1027 is default selected parcel as required)
   const [activeParcelId, setActiveParcelId] = useState('P-1027');
-  const activeParcel = activeParcelId ? (DEMO_PARCELS.find(p => p.parcel_id === activeParcelId) || null) : null;
+  const [activeParcelLive, setActiveParcelLive] = useState(null);
+  const [isParcelLoading, setIsParcelLoading] = useState(false);
+  const [isBackendOnline, setIsBackendOnline] = useState(true);
+
+  // Active Navigation Module
+  const [activeModule, setActiveModule] = useState('explorer');
+
+  // Dynamic Live Presentation Tour HUD State
+  const [isTourOpen, setIsTourOpen] = useState(false);
+  const [tourStep, setTourStep] = useState(1);
+  const [tourStage, setTourStage] = useState(1);
+  const [tourActiveTab, setTourActiveTab] = useState(null);
+
+  const handleSetActiveModule = (mod) => {
+    if (mod === 'presentation') {
+      setIsTourOpen(true);
+      return;
+    }
+    setActiveModule(mod);
+  };
+
+  // Role Based Access Control with server-authenticated token
+  const [currentRole, setCurrentRoleState] = useState('planning_officer');
+
+  // Select parcel with cross-location synchronization, prioritizing live backendParcels
+  const selectParcel = (parcelId) => {
+    if (!parcelId) {
+      setActiveParcelId(null);
+      setActiveParcelLive(null);
+      return;
+    }
+    const found = backendParcels.find(p => p.parcel_id === parcelId || p.ulpin === parcelId) ||
+                  DEMO_PARCELS.find(p => p.parcel_id === parcelId || p.ulpin === parcelId);
+    if (found) {
+      setActiveParcelId(found.parcel_id);
+      if (found.location_id && found.location_id !== selectedLocationId) {
+        const targetLoc = DEMO_LOCATIONS.find(l => l.id === found.location_id);
+        if (targetLoc) {
+          setSelectedLocationId(targetLoc.id);
+          setSelectedJurisdiction(targetLoc.jurisdiction);
+        }
+      }
+    } else {
+      setActiveParcelId(parcelId);
+    }
+  };
+
+  // Live activeParcel resolution: live backend data is canonical, falling back safely
+  const activeParcel = activeParcelLive || (activeParcelId ? (
+    backendParcels.find(p => p.parcel_id === activeParcelId || p.ulpin === activeParcelId) ||
+    DEMO_PARCELS.find(p => p.parcel_id === activeParcelId) ||
+    null
+  ) : null);
   const activeULPIN = activeParcel ? activeParcel.ulpin : '';
+
+  // Synchronize live unified parcel details whenever activeParcelId or currentRole changes
+  useEffect(() => {
+    if (!activeParcelId) {
+      setActiveParcelLive(null);
+      return;
+    }
+    let isMounted = true;
+    setIsParcelLoading(true);
+    getParcelByUlpin(activeParcelId)
+      .then(liveData => {
+        if (isMounted && liveData && liveData.parcel_id) {
+          const fallback = DEMO_PARCELS.find(p => p.parcel_id === liveData.parcel_id || p.ulpin === liveData.ulpin) || {};
+          setActiveParcelLive({ ...fallback, ...liveData });
+          setIsBackendOnline(true);
+        }
+      })
+      .catch(() => {
+        if (isMounted) {
+          const fallback = DEMO_PARCELS.find(p => p.parcel_id === activeParcelId || p.ulpin === activeParcelId) || null;
+          setActiveParcelLive(fallback);
+          setIsBackendOnline(false);
+        }
+      })
+      .finally(() => {
+        if (isMounted) setIsParcelLoading(false);
+      });
+    return () => { isMounted = false; };
+  }, [activeParcelId, currentRole]);
 
   // In-map notification / toast for geolocation and search feedback
   const [locationToast, setLocationToast] = useState(null);
@@ -84,31 +178,6 @@ export function AppProvider({ children }) {
       setActiveParcelId(targetLoc.defaultParcelId);
     }
   };
-
-  // Select parcel with cross-location synchronization
-  const selectParcel = (parcelId) => {
-    if (!parcelId) {
-      setActiveParcelId(null);
-      return;
-    }
-    const found = DEMO_PARCELS.find(p => p.parcel_id === parcelId || p.ulpin === parcelId);
-    if (found) {
-      setActiveParcelId(found.parcel_id);
-      if (found.location_id && found.location_id !== selectedLocationId) {
-        const targetLoc = DEMO_LOCATIONS.find(l => l.id === found.location_id);
-        if (targetLoc) {
-          setSelectedLocationId(targetLoc.id);
-          setSelectedJurisdiction(targetLoc.jurisdiction);
-        }
-      }
-    }
-  };
-
-  // Active Navigation Module
-  const [activeModule, setActiveModule] = useState('explorer');
-
-  // Role Based Access Control with server-authenticated token
-  const [currentRole, setCurrentRoleState] = useState('planning_officer');
 
   const setCurrentRole = (newRole) => {
     const canonicalRole = ROLE_ALIAS[newRole] || newRole;
@@ -255,7 +324,6 @@ export function AppProvider({ children }) {
   };
 
   // Synchronize parcels with backend
-  const [backendParcels, setBackendParcels] = useState(DEMO_PARCELS);
   useEffect(() => {
     let isMounted = true;
     getParcels({ location: selectedLocationId })
@@ -319,12 +387,22 @@ export function AppProvider({ children }) {
         setActiveParcelId,
         activeParcel,
         activeULPIN,
+        isParcelLoading,
+        isBackendOnline,
         selectParcel,
         locationParcels,
         locationToast,
         showLocationToast,
         activeModule,
-        setActiveModule,
+        setActiveModule: handleSetActiveModule,
+        isTourOpen,
+        setIsTourOpen,
+        tourStep,
+        setTourStep,
+        tourStage,
+        setTourStage,
+        tourActiveTab,
+        setTourActiveTab,
         currentRole,
         setCurrentRole,
         roles: ROLES,
@@ -366,7 +444,15 @@ export function AppProvider({ children }) {
         markNotificationRead: handleMarkNotificationRead,
         markAllNotificationsRead: handleMarkAllNotificationsRead,
         kpiData: KPI_DATA,
-        parcels: backendParcels
+        parcels: locationParcels,
+        backendParcels,
+        allParcels: backendParcels,
+        canAccessModule: (mod) => canAccessModule(currentRole, mod),
+        canViewFinancialLiabilities: () => canViewFinancialLiabilities(currentRole),
+        canViewBuildingDetails: () => canViewBuildingDetails(currentRole),
+        canViewInternalAiNotes: () => canViewInternalAiNotes(currentRole),
+        canPerformOfficerWorkflows: () => canPerformOfficerWorkflows(currentRole),
+        canResolveConflicts: () => canResolveConflicts(currentRole)
       }}
     >
       {children}

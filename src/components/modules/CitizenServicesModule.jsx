@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Users,
   Search,
@@ -8,19 +8,25 @@ import {
   CheckCircle2,
   AlertCircle,
   FileText,
-  Building
+  Building,
+  ArrowRight
 } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
-import { createServiceRequest, getServiceRequests } from '../../api/citizen';
+import { createServiceRequest, getServiceRequests, transitionWorkflow } from '../../api/citizen';
 
 export default function CitizenServicesModule() {
-  const { activeParcel, selectParcel, parcels } = useApp();
+  const { activeParcel, selectParcel, parcels, userRole } = useApp();
 
   const [citizenQuery, setCitizenQuery] = useState('');
   const [selectedService, setSelectedService] = useState('demarcation');
   const [applicantName, setApplicantName] = useState('Ravinder Singh');
   const [applicantPhone, setApplicantPhone] = useState('+91 98765 43210');
   const [requestNotes, setRequestNotes] = useState('Request for boundary pillar verification with adjoining parcel P-1026.');
+  const [selectedReqId, setSelectedReqId] = useState('SR-2026-1088');
+  const [loadingLive, setLoadingLive] = useState(false);
+  const [transitionError, setTransitionError] = useState(null);
+  const [transitionSuccess, setTransitionSuccess] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [submittedRequests, setSubmittedRequests] = useState(() => {
     const saved = localStorage.getItem('plot360_citizen_requests');
@@ -48,6 +54,41 @@ export default function CitizenServicesModule() {
         ];
   });
 
+  // ── Load live service requests from backend ──
+  useEffect(() => {
+    let isMounted = true;
+    setLoadingLive(true);
+    getServiceRequests()
+      .then((data) => {
+        if (!isMounted) return;
+        if (Array.isArray(data) && data.length > 0) {
+          const liveMapped = data.map((r) => ({
+            id: r.request_id || `SR-2026-${r.id}`,
+            backendId: r.id,
+            parcel_id: r.ulpin ? r.ulpin.split('-').pop() : 'P-1027',
+            ulpin: r.ulpin || 'IN-PB-CHD-0001027',
+            service: r.service_type || 'Land Service',
+            department: r.department,
+            date: r.created_at ? new Date(r.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : 'Today',
+            status: r.status || 'SUBMITTED',
+            step: r.current_step || 1
+          }));
+          setSubmittedRequests(liveMapped);
+          setSelectedReqId(liveMapped[0].id);
+        }
+      })
+      .catch((err) => {
+        console.warn('Backend service requests offline, using local store:', err);
+      })
+      .finally(() => {
+        if (isMounted) setLoadingLive(false);
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   const [newRequestSuccess, setNewRequestSuccess] = useState(null);
 
   const handleSearch = (e) => {
@@ -67,8 +108,9 @@ export default function CitizenServicesModule() {
 
   const handleSubmitRequest = async (e) => {
     e.preventDefault();
-    const fallbackId = `SR-2026-${Math.floor(1000 + Math.random() * 9000)}`;
-    let persistentId = fallbackId;
+    setIsSubmitting(true);
+    setNewRequestSuccess(null);
+    let persistentId = null;
 
     try {
       const res = await createServiceRequest({
@@ -82,8 +124,14 @@ export default function CitizenServicesModule() {
       if (res && res.request_id) {
         persistentId = res.request_id;
       }
-    } catch (_) {
-      // Offline fallback
+    } catch (err) {
+      console.warn('Backend createServiceRequest error, creating local fallback record:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
+
+    if (!persistentId) {
+      persistentId = `SR-2026-${Math.floor(1000 + Math.random() * 9000)}`;
     }
 
     const newReq = {
@@ -92,7 +140,7 @@ export default function CitizenServicesModule() {
       ulpin: activeParcel ? activeParcel.ulpin : 'IN-PB-CHD-0001027',
       service:
         selectedService === 'demarcation'
-          ? 'Cadastral Boundary Demarcation'
+          ? 'Cadastral Boundary Demarcation (Hadd Shikni)'
           : selectedService === 'mutation'
           ? 'Title Mutation (Intiqal)'
           : selectedService === 'noc'
@@ -105,9 +153,34 @@ export default function CitizenServicesModule() {
 
     const updated = [newReq, ...submittedRequests];
     setSubmittedRequests(updated);
+    setSelectedReqId(newReq.id);
     localStorage.setItem('plot360_citizen_requests', JSON.stringify(updated));
     setNewRequestSuccess(persistentId);
   };
+
+  const handleOfficerAdvance = async (toState) => {
+    setTransitionError(null);
+    setTransitionSuccess(null);
+    const activeReq = submittedRequests.find(r => r.id === selectedReqId) || submittedRequests[0];
+    if (!activeReq) return;
+
+    try {
+      if (activeReq.backendId) {
+        await transitionWorkflow(activeReq.backendId, toState, `Officer advanced workflow step`);
+      }
+      const updatedStatus = toState.toUpperCase();
+      const updated = submittedRequests.map((r) =>
+        r.id === activeReq.id ? { ...r, status: updatedStatus, step: Math.min(r.step + 1, 5) } : r
+      );
+      setSubmittedRequests(updated);
+      setTransitionSuccess(`Workflow stage transitioned to ${updatedStatus}`);
+    } catch (err) {
+      const msg = err?.response?.data?.detail || err?.message || 'Workflow transition rejected by authority';
+      setTransitionError(`Transition Failed: ${msg}`);
+    }
+  };
+
+  const activeReq = submittedRequests.find(r => r.id === selectedReqId) || submittedRequests[0] || {};
 
   return (
     <div className="page-scroll-area">
@@ -214,53 +287,93 @@ export default function CitizenServicesModule() {
 
         {/* Real-time Tracking Stepper */}
         <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-card)', borderRadius: '12px', padding: '16px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
-          <h3 style={{ fontSize: '15px', fontWeight: 700 }}>Track Service Request: SR-2026-1088</h3>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <h3 style={{ fontSize: '15px', fontWeight: 700 }}>Track Service Request: {activeReq.id || 'SR-2026-1088'}</h3>
+            {loadingLive && <span style={{ fontSize: '11px', color: 'var(--brand-accent-cyan)' }}>Syncing...</span>}
+          </div>
           <div style={{ fontSize: '11.5px', color: 'var(--text-muted)' }}>
-            Service: <strong>Building Permission NOC</strong> • Parcel: <strong>P-1027</strong>
+            Service: <strong>{activeReq.service}</strong> • Parcel: <strong>{activeReq.parcel_id}</strong> ({activeReq.ulpin})
           </div>
 
-          {/* Interactive Stepper */}
+          {/* Dynamic Stepper */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', background: 'var(--bg-card-alt)', padding: '14px', borderRadius: '10px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'var(--status-success)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700 }}>✓</div>
+              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: (activeReq.step || 1) >= 1 ? 'var(--status-success)' : 'var(--border-card)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700 }}>✓</div>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-primary)' }}>Application Submitted</div>
-                <div style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>19 Sep 2026, 09:30 AM — Digital application filed with Aadhaar KYC</div>
+                <div style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>{activeReq.date || 'Recent'} — Digital application filed with Aadhaar KYC</div>
               </div>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'var(--status-success)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700 }}>✓</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', opacity: (activeReq.step || 1) >= 2 ? 1 : 0.5 }}>
+              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: (activeReq.step || 1) >= 2 ? 'var(--status-success)' : 'var(--border-card)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700 }}>{(activeReq.step || 1) >= 2 ? '✓' : '2'}</div>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-primary)' }}>Documents Received</div>
-                <div style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>19 Sep 2026, 11:15 AM — Title deed and site architecture plan uploaded</div>
+                <div style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>Title deed and site architecture plan indexed in digital vault</div>
               </div>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'var(--status-success)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700 }}>✓</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', opacity: (activeReq.step || 1) >= 3 ? 1 : 0.5 }}>
+              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: (activeReq.step || 1) >= 3 ? 'var(--status-success)' : 'var(--border-card)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700 }}>{(activeReq.step || 1) >= 3 ? '✓' : '3'}</div>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-primary)' }}>Cadastral Boundary Verification</div>
-                <div style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>19 Sep 2026, 02:40 PM — ULPIN automated cross-check passed with 0 overlaps</div>
+                <div style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>ULPIN automated spatial cross-check passed with 0 overlaps</div>
               </div>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'var(--brand-accent-blue)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700 }}>●</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', opacity: (activeReq.step || 1) >= 4 ? 1 : 0.5 }}>
+              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: (activeReq.step || 1) === 4 ? 'var(--brand-accent-blue)' : (activeReq.step || 1) > 4 ? 'var(--status-success)' : 'var(--border-card)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700 }}>{(activeReq.step || 1) > 4 ? '✓' : '●'}</div>
               <div style={{ flex: 1 }}>
-                <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--brand-accent-cyan)' }}>Department Review in Progress</div>
-                <div style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>Town Planning Officer review underway (Estimated completion: 24 hours)</div>
+                <div style={{ fontSize: '12px', fontWeight: 700, color: (activeReq.step || 1) === 4 ? 'var(--brand-accent-cyan)' : 'var(--text-primary)' }}>Department Review</div>
+                <div style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>Competent Authority examination and NOC verification</div>
               </div>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', opacity: 0.5 }}>
-              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'var(--border-card)', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700 }}>○</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', opacity: (activeReq.step || 1) >= 5 ? 1 : 0.5 }}>
+              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: (activeReq.step || 1) >= 5 ? 'var(--status-success)' : 'var(--border-card)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 700 }}>{(activeReq.step || 1) >= 5 ? '✓' : '○'}</div>
               <div style={{ flex: 1 }}>
-                <div style={{ fontSize: '12px', fontWeight: 700 }}>Final Approval & Digital Certificate Issue</div>
-                <div style={{ fontSize: '10.5px' }}>Cryptographically signed NOC issued with QR code</div>
+                <div style={{ fontSize: '12px', fontWeight: 700 }}>Final Approval &amp; Digital Certificate Issue</div>
+                <div style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>Cryptographically signed document issued with QR verification</div>
               </div>
             </div>
           </div>
+
+          {/* Officer Workflow Actions if authorized role */}
+          {userRole !== 'citizen' && (
+            <div style={{ padding: '10px', background: 'var(--bg-card-alt)', borderRadius: '8px', border: '1px solid var(--border-card)' }}>
+              <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--brand-accent-cyan)', marginBottom: '8px' }}>
+                OFFICER WORKFLOW CONTROLS ({userRole})
+              </div>
+              <div style={{ display: 'flex', gap: '8px' }}>
+                <button
+                  type="button"
+                  className="btn-secondary"
+                  style={{ flex: 1, fontSize: '11px', padding: '6px' }}
+                  onClick={() => handleOfficerAdvance('in_review')}
+                >
+                  Mark Under Review
+                </button>
+                <button
+                  type="button"
+                  className="btn-primary"
+                  style={{ flex: 1, fontSize: '11px', padding: '6px' }}
+                  onClick={() => handleOfficerAdvance('approved')}
+                >
+                  Approve / Sign NOC
+                </button>
+              </div>
+              {transitionSuccess && (
+                <div style={{ marginTop: '6px', fontSize: '11px', color: 'var(--status-success)' }}>
+                  ✓ {transitionSuccess}
+                </div>
+              )}
+              {transitionError && (
+                <div style={{ marginTop: '6px', fontSize: '11px', color: 'var(--status-danger)' }}>
+                  ⚠ {transitionError}
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Past requests list */}
           <div style={{ fontSize: '12px', fontWeight: 700, marginTop: '6px' }}>
@@ -268,12 +381,26 @@ export default function CitizenServicesModule() {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', maxHeight: '140px', overflowY: 'auto' }}>
             {submittedRequests.map(req => (
-              <div key={req.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '8px 10px', background: 'var(--bg-card-alt)', borderRadius: '6px', fontSize: '11.5px' }}>
+              <div
+                key={req.id}
+                onClick={() => setSelectedReqId(req.id)}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: '8px 10px',
+                  background: req.id === activeReq.id ? 'var(--bg-card-hover)' : 'var(--bg-card-alt)',
+                  border: req.id === activeReq.id ? '1px solid var(--brand-accent-cyan)' : '1px solid transparent',
+                  borderRadius: '6px',
+                  fontSize: '11.5px',
+                  cursor: 'pointer'
+                }}
+              >
                 <div>
                   <strong>{req.id}</strong> • {req.service}
                   <div style={{ fontSize: '10px', color: 'var(--text-muted)' }}>Parcel: {req.parcel_id} • {req.date}</div>
                 </div>
-                <span style={{ padding: '2px 6px', borderRadius: '4px', background: req.status === 'COMPLETED' ? 'var(--bg-badge-green)' : 'var(--bg-badge-blue)', color: req.status === 'COMPLETED' ? 'var(--status-success)' : 'var(--brand-accent-cyan)', fontWeight: 600, fontSize: '10px' }}>
+                <span style={{ padding: '2px 6px', borderRadius: '4px', background: req.status === 'COMPLETED' || req.status === 'APPROVED' ? 'var(--bg-badge-green)' : 'var(--bg-badge-blue)', color: req.status === 'COMPLETED' || req.status === 'APPROVED' ? 'var(--status-success)' : 'var(--brand-accent-cyan)', fontWeight: 600, fontSize: '10px' }}>
                   {req.status}
                 </span>
               </div>

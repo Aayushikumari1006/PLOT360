@@ -19,14 +19,19 @@ import {
   Share2,
   Activity,
   Globe,
-  Gauge
+  Gauge,
+  ArrowRight,
+  ExternalLink,
+  Download
 } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
+import { generateParcelPdf } from '../../utils/pdfGenerator';
 
 export default function PresentationModeModal() {
   const {
     activeParcel,
     selectParcel,
+    activeModule,
     setActiveModule,
     setEvidenceModalOpen,
     setFieldModalOpen,
@@ -36,569 +41,536 @@ export default function PresentationModeModal() {
     currentJurisdiction,
     currentLocation,
     changeLocation,
+    isTourOpen,
+    setIsTourOpen,
+    tourStep,
+    setTourStep,
+    tourStage,
+    setTourStage,
+    tourActiveTab,
+    setTourActiveTab,
     t
   } = useApp();
 
-  // Demonstration parcel choices across demo catalog
-  const demoParcelsList = [
-    { id: 'P-1027', name: 'P-1027: Chandigarh AI Sentinel-2 Change Alert & Approved Building', ulpin: 'IN-PB-CHD-0001027', loc: 'Chandigarh' },
-    { id: 'P-1028', name: 'P-1028: Chandigarh Area Discrepancy Conflict (RoR 1,416m² vs Tax 1,530m²)', ulpin: 'IN-PB-CHD-0001028', loc: 'Chandigarh' },
-    { id: 'P-1025', name: 'P-1025: Chandigarh Commercial Complex (Amrik Builders)', ulpin: 'IN-PB-CHD-0001025', loc: 'Chandigarh' },
-    { id: 'P-1009', name: 'P-1009: Chandigarh Institutional Zone (Govt Medical College)', ulpin: 'IN-PB-CHD-0001009', loc: 'Chandigarh' },
-    { id: 'P-3001', name: 'P-3001: Bengaluru Outer Ring Road IT Tech Corridor', ulpin: 'IN-KA-BLR-0003001', loc: 'Bengaluru' },
-    { id: 'P-7001', name: 'P-7001: Lucknow Gomti Nagar Commercial Hub', ulpin: 'IN-UP-LKO-0007001', loc: 'Lucknow' }
-  ];
+  const [stepIndex, setStepIndex] = useState((tourStep || 1) - 1);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [timerProgress, setTimerProgress] = useState(0);
 
-  // 20-Step Cinematic Guided Demo Sequence aligned with SIH Problem & Architecture
+  // 20-Step Dynamic Live Tour Sequence with 3 Crisp Bullet Points & App Driving Targets
   const presentationSteps = [
     {
       step: 1,
       title: '1. Land Governance Problem: Siloed Databases',
-      desc: 'In India, land administration historically suffers from fragmented records across 6+ departments: Revenue (RoR Jamabandi), Registration (Deeds), Survey & Cadastre, Town Planning (Zoning/Master Plans), Municipal Corporation (Property Tax), and Banks (Mortgages). Silos cause title disputes, unauthorized constructions, and revenue leakages.',
-      actionLabel: 'Initialize PLOT360 Unified Land Stack',
-      category: 'PROBLEM'
+      category: 'PROBLEM & CONTEXT',
+      targetModule: 'explorer',
+      targetParcel: 'P-1027',
+      bullets: [
+        '📌 Fragmented Land Administration: Historically records are trapped across 6+ unconnected departments (Revenue, Registration, Planning, Municipal, Banks, Survey).',
+        '🔍 Cost of Data Silos: Results in property title disputes, unauthorized constructions, encroached buffers, and municipal revenue leakage.',
+        '🚀 PLOT360 Unified Solution: Single source of truth unifying cadastral polygons, ownership deeds, and statutory permissions.'
+      ],
+      actionLabel: 'Explore Unified Cadastral Map',
+      actionType: 'navigate'
     },
     {
       step: 2,
       title: '2. Common Identifier: 14-Digit ULPIN Standard',
-      desc: 'PLOT360 establishes the 14-digit Unique Land Parcel Identification Number (e.g. IN-PB-CHD-0001027) as the single authoritative anchor (the "Aadhaar of Land") linking all departmental records deterministically.',
-      actionLabel: 'Bind Parcel to ULPIN Registry',
-      category: 'IDENTIFIER'
+      category: 'NATIONAL STANDARD',
+      targetModule: 'explorer',
+      targetParcel: 'P-1027',
+      bullets: [
+        '📌 The "Aadhaar of Land": 14-digit alphanumeric geospatial hash (e.g. IN-PB-CHD-0001027) generated from polygon vertex centroids.',
+        '🔍 Eliminates Legacy Ambiguity: Replaces disjointed village Khasra and Khata numbers with a unique national coordinate key.',
+        '🚀 Deterministic Cross-Indexing: Every state department indexes their records using this authoritative identifier.'
+      ],
+      actionLabel: 'Highlight Authoritative ULPIN',
+      actionType: 'navigate'
     },
     {
       step: 3,
       title: '3. Multi-Plot GIS Cadastral Basemap',
-      desc: 'High-resolution Google Maps basemaps integrated with georeferenced vector cadastral polygons and centroid coordinates. Every parcel in the jurisdiction is interactively selectable with bounding box filtering.',
-      actionLabel: 'Examine Georeferenced Cadastral Vector',
-      category: 'GIS'
+      category: 'GIS & SPATIAL',
+      targetModule: 'explorer',
+      targetParcel: 'P-1027',
+      bullets: [
+        '📌 High-Res Google Maps Integration: Georeferenced vector cadastral polygons rendered directly over satellite basemaps.',
+        '🔍 Spatial Indexing: Real-time parcel selection, bounding box query, and dual-unit area conversion (metric & local).',
+        '🚀 Interactive Zoning Visualization: Color-coded zoning overlays (Commercial, Residential, Agricultural, Eco-Buffers).'
+      ],
+      actionLabel: 'Examine Live Map Geometry',
+      actionType: 'navigate'
     },
     {
       step: 4,
-      title: '4. Governance & RoR (Jamabandi Record of Rights)',
-      desc: 'Live linkage to state Land Records Department showing tenure type (Freehold/Leasehold), joint ownership shares, cultivation status, and latest mutation transaction timestamp.',
-      actionLabel: 'Verify Record of Rights',
-      category: 'REVENUE'
+      title: '4. Record of Rights (Jamabandi / Bhoomi RoR)',
+      category: 'REVENUE DEPARTMENT',
+      targetModule: 'intelligence',
+      targetParcel: 'P-1027',
+      targetStage: 2,
+      bullets: [
+        '📌 Live Land Records Department Link: Direct digital connection to state Jamabandi RoR registers.',
+        '🔍 Co-Sharer Transparency: Absolute Freehold ownership with 100% legal title registered to Ravinder Singh.',
+        '🚀 Mutation Ledger Audit: Real-time synchronization of inheritance and transfer mutation orders.'
+      ],
+      actionLabel: 'Inspect RoR Jamabandi Ledger',
+      actionType: 'navigate'
     },
     {
       step: 5,
       title: '5. Ownership & Registered Deeds',
-      desc: 'Sub-Registrar Department integration retrieving registered conveyance deeds, registered sale agreements, stamp duty receipts, and digital transfer histories.',
+      category: 'SUB-REGISTRAR REGISTRATION',
+      targetModule: 'intelligence',
+      targetParcel: 'P-1027',
+      targetStage: 2,
+      bullets: [
+        '📌 Sub-Registrar Office Integration: Instant retrieval of registered sale deeds, conveyances, and stamp duty receipts.',
+        '🔍 Historical Chain of Title: Chronological provenance tracing registered property transfers across decades.',
+        '🚀 Anti-Fraud Protection: Prevents fraudulent double-mortgaging and unauthorized power-of-attorney sales.'
+      ],
       actionLabel: 'Audit Registered Title Deeds',
-      category: 'REGISTRATION'
+      actionType: 'navigate'
     },
     {
       step: 6,
-      title: '6. Master Plan, Land Use & Zoning',
-      desc: 'Town and Country Planning integration validating permissible land use categories (Residential / Commercial / Agricultural / Mixed-Use), master plan alignment, and Floor Area Ratio (FAR) ceilings.',
-      actionLabel: 'Verify Permissible Land Use & Zoning',
-      category: 'PLANNING'
+      title: '6. Master Plan 2031 & Zoning Compliance',
+      category: 'TOWN PLANNING',
+      targetModule: 'intelligence',
+      targetParcel: 'P-1027',
+      targetStage: 3,
+      bullets: [
+        '📌 Town & Country Planning Validation: Permissible land use confirmed against statutory Master Plan 2031.',
+        '🔍 Floor Area Ratio (FAR) Enforcement: Permitted FAR 1.75 strictly monitored against municipal limits.',
+        '🚀 Right-of-Way Protection: Confirmed zero encroachment on designated municipal transit and utility corridors.'
+      ],
+      actionLabel: 'Verify Permissible Land Use',
+      actionType: 'navigate'
     },
     {
       step: 7,
-      title: '7. Building Sanction & Built-up Compliance',
-      desc: 'Municipal Urban Local Body (ULB) building sanction ledger cross-referencing approved plinth area, permitted floors, building sanction order number, and construction completion certificates.',
-      actionLabel: 'Cross-Check Building Sanction Plan',
-      category: 'BUILDING'
+      title: '7. Municipal Building Sanction & Plinth',
+      category: 'MUNICIPAL CORPORATION (ULB)',
+      targetModule: 'intelligence',
+      targetParcel: 'P-1027',
+      targetStage: 3,
+      bullets: [
+        '📌 Urban Local Body Building Sanction: Sanction Order #PJB/BP/2023/114 approved for Ground + 2 floors.',
+        '🔍 Plinth Area Verification: Sanctioned architectural parameters cross-referenced against satellite footprint.',
+        '🚀 Completion Status: Active valid building permit with structural stability certifications.'
+      ],
+      actionLabel: 'Review Building Sanction Specs',
+      actionType: 'navigate'
     },
     {
       step: 8,
-      title: '8. Liabilities, Mortgages & Encumbrances',
-      desc: 'Banking & CERSAI integration detecting equitable mortgages, financial liens, hypothecation records, and civil court stay orders. In citizen role, confidential financial figures are masked under RBAC.',
-      actionLabel: 'Inspect Financial Liens & Encumbrances',
-      category: 'LIABILITIES'
+      title: '8. Consolidated Cadastral Dossier & Flowchart',
+      category: 'UNIFIED DOSSIER',
+      targetModule: 'intelligence',
+      targetParcel: 'P-1027',
+      targetStage: 4,
+      actionType: 'dossier',
+      bullets: [
+        '📌 Interactive Lifecycle Flowchart: Visual 5-stage pipeline from acquisition and RoR to satellite AI verification.',
+        '🔍 Multi-Departmental Integration: Aggregates Revenue, Sub-Registrar, Town Planning, Municipal, and CERSAI data.',
+        '🚀 Presentation-Grade Intelligence: Concise bullet points and metric indicators eliminate repetitive clutter.'
+      ],
+      actionLabel: 'Launch Interactive Flowchart Dossier'
     },
     {
       step: 9,
       title: '9. Property Tax Assessment & Municipal Valuation',
-      desc: 'Municipal Corporation property tax ledger showing annual rateable value, GIS-based built-up assessment vs assessed area, payment status, and municipal property identifier.',
-      actionLabel: 'Review Property Tax Assessment Ledger',
-      category: 'TAXATION'
+      category: 'REVENUE & TAXATION',
+      targetModule: 'intelligence',
+      targetParcel: 'P-1027',
+      targetStage: 5,
+      bullets: [
+        '📌 Municipal Tax Ledger: GIS-linked property tax assessment (Receipt #PT-CHD-2024-8902).',
+        '🔍 Revenue Recovery: ₹18,400 paid and cleared up to date with zero municipal attachment notices.',
+        '🚀 Eliminates Leakage: Matches physical cadastral footprint to municipal tax rolls, recovering lost revenue.'
+      ],
+      actionLabel: 'Review Property Tax Ledger',
+      actionType: 'navigate'
     },
     {
       step: 10,
       title: '10. Utilities & Infrastructure Connectivity',
-      desc: 'Multi-utility integration with Jal Board (Water/Sewerage), State Power DISCOM, and telecom infrastructure easements, identifying legitimate municipal service meters.',
-      actionLabel: 'Verify Utility Meter Connections',
-      category: 'UTILITIES'
+      category: 'CIVIC UTILITIES',
+      targetModule: 'intelligence',
+      targetParcel: 'P-1027',
+      targetStage: 5,
+      bullets: [
+        '📌 Tri-Utility Integration: Active Electricity meter (#99210), municipal water connection, and sewerage.',
+        '🔍 Service Feasibility Check: Validates legitimate infrastructure access prior to commercial transactions.',
+        '🚀 Easement Mapping: Visualizes underground utility conduits and power transmission easements.'
+      ],
+      actionLabel: 'Verify Civic Utility Grid',
+      actionType: 'navigate'
     },
     {
       step: 11,
       title: '11. Environmental & Green Belt Restrictions',
-      desc: 'Spatial intersection analysis against statutory ecological protection zones, forest buffers, water body catchment zones, and heritage conservation corridors.',
-      actionLabel: 'Check Statutory Buffer Restrictions',
-      category: 'RESTRICTIONS'
+      category: 'ECO-SENSITIVE BUFFERS',
+      targetModule: 'intelligence',
+      targetParcel: 'P-1027',
+      targetStage: 3,
+      bullets: [
+        '📌 Spatial Buffer Intersection: Automated GIS cross-check against wetlands, forests, and floodplains.',
+        '🔍 Buffer Clearance: Verified 100% clear of Sukhna Lake wetland and Shivalik eco-sensitive buffers.',
+        '🚀 Statutory Enforcement: Blocks unpermitted high-density construction in protected conservation belts.'
+      ],
+      actionLabel: 'Check Ecological Buffer Status',
+      actionType: 'navigate'
     },
     {
       step: 12,
-      title: '12. Temporal Satellite Change Evidence',
-      desc: 'Genuine Copernicus Sentinel-2 Bottom-of-Atmosphere (BOA) surface reflectance differencing (2020 vs 2025) across 6 spectral bands. Draggable split slider reveals actual spatial ground development.',
-      actionLabel: 'Launch Sentinel-2 Draggable Slider',
-      category: 'SATELLITE'
+      title: '12. Temporal Satellite Earth Observation',
+      category: 'COPERNICUS SENTINEL-2',
+      targetModule: 'explorer',
+      targetParcel: 'P-1027',
+      actionType: 'evidence',
+      bullets: [
+        '📌 Copernicus Sentinel-2 BOA Reflectance: Multi-temporal 10m multispectral satellite differencing (2020 vs 2026).',
+        '🔍 Unpermitted Change Detection: Spectral anomaly flags candidate plinth construction during study window.',
+        '🚀 Draggable Split View: Interactive visual before-and-after slider provides verifiable physical proof.'
+      ],
+      actionLabel: 'Launch Sentinel-2 Satellite Slider'
     },
     {
       step: 13,
       title: '13. Explainable AI & Human-in-the-Loop Review',
-      desc: 'Siamese U-Net spatial feature extraction highlights candidate building anomalies. Crucially, AI never declares illegality; it queues evidence for field verification officers with geo-tagged photographic inspection.',
-      actionLabel: 'Queue for Field Verification Officer',
-      category: 'AI_REVIEW'
+      category: 'RESPONSIBLE AI',
+      targetModule: 'explorer',
+      targetParcel: 'P-1027',
+      actionType: 'field',
+      bullets: [
+        '📌 Ethical AI Guardrails: AI flags candidate changes but never executes punitive decisions automatically.',
+        '🔍 Mobile Field Verification: Automatically queues tasks for revenue inspectors to upload geo-tagged site photos.',
+        '🚀 Verified State Transitions: Only certified officer inspections resolve AI change alerts on the state ledger.'
+      ],
+      actionLabel: 'Inspect Field Verification Workflow'
     },
     {
       step: 14,
       title: '14. Automated Cross-Departmental Conflict Engine',
-      desc: 'Continuous consistency checking across 6 departmental databases flags discrepancies (e.g. RoR land area vs Tax registered area, or building construction on agricultural zoning).',
+      category: 'DATA RECONCILIATION',
+      targetModule: 'workflows',
+      targetParcel: 'P-1028',
+      targetTab: 'conflicts',
+      bullets: [
+        '📌 Cross-Registry Consistency Engine: Continuously scans Revenue, Tax, Planning, and Cadastre records.',
+        '🔍 Discrepancy Detection: P-1028 flags area mismatch between RoR (1,416 m²) and Municipal Tax (1,530 m²).',
+        '🚀 Resolution Workflows: Inter-departmental portal allows joint demarcations to resolve historic mismatches.'
+      ],
       actionLabel: 'Analyze Cross-Department Conflicts',
-      category: 'CONFLICTS'
+      actionType: 'navigate'
     },
     {
       step: 15,
       title: '15. Single-Window Citizen Land Services',
-      desc: 'Citizen self-service portal for online mutation requests, Non-Encumbrance Certificate (NEC) issuance, building sanction e-filing, and property tax payment with transparent SLA tracking.',
-      actionLabel: 'Explore Citizen Digital Portal',
-      category: 'CITIZEN'
+      category: 'CITIZEN EMPOWERMENT',
+      targetModule: 'workflows',
+      targetParcel: 'P-1027',
+      targetTab: 'citizen',
+      bullets: [
+        '📌 Transparent Digital Portal: Citizens apply for land demarcation, Non-Encumbrance Certificates, and mutation.',
+        '🔍 Statutory SLA Countdown: 15-day service-level agreement tracking with real-time milestone notifications.',
+        '🚀 Zero Office Visits: Fully contactless digital land governance accessible from mobile and desktop.'
+      ],
+      actionLabel: 'Explore Citizen Services Portal',
+      actionType: 'navigate'
     },
     {
       step: 16,
       title: '16. Inter-Departmental Workflow & Case Tracking',
-      desc: 'Unified state-machine lifecycle tracking service requests across Revenue, Town Planning, and Registration with SLA escalation, digital signature milestones, and role assignments.',
-      actionLabel: 'View Active Departmental Workflows',
-      category: 'WORKFLOW'
+      category: 'OFFICER CASE LIFECYCLE',
+      targetModule: 'workflows',
+      targetParcel: 'P-1027',
+      targetTab: 'workflows',
+      bullets: [
+        '📌 Unified State Machine: Coordinates applications across Revenue Officers, Town Planners, and Sub-Registrars.',
+        '🔍 Escalation Protocols: Automated escalation to District Collector if SLA deadlines are exceeded.',
+        '🚀 Digital Audit Integration: Every approval or query is cryptographically signed and logged.'
+      ],
+      actionLabel: 'View Active Case Workflows',
+      actionType: 'navigate'
     },
     {
       step: 17,
-      title: '17. Geospatial Analytics & Predictive Decision Support',
-      desc: 'Executive dashboard visualizing urban expansion frontiers, tax assessment shortfall heatmaps, agricultural land conversion trends, and compliance risk index by ward/tehsil.',
+      title: '17. Geospatial Analytics & Executive BI',
+      category: 'EXECUTIVE INTELLIGENCE',
+      targetModule: 'analytics',
+      targetParcel: 'P-1027',
+      targetTab: 'decision',
+      bullets: [
+        '📌 Macro Geospatial Insights: Macro-level analytics spanning all 25 study locations in 18 Indian states.',
+        '🔍 Performance Benchmarks: 99.2% ULPIN adoption, 91.4% tax recovery, and 400+ mapped parcels.',
+        '🚀 Frontier Growth Modeling: Identifies urban expansion corridors and infrastructure investment priorities.'
+      ],
       actionLabel: 'Inspect Geospatial Analytics Hub',
-      category: 'ANALYTICS'
+      actionType: 'navigate'
     },
     {
       step: 18,
-      title: '18. Interoperability Hub & Legacy API Adapters',
-      desc: 'RESTful microservice connectors with OpenAPI 3.1 specifications and cryptographic audit trails, enabling legacy state databases to connect without database overhaul.',
-      actionLabel: 'Inspect Interoperability Hub',
-      category: 'INTEGRATION'
+      title: '18. Immutable Audit Trail & Provenance Ledger',
+      category: 'AUDIT & COMPLIANCE',
+      targetModule: 'admin',
+      targetParcel: 'P-1027',
+      targetTab: 'admin',
+      bullets: [
+        '📌 SHA-256 Tamper-Evidence: Every mutation, record update, and inspection is cryptographically logged.',
+        '🔍 CAG & State Auditor Portal: Dedicated compliance auditor role enables statutory multi-agency oversight.',
+        '🚀 Zero Ledger Alteration: Guarantees past records cannot be manipulated retroactively.'
+      ],
+      actionLabel: 'Inspect Immutable Audit Trail',
+      actionType: 'navigate'
     },
     {
       step: 19,
-      title: '19. Multi-State Jurisdiction Architecture',
-      desc: 'Federated multi-jurisdiction engine dynamically switching state terminology (e.g., Jamabandi in Punjab/Haryana vs 7/12 Extract in Maharashtra vs Khata in Karnataka) across 15 national study locations.',
-      actionLabel: 'Demonstrate Multi-Jurisdiction Engine',
-      category: 'JURISDICTIONS'
+      title: '19. Official Land Passport (PDF Dossier)',
+      category: 'EXECUTIVE ARTIFACT',
+      targetModule: 'explorer',
+      targetParcel: 'P-1027',
+      actionType: 'pdf',
+      bullets: [
+        '📌 Catchy Executive Brief: High-impact single-page Land Passport with 4 metric cards and 5 crisp bullet points.',
+        '🔍 Institutional KYC: Used by mortgage banks for rapid credit underwriting and buyers for title due diligence.',
+        '🚀 Vector QR Seal: Includes 2D matrix cryptographic seal linking directly to online verification.'
+      ],
+      actionLabel: 'Download Executive Land Passport (PDF)'
     },
     {
       step: 20,
-      title: '20. Scalability & Nationwide Deployment Readiness',
-      desc: 'Cloud-native, containerized architecture supporting nationwide ULPIN scale (140+ million land parcels), zero synthetic imagery, strict server-side RBAC, and full quad-lingual accessibility.',
-      actionLabel: 'Conclude Tour & Return to Explorer',
-      category: 'SCALE'
+      title: '20. National Land Stack Vision (SIH 2024)',
+      category: 'PRODUCTION READINESS',
+      targetModule: 'explorer',
+      targetParcel: 'P-1027',
+      bullets: [
+        '📌 From Boundaries to Insights: Complete architectural blueprint unifying India\'s land administration.',
+        '🔍 Scalable Microservices: FastAPI backend + GIS spatial engine ready for national state deployment.',
+        '🚀 Verified Conformance: 142/142 tests passing across security, spatial indexing, RBAC, and analytics.'
+      ],
+      actionLabel: 'Complete Tour & Return to Workspace',
+      actionType: 'finish'
     }
   ];
 
-  const [currentStepIndex, setCurrentStepIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [playbackSpeed, setPlaybackSpeed] = useState(1); // 1x, 1.5x, 2x
-  const timerRef = useRef(null);
+  const currentStepData = presentationSteps[stepIndex] || presentationSteps[0];
 
-  const currentStep = presentationSteps[currentStepIndex];
-
-  // Role permissions check for presentation stages
-  const getRoleStepStatus = (stepCategory) => {
-    if (currentRole === 'citizen') {
-      if (['LIABILITIES', 'CONFLICTS', 'WORKFLOW'].includes(stepCategory)) {
-        return { label: 'Citizen View (Protected)', alert: 'Internal officer inspection notes and confidential mortgage amounts are masked under RBAC.' };
-      }
-    }
-    return { label: `Authorized (${currentRole})`, alert: null };
-  };
-
-  // Perform step action dynamically
-  const executeStepAction = (stepIdx) => {
-    const step = presentationSteps[stepIdx];
-    if (!step) return;
-
-    if (stepIdx === 1) {
-      // 2. ULPIN
-      selectParcel(activeParcel?.parcel_id || 'P-1027');
-    } else if (stepIdx === 2) {
-      // 3. GIS
-      setActiveModule('explorer');
-    } else if (stepIdx === 3 || stepIdx === 4 || stepIdx === 5 || stepIdx === 6 || stepIdx === 7 || stepIdx === 8 || stepIdx === 9 || stepIdx === 10) {
-      // Data inspection steps
-      setActiveModule('explorer');
-    } else if (stepIdx === 11) {
-      // 12. Satellite Evidence
-      if (activeParcel?.parcel_id === 'P-1027') {
-        setEvidenceModalOpen(true);
-      }
-    } else if (stepIdx === 12) {
-      // 13. AI Field review
-      setEvidenceModalOpen(false);
-      setFieldModalOpen(true);
-    } else if (stepIdx === 13) {
-      // 14. Conflicts
-      setFieldModalOpen(false);
-      if (currentRole !== 'citizen') {
-        setActiveModule('analytics');
-      } else {
-        setActiveModule('explorer');
-      }
-    } else if (stepIdx === 14) {
-      // 15. Citizen Services
-      setActiveModule('citizen');
-    } else if (stepIdx === 15) {
-      // 16. Workflow
-      setActiveModule('records');
-    } else if (stepIdx === 16) {
-      // 17. Analytics
-      setActiveModule('analytics');
-    } else if (stepIdx === 17) {
-      // 18. Integrations
-      setActiveModule('integrations');
-    } else if (stepIdx === 18) {
-      // 19. Multi-jurisdiction
-      setActiveModule('explorer');
-    } else if (stepIdx === 19) {
-      // 20. Conclusion
-      setActiveModule('explorer');
-    }
-  };
-
-  // Step advancement
-  const handleNext = () => {
-    if (currentStepIndex < presentationSteps.length - 1) {
-      const nextIdx = currentStepIndex + 1;
-      setCurrentStepIndex(nextIdx);
-      executeStepAction(nextIdx);
-    } else {
-      setIsPlaying(false);
-      handleExit();
-    }
-  };
-
-  const handlePrev = () => {
-    if (currentStepIndex > 0) {
-      const prevIdx = currentStepIndex - 1;
-      setCurrentStepIndex(prevIdx);
-      executeStepAction(prevIdx);
-    }
-  };
-
-  const handleRestart = () => {
-    setCurrentStepIndex(0);
-    executeStepAction(0);
-  };
-
-  const handleExit = () => {
-    setIsPlaying(false);
-    if (timerRef.current) clearInterval(timerRef.current);
-    setEvidenceModalOpen(false);
-    setFieldModalOpen(false);
-    setUnifiedReportOpen(false);
-    setActiveModule('explorer');
-  };
-
-  // Automated playback timer
+  // Drive the application underneath dynamically as presentation proceeds
   useEffect(() => {
-    if (isPlaying) {
-      const baseDelay = 4500; // 4.5 seconds at 1x
-      const delay = Math.round(baseDelay / playbackSpeed);
+    const s = presentationSteps[stepIndex];
+    if (!s) return;
 
-      timerRef.current = setTimeout(() => {
-        if (currentStepIndex < presentationSteps.length - 1) {
-          const nextIdx = currentStepIndex + 1;
-          setCurrentStepIndex(nextIdx);
-          executeStepAction(nextIdx);
-        } else {
-          setIsPlaying(false);
-        }
-      }, delay);
+    if (s.targetModule) {
+      setActiveModule(s.targetModule);
+    }
+    if (s.targetParcel) {
+      selectParcel(s.targetParcel);
+    }
+    if (s.targetStage && setTourStage) {
+      setTourStage(s.targetStage);
+    }
+    if (s.targetTab && setTourActiveTab) {
+      setTourActiveTab(s.targetTab);
+    }
+
+    // Auto-trigger corresponding modals for interactive showcase steps
+    if (s.actionType === 'dossier') {
+      setUnifiedReportOpen(true);
+      setEvidenceModalOpen(false);
+      setFieldModalOpen(false);
+    } else if (s.actionType === 'evidence') {
+      setEvidenceModalOpen(true);
+      setUnifiedReportOpen(false);
+      setFieldModalOpen(false);
+    } else if (s.actionType === 'field') {
+      setFieldModalOpen(true);
+      setUnifiedReportOpen(false);
+      setEvidenceModalOpen(false);
+    } else {
+      setUnifiedReportOpen(false);
+      setEvidenceModalOpen(false);
+      setFieldModalOpen(false);
+    }
+  }, [stepIndex]);
+
+  // Auto-Tour Timer
+  useEffect(() => {
+    let timer = null;
+    let interval = null;
+
+    if (isPlaying) {
+      setTimerProgress(0);
+      const stepDuration = 6000; // 6 seconds per step
+      const tick = 100;
+      let elapsed = 0;
+
+      interval = setInterval(() => {
+        elapsed += tick;
+        setTimerProgress(Math.min(100, (elapsed / stepDuration) * 100));
+      }, tick);
+
+      timer = setTimeout(() => {
+        setStepIndex((prev) => {
+          if (prev >= presentationSteps.length - 1) {
+            setIsPlaying(false);
+            return 0;
+          }
+          return prev + 1;
+        });
+      }, stepDuration);
+    } else {
+      setTimerProgress(0);
     }
 
     return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
+      if (timer) clearTimeout(timer);
+      if (interval) clearInterval(interval);
     };
-  }, [isPlaying, currentStepIndex, playbackSpeed]);
+  }, [isPlaying, stepIndex]);
 
-  const roleInfo = getRoleStepStatus(currentStep.category);
+  const handleNext = () => {
+    setStepIndex((prev) => Math.min(presentationSteps.length - 1, prev + 1));
+  };
+
+  const handlePrev = () => {
+    setStepIndex((prev) => Math.max(0, prev - 1));
+  };
+
+  const handleExecuteAction = () => {
+    const s = currentStepData;
+    if (s.actionType === 'dossier') {
+      setUnifiedReportOpen(true);
+    } else if (s.actionType === 'evidence') {
+      setEvidenceModalOpen(true);
+    } else if (s.actionType === 'field') {
+      setFieldModalOpen(true);
+    } else if (s.actionType === 'pdf') {
+      generateParcelPdf(activeParcel, currentRole);
+    } else if (s.actionType === 'finish') {
+      setIsTourOpen(false);
+      setActiveModule('explorer');
+    } else if (s.targetModule) {
+      setActiveModule(s.targetModule);
+    }
+  };
 
   return (
-    <div className="page-scroll-area">
-      {/* 1. Header & Context */}
-      <div className="page-header-container">
-        <div className="breadcrumb-row">
-          <span className="breadcrumb-item">PLOT360</span>
-          <span className="breadcrumb-sep">/</span>
-          <span className="breadcrumb-item">{t('nav.presentation', 'Presentation Mode')}</span>
-          <span className="breadcrumb-sep">/</span>
-          <span className="breadcrumb-item" style={{ color: 'var(--brand-accent-cyan)' }}>
-            {isPlaying ? 'Live Auto-Playback' : 'Interactive Guided Tour'}
-          </span>
-        </div>
-        <div className="page-title-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <Tv className="page-icon" />
-            <h1 className="page-title">
-              {t('presentation.title', 'PLOT360 Cinematic Demonstration & Guided Tour')}
-            </h1>
-          </div>
-          {/* Exit Button */}
-          <button
-            className="btn-secondary"
-            onClick={handleExit}
-            style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 14px', fontSize: '12px' }}
-          >
-            <LogOut size={14} />
-            <span>{t('presentation.exit', 'Exit Presentation Mode')}</span>
-          </button>
-        </div>
-        <p className="page-subtitle">
-          {t('presentation.subtitle', 'A real-time, API-backed guided demonstration executing authentic PLOT360 workflows, parcel ULPIN queries, satellite temporal differencing, and strict role-based data governance.')}
-        </p>
-      </div>
-
-      {/* 2. Top Cinema Control Bar (Play, Pause, Next, Prev, Restart, Speed) */}
-      <div
-        style={{
-          background: 'var(--bg-card)',
-          border: '1px solid var(--border-card)',
-          borderRadius: '12px',
-          padding: '12px 18px',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '12px',
-          boxShadow: 'var(--shadow-sm)'
-        }}
-      >
-        {/* Playback Controls */}
+    <div className="live-tour-hud-container">
+      {/* 1. Header Row */}
+      <div className="live-tour-hud-header">
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          {isPlaying ? (
-            <button
-              className="btn-secondary"
-              onClick={() => setIsPlaying(false)}
-              style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '7px 14px', background: 'rgba(239, 68, 68, 0.1)', color: '#ef4444', borderColor: 'rgba(239, 68, 68, 0.3)' }}
-            >
-              <Pause size={15} />
-              <span>Pause</span>
-            </button>
-          ) : (
-            <button
-              className="btn-primary"
-              onClick={() => setIsPlaying(true)}
-              style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '7px 14px' }}
-            >
-              <Play size={15} />
-              <span>{currentStepIndex === 0 ? 'Play Tour' : 'Resume Play'}</span>
-            </button>
-          )}
-
-          <button
-            className="btn-secondary"
-            onClick={handlePrev}
-            disabled={currentStepIndex === 0}
-            style={{ padding: '7px 10px' }}
-            title="Previous Step"
-          >
-            <SkipBack size={15} />
-          </button>
-
-          <button
-            className="btn-secondary"
-            onClick={handleNext}
-            disabled={currentStepIndex === presentationSteps.length - 1}
-            style={{ padding: '7px 10px' }}
-            title="Next Step"
-          >
-            <SkipForward size={15} />
-          </button>
-
-          <button
-            className="btn-secondary"
-            onClick={handleRestart}
-            style={{ padding: '7px 10px' }}
-            title="Restart from Step 1"
-          >
-            <RotateCcw size={15} />
-          </button>
-        </div>
-
-        {/* Speed Controls */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 600 }}>SPEED:</span>
-          {[1, 1.5, 2].map((s) => (
-            <button
-              key={s}
-              onClick={() => setPlaybackSpeed(s)}
-              style={{
-                padding: '4px 10px',
-                fontSize: '11px',
-                fontWeight: 700,
-                borderRadius: '6px',
-                border: playbackSpeed === s ? '1px solid var(--brand-accent-blue)' : '1px solid var(--border-subtle)',
-                background: playbackSpeed === s ? 'rgba(37, 99, 235, 0.2)' : 'var(--bg-card-alt)',
-                color: playbackSpeed === s ? 'var(--brand-accent-cyan)' : 'var(--text-secondary)',
-                cursor: 'pointer'
-              }}
-            >
-              {s}x
-            </button>
-          ))}
-        </div>
-
-        {/* Step Indicator & Active Role Badge */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '4px 10px', borderRadius: '6px', background: 'var(--bg-card-alt)', border: '1px solid var(--border-subtle)', fontSize: '11.5px' }}>
-            <Shield size={13} style={{ color: 'var(--brand-accent-cyan)' }} />
-            <span style={{ color: 'var(--text-muted)' }}>Role:</span>
-            <strong style={{ color: 'var(--text-primary)' }}>{currentRole}</strong>
+          <div className="live-tour-pulse-icon">
+            <Tv size={15} />
           </div>
-          <div style={{ fontSize: '12.5px', fontWeight: 700, color: 'var(--brand-accent-cyan)' }}>
-            STEP {currentStep.step} / {presentationSteps.length}
-          </div>
-        </div>
-      </div>
-
-      {/* 3. Progress Bar */}
-      <div style={{ width: '100%', height: '4px', background: 'var(--bg-card-alt)', borderRadius: '2px', overflow: 'hidden' }}>
-        <div
-          style={{
-            height: '100%',
-            width: `${((currentStepIndex + 1) / presentationSteps.length) * 100}%`,
-            background: 'linear-gradient(90deg, var(--brand-accent-blue), var(--brand-accent-cyan))',
-            transition: 'width 0.4s ease'
-          }}
-        />
-      </div>
-
-      {/* 4. Active Step Showcase Card */}
-      <div
-        style={{
-          background: 'var(--bg-card)',
-          border: '1px solid var(--border-card)',
-          borderRadius: '12px',
-          padding: '24px',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '16px',
-          boxShadow: 'var(--shadow-sm)'
-        }}
-      >
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '10px' }}>
           <div>
-            <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--brand-accent-cyan)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-              {currentStep.category} ARCHITECTURE STAGE
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span className="live-tour-hud-badge">LIVE APP TOUR</span>
+              <span className="live-tour-step-counter">
+                STEP {stepIndex + 1} OF {presentationSteps.length}
+              </span>
             </div>
-            <h2 style={{ fontSize: '20px', fontWeight: 700, color: 'var(--text-primary)', marginTop: '4px' }}>
-              {currentStep.title}
-            </h2>
-          </div>
-          <div style={{ display: 'flex', gap: '6px' }}>
-            <span
-              style={{
-                fontSize: '11px',
-                fontWeight: 600,
-                padding: '4px 8px',
-                borderRadius: '6px',
-                background: 'rgba(56, 189, 248, 0.1)',
-                color: 'var(--brand-accent-cyan)',
-                border: '1px solid rgba(56, 189, 248, 0.25)'
-              }}
-            >
-              {roleInfo.label}
+            <span style={{ fontSize: '10.5px', color: 'var(--brand-accent-cyan)', fontWeight: 600 }}>
+              {currentStepData.category}
             </span>
           </div>
         </div>
 
-        <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: '900px' }}>
-          {currentStep.desc}
-        </p>
-
-        {roleInfo.alert && (
-          <div style={{ background: 'rgba(234, 179, 8, 0.08)', border: '1px solid rgba(234, 179, 8, 0.3)', borderRadius: '8px', padding: '10px 14px', display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <AlertTriangle size={16} style={{ color: '#eab308', flexShrink: 0 }} />
-            <span style={{ fontSize: '12px', color: 'var(--text-primary)' }}>{roleInfo.alert}</span>
-          </div>
-        )}
-
-        {/* Step Action Bar */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid var(--border-subtle)', paddingTop: '16px', marginTop: '4px' }}>
-          <button
-            className="btn-secondary"
-            onClick={handlePrev}
-            disabled={currentStepIndex === 0}
-            style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px' }}
+        {/* Step Selector Dropdown & Exit */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <select
+            className="live-tour-step-select"
+            value={stepIndex}
+            onChange={(e) => setStepIndex(Number(e.target.value))}
           >
-            <SkipBack size={14} />
-            <span>Previous Stage</span>
+            {presentationSteps.map((s, idx) => (
+              <option key={s.step} value={idx}>
+                {s.step}. {s.title.replace(/^[0-9]+\.\s*/, '')}
+              </option>
+            ))}
+          </select>
+
+          <button
+            className={`live-tour-play-btn ${isPlaying ? 'active' : ''}`}
+            onClick={() => setIsPlaying(!isPlaying)}
+            title={isPlaying ? 'Pause Auto-Tour' : 'Start Auto-Tour (6s per feature)'}
+          >
+            {isPlaying ? <Pause size={13} /> : <Play size={13} />}
+            <span>{isPlaying ? 'Pause' : 'Auto Tour'}</span>
           </button>
 
           <button
-            className="btn-primary"
-            onClick={() => {
-              executeStepAction(currentStepIndex);
-              handleNext();
-            }}
-            style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '9px 20px', fontSize: '13px' }}
+            className="icon-btn"
+            onClick={() => setIsTourOpen(false)}
+            title="Exit Live Tour"
+            style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'rgba(239, 68, 68, 0.15)', color: 'var(--status-error)' }}
           >
-            <span>{currentStep.actionLabel}</span>
-            <SkipForward size={14} />
+            <X size={15} />
           </button>
         </div>
       </div>
 
-      {/* 5. Demonstration Target Parcel Selector */}
-      <div
-        style={{
-          background: 'var(--bg-card)',
-          border: '1px solid var(--border-card)',
-          borderRadius: '12px',
-          padding: '18px',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '12px'
-        }}
-      >
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <h3 style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text-primary)' }}>
-            Demonstration Target Parcel (Select to Study Across Live Pipeline)
-          </h3>
-          <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>
-            Active: <strong>{activeParcel?.parcel_id || 'None'}</strong> ({activeParcel?.ulpin || 'No ULPIN'})
-          </span>
+      {/* Timer Progress Bar (Only during auto-tour) */}
+      <div className="live-tour-progress-track">
+        <div
+          className="live-tour-progress-fill"
+          style={{ width: isPlaying ? `${timerProgress}%` : `${((stepIndex + 1) / 20) * 100}%` }}
+        />
+      </div>
+
+      {/* 2. Feature Title & Catchy 3-Bullet-Point Summary Card */}
+      <div className="live-tour-card-body">
+        <h3 className="live-tour-feature-title">{currentStepData.title}</h3>
+
+        <div className="live-tour-bullets-container">
+          {currentStepData.bullets.map((b, i) => (
+            <div key={i} className="live-tour-bullet-row">
+              <span className="live-tour-bullet-text">{b}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 3. Footer Action Controls */}
+      <div className="live-tour-hud-footer">
+        <div style={{ display: 'flex', gap: '6px' }}>
+          <button
+            className="btn-secondary"
+            style={{ padding: '6px 12px', fontSize: '11.5px', gap: '4px' }}
+            onClick={handlePrev}
+            disabled={stepIndex === 0}
+          >
+            <SkipBack size={13} />
+            <span>Prev</span>
+          </button>
+          <button
+            className="btn-secondary"
+            style={{ padding: '6px 12px', fontSize: '11.5px', gap: '4px' }}
+            onClick={handleNext}
+            disabled={stepIndex === presentationSteps.length - 1}
+          >
+            <span>Next</span>
+            <SkipForward size={13} />
+          </button>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '10px' }}>
-          {demoParcelsList.map((p, idx) => {
-            const isSelected = activeParcel?.parcel_id === p.id;
-            return (
-              <div
-                key={idx}
-                onClick={() => selectParcel(p.id)}
-                style={{
-                  padding: '12px',
-                  borderRadius: '8px',
-                  border: `1.5px solid ${isSelected ? 'var(--brand-accent-blue)' : 'var(--border-subtle)'}`,
-                  background: isSelected ? 'rgba(37, 99, 235, 0.12)' : 'var(--bg-card-alt)',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  transition: 'border 0.2s, background 0.2s'
-                }}
-              >
-                <div>
-                  <div style={{ fontSize: '12.5px', fontWeight: 700, color: 'var(--text-primary)' }}>{p.name}</div>
-                  <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '2px' }}>
-                    ULPIN: {p.ulpin} • {p.loc}
-                  </div>
-                </div>
-                {isSelected && (
-                  <CheckCircle size={18} style={{ color: 'var(--brand-accent-cyan)', flexShrink: 0 }} />
-                )}
-              </div>
-            );
-          })}
-        </div>
+        {/* Live System Action Button */}
+        <button
+          className="btn-primary"
+          style={{
+            padding: '6px 16px',
+            fontSize: '11.5px',
+            fontWeight: 700,
+            background: 'linear-gradient(135deg, #0284c7 0%, #2563eb 100%)',
+            boxShadow: '0 0 14px rgba(56, 189, 248, 0.35)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px'
+          }}
+          onClick={handleExecuteAction}
+        >
+          {currentStepData.actionType === 'pdf' ? <Download size={13} /> : <ExternalLink size={13} />}
+          <span>{currentStepData.actionLabel}</span>
+        </button>
       </div>
     </div>
   );

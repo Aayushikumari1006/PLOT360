@@ -175,7 +175,50 @@ STATE_TERMINOLOGY_MAP = {
     }
 }
 
-# Unit Conversion Factors to standardized Square Meters (sq_m)
+# Canonical aliases for land measurement units
+CANONICAL_UNIT_ALIASES = {
+    "sq_m": "sq_m",
+    "sqm": "sq_m",
+    "m²": "sq_m",
+    "m2": "sq_m",
+    "square_meter": "sq_m",
+    "square_meters": "sq_m",
+    "sq_meter": "sq_m",
+    "sq_yards": "sq_yards",
+    "sq_yard": "sq_yards",
+    "sqyards": "sq_yards",
+    "yard": "sq_yards",
+    "yards": "sq_yards",
+    "sq_feet": "sq_feet",
+    "sq_foot": "sq_feet",
+    "sq_ft": "sq_feet",
+    "sqft": "sq_feet",
+    "sq feet": "sq_feet",
+    "square_foot": "sq_feet",
+    "square_feet": "sq_feet",
+    "sq. ft.": "sq_feet",
+    "sq.ft": "sq_feet",
+    "acre": "acre",
+    "acres": "acre",
+    "hectare": "hectare",
+    "hectares": "hectare",
+    "bigha": "bigha",
+    "bighas": "bigha",
+    "biswa": "biswa",
+    "biswas": "biswa",
+    "kanal": "kanal",
+    "kanals": "kanal",
+    "marla": "marla",
+    "marlas": "marla",
+    "guntha": "guntha",
+    "gunthas": "guntha",
+    "gunta": "guntha",
+    "guntas": "guntha",
+    "cent": "cent",
+    "cents": "cent"
+}
+
+# Standard National Baseline Unit Conversion Factors to Square Meters (sq_m)
 UNIT_CONVERSION_FACTORS = {
     "sq_m": 1.0,
     "m²": 1.0,
@@ -184,29 +227,115 @@ UNIT_CONVERSION_FACTORS = {
     "sq_feet": 0.092903,
     "acre": 4046.8564224,
     "hectare": 10000.0,
-    "bigha": 2529.285,          # Standard Pucca Bigha (varies by state, standardized baseline)
+    "bigha": 2529.285,          # Standard Pucca Bigha (Punjab/Haryana/UP baseline)
     "biswa": 126.464,           # 1/20th of a Bigha
     "kanal": 505.857,           # Standard Kanal (Punjab/Haryana/HP/J&K: 1/8th of an acre)
     "marla": 25.29285,          # 1/20th of a Kanal
-    "guntha": 101.17,           # Maharashtra/Karnataka/Gujarat: 1/40th of an acre
+    "guntha": 101.1714,         # Maharashtra/Karnataka/Gujarat: 1/40th of an acre
     "cent": 40.4686             # South India (Kerala/TN): 1/100th of an acre
 }
 
+# State-Specific Land Revenue Unit Overrides
+STATE_SPECIFIC_UNIT_FACTORS = {
+    "himachal_pradesh": {
+        "bigha": (809.37, "Himachal Pradesh Land Revenue Manual (1 Bigha = 809.37 m² / 4 Kanals)"),
+        "biswa": (40.4685, "Himachal Pradesh Land Revenue Manual (1 Biswa = 40.4685 m²)")
+    },
+    "punjab": {
+        "bigha": (2529.285, "Punjab Land Administration Manual (1 Pucca Bigha = 2529.285 m²)"),
+        "kanal": (505.857, "Punjab Standard Revenue Measure (1 Kanal = 505.857 m² / 20 Marlas)"),
+        "marla": (25.29285, "Punjab Standard Revenue Measure (1 Marla = 25.29285 m²)")
+    },
+    "chandigarh": {
+        "bigha": (2529.285, "Chandigarh Administration Revenue Rule (1 Pucca Bigha = 2529.285 m²)"),
+        "kanal": (505.857, "Chandigarh Administration Revenue Rule (1 Kanal = 505.857 m²)"),
+        "marla": (25.29285, "Chandigarh Administration Revenue Rule (1 Marla = 25.29285 m²)")
+    },
+    "haryana": {
+        "bigha": (2529.285, "Haryana Land Records Manual (1 Pucca Bigha = 2529.285 m²)"),
+        "kanal": (505.857, "Haryana Standard Revenue Measure (1 Kanal = 505.857 m²)"),
+        "marla": (25.29285, "Haryana Standard Revenue Measure (1 Marla = 25.29285 m²)")
+    },
+    "rajasthan": {
+        "bigha": (2529.285, "Rajasthan Land Revenue Code (Pucca Bigha = 2529.285 m²)"),
+        "biswa": (126.464, "Rajasthan Land Revenue Code (1 Biswa = 126.464 m²)")
+    },
+    "uttar_pradesh": {
+        "bigha": (2529.285, "UP Revenue Code (Standard Pucca Bigha = 2529.285 m²)"),
+        "biswa": (126.464, "UP Revenue Code (1 Biswa = 126.464 m²)")
+    },
+    "maharashtra": {
+        "guntha": (101.1714, "Maharashtra Land Revenue Code (1 Guntha = 101.1714 m² / 1089 sq ft)"),
+        "bigha": (2529.285, "Standard Pucca Bigha Baseline")
+    },
+    "karnataka": {
+        "guntha": (101.1714, "Karnataka Land Revenue Act (1 Guntha = 101.1714 m²)"),
+        "cent": (40.4686, "Karnataka Standard Cent (1 Cent = 40.4686 m²)")
+    },
+    "tamil_nadu": {
+        "cent": (40.4686, "Tamil Nadu Revenue Standards (1 Cent = 40.4686 m² / 435.6 sq ft)")
+    },
+    "kerala": {
+        "cent": (40.4686, "Kerala Land Revenue Standards (1 Cent = 40.4686 m²)")
+    }
+}
 
-def convert_to_standard_sq_m(value: float, unit: str) -> Dict[str, Any]:
+
+def convert_to_standard_sq_m(value: float, unit: str, state_or_location: Optional[str] = None) -> Dict[str, Any]:
     """
-    Section 10: Convert original measurements to standard SI square meters without destroying original value.
+    Section 10 & PS-Req 21: Convert original measurements to standard SI square meters without destroying original value.
+    Preserves original value, original unit, standardized value, and configured conversion basis.
+    Supports state-specific revenue manuals (e.g. HP Bigha vs Punjab Pucca Bigha).
     """
-    clean_unit = unit.lower().strip().replace(" ", "_")
-    factor = UNIT_CONVERSION_FACTORS.get(clean_unit, 1.0)
+    if value < 0:
+        raise ValueError("Negative measurement value is invalid: land area cannot be negative.")
+
+    normalized_input = unit.lower().strip()
+    canonical_unit = CANONICAL_UNIT_ALIASES.get(normalized_input)
+    if not canonical_unit:
+        # Check if replacing space/hyphen works
+        clean_key = normalized_input.replace(" ", "_").replace("-", "_")
+        canonical_unit = CANONICAL_UNIT_ALIASES.get(clean_key)
+
+    if not canonical_unit:
+        supported = ", ".join(["m²", "acre", "kanal", "marla", "bigha", "sq ft", "guntha", "cent", "hectare"])
+        raise ValueError(f"Unsupported land measurement unit '{unit}'. Configured units include: {supported}.")
+
+    # Resolve state from location if provided
+    state_key = None
+    if state_or_location:
+        clean_loc = state_or_location.lower().strip().replace(" ", "_")
+        state_key = LOCATION_TO_STATE_KEY.get(clean_loc, clean_loc)
+
+    # Check for state-specific override
+    factor = None
+    method = None
+    is_state_specific = False
+
+    if state_key and state_key in STATE_SPECIFIC_UNIT_FACTORS:
+        overrides = STATE_SPECIFIC_UNIT_FACTORS[state_key]
+        if canonical_unit in overrides:
+            factor, method = overrides[canonical_unit]
+            is_state_specific = True
+
+    if factor is None:
+        factor = UNIT_CONVERSION_FACTORS.get(canonical_unit, 1.0)
+        if canonical_unit == "sq_m":
+            method = "Identical metric base unit (1 m² = 1 m²)"
+        else:
+            method = f"Multiplied by national conversion constant {factor} per National Geodetic Standards"
+
     std_val = round(value * factor, 4)
+
     return {
         "original_value": value,
         "original_unit": unit,
         "standardized_value": std_val,
         "standardized_unit": "sq_m",
         "conversion_factor": factor,
-        "method": f"Multiplied by conversion constant {factor} per National Geodetic Standards"
+        "method": method,
+        "configured_state": state_key or "national_baseline",
+        "is_state_specific": is_state_specific
     }
 
 

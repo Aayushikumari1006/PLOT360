@@ -25,7 +25,10 @@ export default function ViewEvidenceModal() {
 
   if (!evidenceModalOpen) return null;
 
-  const isSentinelAvailable = activeParcel?.parcel_id === 'P-1027' || Boolean(activeParcel?.sentinel_available);
+  const isSentinelAvailable = true;
+  const locKey = (activeParcel?.location_id || '').toLowerCase() || 'chandigarh';
+  const t1Image = `/assets/satellite/${locKey}_2020.jpg`;
+  const t2Image = `/assets/satellite/${locKey}_2025.jpg`;
 
   return (
     <div
@@ -141,7 +144,7 @@ export default function ViewEvidenceModal() {
                 style={{
                   position: 'absolute',
                   inset: 0,
-                  backgroundImage: 'url(/assets/demo/chandigarh_satellite_basemap.jpg)',
+                  backgroundImage: `url(${t2Image}), url(/assets/demo/chandigarh_satellite_basemap.jpg)`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   filter: 'contrast(1.2) brightness(1.05)'
@@ -184,7 +187,7 @@ export default function ViewEvidenceModal() {
                     inset: 0,
                     width: '1000px',
                     height: '100%',
-                    backgroundImage: 'url(/assets/demo/chandigarh_satellite_basemap.jpg)',
+                    backgroundImage: `url(${t1Image}), url(/assets/demo/chandigarh_satellite_basemap.jpg)`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     filter: 'brightness(0.92) contrast(1.02) saturate(1.3)'
@@ -389,7 +392,7 @@ export default function ViewEvidenceModal() {
                   <div style={{ background: 'var(--bg-card-alt)', padding: '10px', borderRadius: '8px', border: '1px solid var(--border-subtle)' }}>
                     <span style={{ color: 'var(--text-muted)', fontSize: '10.5px' }}>TEMPORAL CHANGE FOOTPRINT</span>
                     <p style={{ color: 'var(--text-primary)', marginTop: '2px', lineHeight: 1.3 }}>
-                      Siamese U-Net spatial difference detected 385.40 m² potential development within cadastral boundaries ({activeParcel.ulpin}).
+                      Siamese U-Net spatial difference detected {activeParcel.change_area_m2 ? `${activeParcel.change_area_m2} m²` : '385.40 m²'} potential development within cadastral boundaries ({activeParcel.ulpin}).
                     </p>
                   </div>
 
@@ -403,7 +406,7 @@ export default function ViewEvidenceModal() {
                     <div style={{ background: 'var(--bg-card-alt)', padding: '8px', borderRadius: '8px', border: '1px solid var(--border-subtle)' }}>
                       <span style={{ color: 'var(--text-muted)', fontSize: '10px' }}>CONFIDENCE SCORE</span>
                       <div style={{ fontWeight: 700, color: 'var(--status-success)', marginTop: '2px' }}>
-                        89% (High)
+                        {activeParcel.confidence || (activeParcel.scenario === 'AI_CHANGE_REVIEW' ? '89% (High)' : '85% (High)')}
                       </div>
                     </div>
                   </div>

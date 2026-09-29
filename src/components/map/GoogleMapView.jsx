@@ -43,13 +43,27 @@ export default function GoogleMapView() {
 
   const mapRef = useRef(null);
   const googleMapRef = useRef(null);  // persistent ref so effects can always access latest map
-  const polygonRefs = useRef([]);     // [{id, poly}]
+  const polygonRefs = useRef([]);     // [{id, poly, landUse}]
+  const boundaryRefs = useRef([]);
+  const utilityRefs = useRef([]);
+  const protectedRefs = useRef([]);
   const loaderRef = useRef(null);
 
   const [mapLoaded, setMapLoaded] = useState(false);
   const [apiError, setApiError] = useState(false);
 
   const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || '';
+
+  const getZoningColor = (landUse) => {
+    if (!landUse) return '#0f172a';
+    const lu = String(landUse).toLowerCase();
+    if (lu.includes('commercial')) return '#a855f7';
+    if (lu.includes('residential')) return '#eab308';
+    if (lu.includes('agri')) return '#10b981';
+    if (lu.includes('indus')) return '#6366f1';
+    if (lu.includes('instit')) return '#06b6d4';
+    return '#0f172a';
+  };
 
   // ─── 1. Initialize Google Maps once ──────────────────────────────────────
   useEffect(() => {
@@ -106,8 +120,14 @@ export default function GoogleMapView() {
     const google = window.google;
     const map = googleMapRef.current;
 
-    // Remove old polygons
-    polygonRefs.current.forEach(({ poly }) => poly.setMap(null));
+    // Remove old polygons and labels cleanly
+    polygonRefs.current.forEach(({ poly }) => {
+      if (poly._label) poly._label.setMap(null);
+      if (window.google?.maps?.event) {
+        window.google.maps.event.clearInstanceListeners(poly);
+      }
+      poly.setMap(null);
+    });
     polygonRefs.current = [];
 
     if (!layers.parcels) return;
@@ -116,14 +136,16 @@ export default function GoogleMapView() {
       .filter(p => p.polygon && p.polygon.length > 2)
       .map((parcel) => {
         const isSelected = activeParcel && parcel.parcel_id === activeParcel.parcel_id;
+        const defaultFill = layers.zoning ? getZoningColor(parcel.land_use) : '#0f172a';
+        const defaultOpacity = layers.zoning ? 0.35 : 0.22;
 
         const poly = new google.maps.Polygon({
           paths: parcel.polygon,
-          strokeColor:   isSelected ? '#38bdf8' : 'rgba(255,255,255,0.6)',
+          strokeColor:   isSelected ? '#38bdf8' : (layers.zoning ? getZoningColor(parcel.land_use) : 'rgba(255,255,255,0.6)'),
           strokeOpacity: 0.9,
           strokeWeight:  isSelected ? 3.5 : 1.2,
-          fillColor:     isSelected ? '#0284c7' : '#0f172a',
-          fillOpacity:   isSelected ? 0.38 : 0.22,
+          fillColor:     isSelected ? '#0284c7' : defaultFill,
+          fillOpacity:   isSelected ? 0.38 : defaultOpacity,
           map,
           zIndex:        isSelected ? 10 : 1,
           clickable:     true
@@ -164,24 +186,37 @@ export default function GoogleMapView() {
           poly._isSelectedLabel = isSelected;
         }
 
-        return { id: parcel.parcel_id, poly };
+        return { id: parcel.parcel_id, poly, landUse: parcel.land_use };
       });
 
     polygonRefs.current = created;
+
+    return () => {
+      created.forEach(({ poly }) => {
+        if (poly._label) poly._label.setMap(null);
+        if (window.google?.maps?.event) {
+          window.google.maps.event.clearInstanceListeners(poly);
+        }
+        poly.setMap(null);
+      });
+    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mapLoaded, locationParcels, layers.parcels, layers.labels]);
+  }, [mapLoaded, locationParcels, layers.parcels, layers.labels, layers.zoning]);
 
   // ─── 3. Update polygon selection styling when activeParcel changes ─────────
   useEffect(() => {
     if (!mapLoaded || !window.google) return;
 
-    polygonRefs.current.forEach(({ id, poly }) => {
+    polygonRefs.current.forEach(({ id, poly, landUse }) => {
       const isSelected = activeParcel && id === activeParcel.parcel_id;
+      const defaultFill = layers.zoning ? getZoningColor(landUse) : '#0f172a';
+      const defaultOpacity = layers.zoning ? 0.35 : 0.22;
+
       poly.setOptions({
-        strokeColor:   isSelected ? '#38bdf8' : 'rgba(255,255,255,0.6)',
+        strokeColor:   isSelected ? '#38bdf8' : (layers.zoning ? getZoningColor(landUse) : 'rgba(255,255,255,0.6)'),
         strokeWeight:  isSelected ? 3.5 : 1.2,
-        fillColor:     isSelected ? '#0284c7' : '#0f172a',
-        fillOpacity:   isSelected ? 0.38 : 0.22,
+        fillColor:     isSelected ? '#0284c7' : defaultFill,
+        fillOpacity:   isSelected ? 0.38 : defaultOpacity,
         zIndex:        isSelected ? 10 : 1
       });
 
@@ -197,7 +232,121 @@ export default function GoogleMapView() {
       }
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeParcel, mapLoaded]);
+  }, [activeParcel, mapLoaded, layers.zoning]);
+
+  // ─── 3B. Boundary Overlays ───────────────────────────────────────────────
+  useEffect(() => {
+    if (!mapLoaded || !googleMapRef.current || !window.google) return;
+    const google = window.google;
+    const map = googleMapRef.current;
+
+    boundaryRefs.current.forEach(item => item.setMap(null));
+    boundaryRefs.current = [];
+
+    if (!layers.boundaries || !locationParcels || locationParcels.length === 0) return;
+
+    const bounds = new google.maps.LatLngBounds();
+    locationParcels.forEach(p => {
+      if (p.polygon) p.polygon.forEach(pt => bounds.extend(pt));
+    });
+
+    if (bounds.isEmpty()) return;
+    const sw = bounds.getSouthWest();
+    const ne = bounds.getNorthEast();
+    const padLat = (ne.lat() - sw.lat()) * 0.12 || 0.001;
+    const padLng = (ne.lng() - sw.lng()) * 0.12 || 0.001;
+
+    const boundaryPoly = new google.maps.Polygon({
+      paths: [
+        { lat: sw.lat() - padLat, lng: sw.lng() - padLng },
+        { lat: ne.lat() + padLat, lng: sw.lng() - padLng },
+        { lat: ne.lat() + padLat, lng: ne.lng() + padLng },
+        { lat: sw.lat() - padLat, lng: ne.lng() + padLng }
+      ],
+      strokeColor: '#ef4444',
+      strokeOpacity: 0.85,
+      strokeWeight: 2.5,
+      fillColor: '#ef4444',
+      fillOpacity: 0.04,
+      map,
+      clickable: false,
+      zIndex: 2
+    });
+
+    boundaryRefs.current = [boundaryPoly];
+  }, [mapLoaded, locationParcels, layers.boundaries]);
+
+  // ─── 3C. Civic Utilities Network Overlays ─────────────────────────────────
+  useEffect(() => {
+    if (!mapLoaded || !googleMapRef.current || !window.google) return;
+    const google = window.google;
+    const map = googleMapRef.current;
+
+    utilityRefs.current.forEach(item => item.setMap(null));
+    utilityRefs.current = [];
+
+    if (!layers.utilities || !locationParcels || locationParcels.length === 0) return;
+
+    const points = [];
+    locationParcels.forEach(p => {
+      if (p.polygon && p.polygon.length > 0) {
+        points.push(p.polygon[0]);
+      }
+    });
+
+    if (points.length >= 2) {
+      const line = new google.maps.Polyline({
+        path: points,
+        strokeColor: '#f97316',
+        strokeOpacity: 0.9,
+        strokeWeight: 3,
+        map,
+        clickable: false,
+        zIndex: 5
+      });
+      utilityRefs.current = [line];
+    }
+  }, [mapLoaded, locationParcels, layers.utilities]);
+
+  // ─── 3D. Protected Environmental Buffers ─────────────────────────────────
+  useEffect(() => {
+    if (!mapLoaded || !googleMapRef.current || !window.google) return;
+    const google = window.google;
+    const map = googleMapRef.current;
+
+    protectedRefs.current.forEach(item => item.setMap(null));
+    protectedRefs.current = [];
+
+    if (!layers.protected || !locationParcels || locationParcels.length === 0) return;
+
+    const bounds = new google.maps.LatLngBounds();
+    locationParcels.forEach(p => {
+      if (p.polygon) p.polygon.forEach(pt => bounds.extend(pt));
+    });
+    if (bounds.isEmpty()) return;
+    const ne = bounds.getNorthEast();
+    const sw = bounds.getSouthWest();
+    const height = ne.lat() - sw.lat();
+
+    const bufferPoly = new google.maps.Polygon({
+      paths: [
+        { lat: ne.lat() - height * 0.1, lng: sw.lng() },
+        { lat: ne.lat() + height * 0.35, lng: sw.lng() },
+        { lat: ne.lat() + height * 0.35, lng: ne.lng() },
+        { lat: ne.lat() - height * 0.1, lng: ne.lng() }
+      ],
+      strokeColor: '#10b981',
+      strokeOpacity: 0.85,
+      strokeWeight: 2,
+      fillColor: '#10b981',
+      fillOpacity: 0.22,
+      map,
+      clickable: false,
+      zIndex: 3
+    });
+
+    protectedRefs.current = [bufferPoly];
+  }, [mapLoaded, locationParcels, layers.protected]);
 
   // ─── 4. Move map when location changes ───────────────────────────────────
   useEffect(() => {

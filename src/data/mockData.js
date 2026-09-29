@@ -125,7 +125,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7842,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Amrik Builders & Promoters",
       "relation": "Ltd.",
@@ -216,7 +216,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7788,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Gurpreet Kaur",
       "relation": "w/o Jaswant Singh",
@@ -307,7 +307,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.783,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Balwinder Singh",
       "relation": "s/o Ajaib Singh",
@@ -402,7 +402,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2167,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Regal Holdings Pvt. Ltd.",
       "relation": "Corp",
@@ -493,7 +493,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.046,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Vikramaditya Saxena",
       "relation": "s/o O. P. Saxena",
@@ -588,7 +588,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1214,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Suresh Chand Gupta",
       "relation": "s/o R. L. Gupta",
@@ -679,7 +679,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.7499,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Innova Cyber Infrastructure Ltd.",
       "relation": "Corp",
@@ -770,7 +770,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.6288,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Siddharth Nambiar",
       "relation": "s/o K. V. Nambiar",
@@ -865,7 +865,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.6602,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Apex Embedded Solutions Ltd.",
       "relation": "Corp",
@@ -956,7 +956,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8295,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Horizon Realty LLP",
       "relation": "Partnership",
@@ -1047,7 +1047,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8722,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Pravin Shah & Sons",
       "relation": "HUF",
@@ -1138,7 +1138,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.889,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "National Warehousing Corp",
       "relation": "Corp",
@@ -1229,7 +1229,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.7673,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Mahaveer Prasad Sharma",
       "relation": "s/o G. D. Sharma",
@@ -1320,7 +1320,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.8012,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Rajendra Singh Rathore & Co-owners",
       "relation": "Joint",
@@ -1411,7 +1411,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.834,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ametek Precision Tools Ltd.",
       "relation": "Corp",
@@ -1502,7 +1502,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5122,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Patel Infrastructure Consortium",
       "relation": "Partnership",
@@ -1593,7 +1593,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.508,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Mehul J. Adani",
       "relation": "s/o J. K. Adani",
@@ -1684,7 +1684,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 81.0028,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Awadh Commercial Enclave Ltd.",
       "relation": "Corp",
@@ -1775,7 +1775,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.946,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Begum Fatima Trust",
       "relation": "Trust",
@@ -1866,7 +1866,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.3808,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Deccan Cyber Infotech Ltd.",
       "relation": "Corp",
@@ -1957,7 +1957,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.349,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "K. Venkat Rao",
       "relation": "s/o K. N. Rao",
@@ -2052,7 +2052,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.228,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Coromandel Tech Parks Ltd.",
       "relation": "Corp",
@@ -2143,7 +2143,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.234,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Subramanian Silk Emporium",
       "relation": "Partnership",
@@ -2234,7 +2234,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.7389,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kalyani Tech Parks Ltd.",
       "relation": "Corp",
@@ -2325,7 +2325,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8077,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Shrikant G. Deshpande",
       "relation": "s/o G. K. Deshpande",
@@ -2416,7 +2416,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 83.0045,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ram Ratan Yadav",
       "relation": "s/o Bhola Yadav",
@@ -2507,7 +2507,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 83.031,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Chandrama Prasad Maurya",
       "relation": "s/o Kashi Maurya",
@@ -2598,7 +2598,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 83.0225,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Dharmarajika Monastery Trust",
       "relation": "Trust",
@@ -2689,7 +2689,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.951,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Tribhuvandas Dairy Co-op Society",
       "relation": "Society",
@@ -2780,7 +2780,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.984,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Dineshbhai Somabhai Patel",
       "relation": "s/o Somabhai Patel",
@@ -2871,7 +2871,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.182,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Himachal Eco Conservation Society",
       "relation": "NGO",
@@ -2962,7 +2962,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1718,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kailash Chand Verma",
       "relation": "s/o Devi Ram Verma",
@@ -3053,7 +3053,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.081,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Lt. Col. Jaswant Singh (Retd.)",
       "relation": "s/o Amar Singh",
@@ -3144,7 +3144,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1088,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Himalayan Logistics & Cold Chain",
       "relation": "Corp",
@@ -3235,7 +3235,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.275,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Malabar Maritime Properties Ltd.",
       "relation": "Corp",
@@ -3326,7 +3326,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.252,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Cochin International Freight Carriers",
       "relation": "Partnership",
@@ -3417,7 +3417,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7737,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Simranjit Singh",
       "relation": "s/o Legal Representative",
@@ -3508,7 +3508,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7775,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Gurinder Kaur",
       "relation": "s/o Legal Representative",
@@ -3593,7 +3593,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7813,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Harpreet Verma",
       "relation": "s/o Legal Representative",
@@ -3688,7 +3688,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7851,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Chandigarh Real Estate Ltd",
       "relation": "s/o Legal Representative",
@@ -3777,7 +3777,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7737,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Manjit Singh Brar",
       "relation": "s/o Legal Representative",
@@ -3868,7 +3868,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7775,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Rajinder Paul",
       "relation": "s/o Legal Representative",
@@ -3953,7 +3953,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7813,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Sunita Sharma",
       "relation": "s/o Legal Representative",
@@ -4044,7 +4044,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7851,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Daljit Sandhu",
       "relation": "s/o Legal Representative",
@@ -4129,7 +4129,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7737,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kuldeep Kaur",
       "relation": "s/o Legal Representative",
@@ -4220,7 +4220,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7775,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Amarjit Singh",
       "relation": "s/o Legal Representative",
@@ -4305,7 +4305,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7813,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Jaswinder Singh",
       "relation": "s/o Legal Representative",
@@ -4396,7 +4396,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.7851,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Pritam Enterprises",
       "relation": "s/o Legal Representative",
@@ -4481,7 +4481,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2147,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Rakesh Aggarwal",
       "relation": "s/o Legal Representative",
@@ -4572,7 +4572,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2033,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Pooja Malhotra",
       "relation": "s/o Legal Representative",
@@ -4657,7 +4657,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2071,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Sunil Goel & Bros",
       "relation": "s/o Legal Representative",
@@ -4752,7 +4752,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2109,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Vikram Batra",
       "relation": "s/o Legal Representative",
@@ -4841,7 +4841,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2147,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Anjali Mehra",
       "relation": "s/o Legal Representative",
@@ -4932,7 +4932,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2033,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "DDA Allottee Trust",
       "relation": "s/o Legal Representative",
@@ -5017,7 +5017,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2071,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Sanjay Kapoor",
       "relation": "s/o Legal Representative",
@@ -5108,7 +5108,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2109,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Vandana Gupta",
       "relation": "s/o Legal Representative",
@@ -5193,7 +5193,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2147,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Rohit Tandon",
       "relation": "s/o Legal Representative",
@@ -5284,7 +5284,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2033,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ashok Singhal",
       "relation": "s/o Legal Representative",
@@ -5369,7 +5369,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2071,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Deepak Chopra",
       "relation": "s/o Legal Representative",
@@ -5460,7 +5460,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2109,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kavita Sethi",
       "relation": "s/o Legal Representative",
@@ -5545,7 +5545,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.2147,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Rajeev Mittal",
       "relation": "s/o Legal Representative",
@@ -5640,7 +5640,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.6003,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Suresh Babu",
       "relation": "s/o Legal Representative",
@@ -5731,7 +5731,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.5889,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Narayana Murthy K.",
       "relation": "s/o Legal Representative",
@@ -5816,7 +5816,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.5927,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Venkatesh Rao",
       "relation": "s/o Legal Representative",
@@ -5911,7 +5911,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.5965,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Brigade Tech Ventures",
       "relation": "s/o Legal Representative",
@@ -6000,7 +6000,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.6003,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Lakshmi Bai",
       "relation": "s/o Legal Representative",
@@ -6091,7 +6091,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.5889,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Prashanth Gowda",
       "relation": "s/o Legal Representative",
@@ -6176,7 +6176,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.5927,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Radha Krishna",
       "relation": "s/o Legal Representative",
@@ -6267,7 +6267,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.5965,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Anand Swaminathan",
       "relation": "s/o Legal Representative",
@@ -6352,7 +6352,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.6003,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Bhoomi Developers LLP",
       "relation": "s/o Legal Representative",
@@ -6443,7 +6443,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.5889,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Sujatha Reddy",
       "relation": "s/o Legal Representative",
@@ -6528,7 +6528,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.5927,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kiran Kumar M.",
       "relation": "s/o Legal Representative",
@@ -6619,7 +6619,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.5965,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Girish Hegde",
       "relation": "s/o Legal Representative",
@@ -6704,7 +6704,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.6003,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Siddhartha Enterprises",
       "relation": "s/o Legal Representative",
@@ -6799,7 +6799,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8834,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Mahesh Shah",
       "relation": "s/o Legal Representative",
@@ -6890,7 +6890,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.872,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Pradeep Kadam",
       "relation": "s/o Legal Representative",
@@ -6975,7 +6975,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8758,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Godrej Properties Consortium",
       "relation": "s/o Legal Representative",
@@ -7070,7 +7070,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8796,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Nilesh Patkar",
       "relation": "s/o Legal Representative",
@@ -7159,7 +7159,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8834,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Smita Deshmukh",
       "relation": "s/o Legal Representative",
@@ -7250,7 +7250,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.872,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Hiten Thakkar",
       "relation": "s/o Legal Representative",
@@ -7335,7 +7335,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8758,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ramesh Solanki",
       "relation": "s/o Legal Representative",
@@ -7426,7 +7426,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8796,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kishore Chitre",
       "relation": "s/o Legal Representative",
@@ -7511,7 +7511,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8834,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Prakash Wagle",
       "relation": "s/o Legal Representative",
@@ -7602,7 +7602,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.872,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Meena Bhansali",
       "relation": "s/o Legal Representative",
@@ -7687,7 +7687,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8758,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Jitendra Parekh",
       "relation": "s/o Legal Representative",
@@ -7778,7 +7778,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8796,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Shilpa Sawant",
       "relation": "s/o Legal Representative",
@@ -7863,7 +7863,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.8834,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "MMRDA Development Hub",
       "relation": "s/o Legal Representative",
@@ -7958,7 +7958,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5733,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Chirag Patel",
       "relation": "s/o Legal Representative",
@@ -8049,7 +8049,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5771,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Bhavin Shah",
       "relation": "s/o Legal Representative",
@@ -8134,7 +8134,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5657,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Pravinbhai Prajapati",
       "relation": "s/o Legal Representative",
@@ -8229,7 +8229,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5695,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Adani Township Ltd",
       "relation": "s/o Legal Representative",
@@ -8318,7 +8318,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5733,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Hasmukh Vora",
       "relation": "s/o Legal Representative",
@@ -8409,7 +8409,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5771,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Jayshreeben Dave",
       "relation": "s/o Legal Representative",
@@ -8494,7 +8494,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5657,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kalpesh Trivedi",
       "relation": "s/o Legal Representative",
@@ -8585,7 +8585,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5695,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Manish Mehta",
       "relation": "s/o Legal Representative",
@@ -8670,7 +8670,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5733,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Dinesh Zala",
       "relation": "s/o Legal Representative",
@@ -8761,7 +8761,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5771,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kinjalben Modi",
       "relation": "s/o Legal Representative",
@@ -8846,7 +8846,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5657,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Haresh Parmar",
       "relation": "s/o Legal Representative",
@@ -8937,7 +8937,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5695,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Gaurav Dholakia",
       "relation": "s/o Legal Representative",
@@ -9022,7 +9022,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5733,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Jayantilal & Sons",
       "relation": "s/o Legal Representative",
@@ -9117,7 +9117,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.5771,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Mukesh Somani",
       "relation": "s/o Legal Representative",
@@ -9206,7 +9206,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9481,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ram Kishore Yadav",
       "relation": "s/o Legal Representative",
@@ -9297,7 +9297,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9519,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Shashi Bhushan Tripathi",
       "relation": "s/o Legal Representative",
@@ -9382,7 +9382,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9405,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Awadh Construction Corp",
       "relation": "s/o Legal Representative",
@@ -9477,7 +9477,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9443,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Neeraj Shukla",
       "relation": "s/o Legal Representative",
@@ -9566,7 +9566,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9481,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Pushpa Devi Verma",
       "relation": "s/o Legal Representative",
@@ -9657,7 +9657,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9519,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Santosh Kumar Mishra",
       "relation": "s/o Legal Representative",
@@ -9742,7 +9742,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9405,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Alok Srivastava",
       "relation": "s/o Legal Representative",
@@ -9833,7 +9833,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9443,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Rekha Pandey",
       "relation": "s/o Legal Representative",
@@ -9918,7 +9918,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9481,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kamleshwar Singh",
       "relation": "s/o Legal Representative",
@@ -10009,7 +10009,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9519,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Sunita Awasthi",
       "relation": "s/o Legal Representative",
@@ -10094,7 +10094,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9405,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Manoj Rawat",
       "relation": "s/o Legal Representative",
@@ -10185,7 +10185,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9443,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Pratibha Tiwari",
       "relation": "s/o Legal Representative",
@@ -10270,7 +10270,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9481,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Dharmendra Chauhan",
       "relation": "s/o Legal Representative",
@@ -10365,7 +10365,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.9519,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Vipin Bihari Lal",
       "relation": "s/o Legal Representative",
@@ -10454,7 +10454,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.4886,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "K. Venkat Reddy",
       "relation": "s/o Legal Representative",
@@ -10545,7 +10545,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.4924,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ch. Madhava Rao",
       "relation": "s/o Legal Representative",
@@ -10630,7 +10630,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.481,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Cybercity Infrastructure Ltd",
       "relation": "s/o Legal Representative",
@@ -10725,7 +10725,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.4848,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "B. Srinivas Goud",
       "relation": "s/o Legal Representative",
@@ -10814,7 +10814,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.4886,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "P. Anasuya Devi",
       "relation": "s/o Legal Representative",
@@ -10905,7 +10905,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.4924,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "G. Naresh Kumar",
       "relation": "s/o Legal Representative",
@@ -10990,7 +10990,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.481,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "T. Subba Rao",
       "relation": "s/o Legal Representative",
@@ -11081,7 +11081,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.4848,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "S. Lavanya",
       "relation": "s/o Legal Representative",
@@ -11166,7 +11166,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.4886,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "M. Mallikarjun",
       "relation": "s/o Legal Representative",
@@ -11257,7 +11257,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.4924,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Y. Chandrasekhar",
       "relation": "s/o Legal Representative",
@@ -11342,7 +11342,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.481,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "V. Vijaya Lakshmi",
       "relation": "s/o Legal Representative",
@@ -11433,7 +11433,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.4848,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "D. Ramana Murthy",
       "relation": "s/o Legal Representative",
@@ -11518,7 +11518,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.4886,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "A. Ravi Teja",
       "relation": "s/o Legal Representative",
@@ -11613,7 +11613,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 78.4924,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "N. Sravan Kumar",
       "relation": "s/o Legal Representative",
@@ -11702,7 +11702,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.2726,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "S. Soundararajan",
       "relation": "s/o Legal Representative",
@@ -11793,7 +11793,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.2764,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "K. Meenakshi Sundaram",
       "relation": "s/o Legal Representative",
@@ -11878,7 +11878,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.265,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "TIDEL Park Ancillary Trust",
       "relation": "s/o Legal Representative",
@@ -11973,7 +11973,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.2688,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "V. Selvakumar",
       "relation": "s/o Legal Representative",
@@ -12062,7 +12062,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.2726,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "R. Revathi Ammal",
       "relation": "s/o Legal Representative",
@@ -12153,7 +12153,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.2764,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "M. Palanivelu",
       "relation": "s/o Legal Representative",
@@ -12238,7 +12238,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.265,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "N. Karthikeyan",
       "relation": "s/o Legal Representative",
@@ -12329,7 +12329,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.2688,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "A. Jayaraman",
       "relation": "s/o Legal Representative",
@@ -12414,7 +12414,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.2726,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "S. Balamurugan",
       "relation": "s/o Legal Representative",
@@ -12505,7 +12505,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.2764,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "D. Thenmozhi",
       "relation": "s/o Legal Representative",
@@ -12590,7 +12590,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.265,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "P. Vasanth Kumar",
       "relation": "s/o Legal Representative",
@@ -12681,7 +12681,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.2688,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "E. Arumugam",
       "relation": "s/o Legal Representative",
@@ -12766,7 +12766,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.2726,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "G. Vijayaraghavan",
       "relation": "s/o Legal Representative",
@@ -12861,7 +12861,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 80.2764,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "C. Thangavel",
       "relation": "s/o Legal Representative",
@@ -12950,7 +12950,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1753,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Prem Lal Thakur",
       "relation": "s/o Legal Representative",
@@ -13041,7 +13041,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1791,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Gian Chand Sharma",
       "relation": "s/o Legal Representative",
@@ -13126,7 +13126,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1677,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Himachal Tourism Board",
       "relation": "s/o Legal Representative",
@@ -13221,7 +13221,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1715,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kanta Devi",
       "relation": "s/o Legal Representative",
@@ -13310,7 +13310,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1753,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Surinder Singh Verma",
       "relation": "s/o Legal Representative",
@@ -13401,7 +13401,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1791,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Bipin Bihari Joshi",
       "relation": "s/o Legal Representative",
@@ -13486,7 +13486,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1677,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Tara Chand Chauhan",
       "relation": "s/o Legal Representative",
@@ -13577,7 +13577,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1715,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Mohan Lal Negi",
       "relation": "s/o Legal Representative",
@@ -13662,7 +13662,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1753,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Sunita Rana",
       "relation": "s/o Legal Representative",
@@ -13753,7 +13753,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1791,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Devender Kumar",
       "relation": "s/o Legal Representative",
@@ -13838,7 +13838,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1677,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Rajeshwar Sen",
       "relation": "s/o Legal Representative",
@@ -13929,7 +13929,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1715,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Anita Sood",
       "relation": "s/o Legal Representative",
@@ -14014,7 +14014,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1753,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Virender Guleria",
       "relation": "s/o Legal Representative",
@@ -14109,7 +14109,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1791,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Tek Chand Kashyap",
       "relation": "s/o Legal Representative",
@@ -14198,7 +14198,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1018,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Jagdish Chandra",
       "relation": "s/o Legal Representative",
@@ -14289,7 +14289,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1056,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Hemant Kumar Sharma",
       "relation": "s/o Legal Representative",
@@ -14374,7 +14374,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.0942,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Shoolini Pharma Hub",
       "relation": "s/o Legal Representative",
@@ -14469,7 +14469,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.098,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Manmohan Singh",
       "relation": "s/o Legal Representative",
@@ -14558,7 +14558,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1018,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Sushma Devi",
       "relation": "s/o Legal Representative",
@@ -14649,7 +14649,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1056,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Dina Nath",
       "relation": "s/o Legal Representative",
@@ -14734,7 +14734,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.0942,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Vikas Panwar",
       "relation": "s/o Legal Representative",
@@ -14825,7 +14825,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.098,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Rattan Lal",
       "relation": "s/o Legal Representative",
@@ -14910,7 +14910,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1018,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Bhupinder Singh",
       "relation": "s/o Legal Representative",
@@ -15001,7 +15001,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1056,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Meena Thakur",
       "relation": "s/o Legal Representative",
@@ -15086,7 +15086,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.0942,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Yogesh Attri",
       "relation": "s/o Legal Representative",
@@ -15177,7 +15177,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.098,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kishore Sen",
       "relation": "s/o Legal Representative",
@@ -15262,7 +15262,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1018,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kamla Kaushal",
       "relation": "s/o Legal Representative",
@@ -15357,7 +15357,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 77.1056,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Tilak Raj",
       "relation": "s/o Legal Representative",
@@ -15446,7 +15446,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.9308,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Tribhuvandas Patel",
       "relation": "s/o Legal Representative",
@@ -15537,7 +15537,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.9346,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Amul Cooperative Federation",
       "relation": "s/o Legal Representative",
@@ -15622,7 +15622,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.9232,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ramanbhai Solanki",
       "relation": "s/o Legal Representative",
@@ -15717,7 +15717,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.927,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kantibhai Makwana",
       "relation": "s/o Legal Representative",
@@ -15806,7 +15806,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.9308,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Dineshbhai Rabari",
       "relation": "s/o Legal Representative",
@@ -15897,7 +15897,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.9346,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Shardaben Vaghela",
       "relation": "s/o Legal Representative",
@@ -15982,7 +15982,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.9232,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Bharatbhai Chauhan",
       "relation": "s/o Legal Representative",
@@ -16073,7 +16073,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.927,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Girishbhai Zala",
       "relation": "s/o Legal Representative",
@@ -16158,7 +16158,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.9308,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Nileshbhai Barot",
       "relation": "s/o Legal Representative",
@@ -16249,7 +16249,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.9346,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Minaben Parmar",
       "relation": "s/o Legal Representative",
@@ -16334,7 +16334,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.9232,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ashokbhai Desai",
       "relation": "s/o Legal Representative",
@@ -16425,7 +16425,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.927,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Rohitbhai Rohit",
       "relation": "s/o Legal Representative",
@@ -16510,7 +16510,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.9308,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Lalitbhai Thakor",
       "relation": "s/o Legal Representative",
@@ -16605,7 +16605,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 72.9346,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ketanbhai Suthar",
       "relation": "s/o Legal Representative",
@@ -16694,7 +16694,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.793,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Gopal Singh Rathore",
       "relation": "s/o Legal Representative",
@@ -16785,7 +16785,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.7816,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Bhairon Singh Shekhawat",
       "relation": "s/o Legal Representative",
@@ -16870,7 +16870,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.7854,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Pink City Developers",
       "relation": "s/o Legal Representative",
@@ -16965,7 +16965,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.7892,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kailash Chand Meena",
       "relation": "s/o Legal Representative",
@@ -17054,7 +17054,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.793,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Shanti Devi Sharma",
       "relation": "s/o Legal Representative",
@@ -17145,7 +17145,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.7816,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Mahaveer Prasad Jain",
       "relation": "s/o Legal Representative",
@@ -17230,7 +17230,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.7854,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Satyanarayan Saini",
       "relation": "s/o Legal Representative",
@@ -17321,7 +17321,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.7892,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ghanshyam Gurjar",
       "relation": "s/o Legal Representative",
@@ -17406,7 +17406,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.793,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Bhagwan Sahai",
       "relation": "s/o Legal Representative",
@@ -17497,7 +17497,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.7816,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kamlesh Kumar",
       "relation": "s/o Legal Representative",
@@ -17582,7 +17582,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.7854,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Om Prakash Kumawat",
       "relation": "s/o Legal Representative",
@@ -17673,7 +17673,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.7892,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ramavtar Verma",
       "relation": "s/o Legal Representative",
@@ -17758,7 +17758,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 75.793,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Pushpendra Singh",
       "relation": "s/o Legal Representative",
@@ -17853,7 +17853,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.9796,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Pandit Shiv Kumar Shastri",
       "relation": "s/o Legal Representative",
@@ -17944,7 +17944,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.9682,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kashi Vishwanath Trust Enclave",
       "relation": "s/o Legal Representative",
@@ -18029,7 +18029,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.972,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Ram Janam Maurya",
       "relation": "s/o Legal Representative",
@@ -18124,7 +18124,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.9758,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Kanhaiya Lal Gupta",
       "relation": "s/o Legal Representative",
@@ -18213,7 +18213,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.9796,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Durga Prasad Bind",
       "relation": "s/o Legal Representative",
@@ -18304,7 +18304,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.9682,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Santosh Kumar Chaubey",
       "relation": "s/o Legal Representative",
@@ -18389,7 +18389,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.972,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Vimla Devi Pandey",
       "relation": "s/o Legal Representative",
@@ -18480,7 +18480,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.9758,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Radhey Shyam Patel",
       "relation": "s/o Legal Representative",
@@ -18565,7 +18565,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.9796,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Gauri Shankar Mishra",
       "relation": "s/o Legal Representative",
@@ -18656,7 +18656,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.9682,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Bachchu Lal Yadav",
       "relation": "s/o Legal Representative",
@@ -18741,7 +18741,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.972,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Brij Mohan Tiwari",
       "relation": "s/o Legal Representative",
@@ -18832,7 +18832,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.9758,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Prakash Chandra Srivastava",
       "relation": "s/o Legal Representative",
@@ -18917,7 +18917,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 82.9796,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Laxmi Narayan Seth",
       "relation": "s/o Legal Representative",
@@ -19012,7 +19012,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8586,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Balasaheb Patil",
       "relation": "s/o Legal Representative",
@@ -19103,7 +19103,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8624,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Vitthalrao Jagtap",
       "relation": "s/o Legal Representative",
@@ -19188,7 +19188,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.851,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Magarpatta Tech Horizon",
       "relation": "s/o Legal Representative",
@@ -19283,7 +19283,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8548,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Sambhaji Gaikwad",
       "relation": "s/o Legal Representative",
@@ -19372,7 +19372,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8586,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Sunandabai More",
       "relation": "s/o Legal Representative",
@@ -19463,7 +19463,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8624,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Dattatraya Shinde",
       "relation": "s/o Legal Representative",
@@ -19548,7 +19548,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.851,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Anandrao Kadam",
       "relation": "s/o Legal Representative",
@@ -19639,7 +19639,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8548,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Pandurang Babar",
       "relation": "s/o Legal Representative",
@@ -19724,7 +19724,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8586,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Chandrakant Phadtare",
       "relation": "s/o Legal Representative",
@@ -19815,7 +19815,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8624,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Shrikant Deshmukh",
       "relation": "s/o Legal Representative",
@@ -19900,7 +19900,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.851,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Nitin Khutwad",
       "relation": "s/o Legal Representative",
@@ -19991,7 +19991,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8548,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Sudhir Bhalerao",
       "relation": "s/o Legal Representative",
@@ -20076,7 +20076,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8586,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Archana Chavan",
       "relation": "s/o Legal Representative",
@@ -20171,7 +20171,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 73.8624,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Yuvraj Bhosale",
       "relation": "s/o Legal Representative",
@@ -20260,7 +20260,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.2692,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "K. P. Kurian",
       "relation": "s/o Legal Representative",
@@ -20351,7 +20351,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.273,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Thomas Varghese",
       "relation": "s/o Legal Representative",
@@ -20436,7 +20436,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.2616,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Cochin Tech Venture Trust",
       "relation": "s/o Legal Representative",
@@ -20531,7 +20531,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.2654,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Abdul Rahman K.",
       "relation": "s/o Legal Representative",
@@ -20620,7 +20620,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.2692,
     "scenario": "TAX_CASE",
     "scenario_display": "Property Tax Compliance Case",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Mary Varghese",
       "relation": "s/o Legal Representative",
@@ -20711,7 +20711,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.273,
     "scenario": "DISPUTED",
     "scenario_display": "Boundary Demarcation Dispute",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Suresh Menon",
       "relation": "s/o Legal Representative",
@@ -20796,7 +20796,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.2616,
     "scenario": "RESTRICTION_BUFFER",
     "scenario_display": "Statutory Environmental / Heritage Buffer",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Mathew Joseph",
       "relation": "s/o Legal Representative",
@@ -20887,7 +20887,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.2654,
     "scenario": "INFRASTRUCTURE_GAP",
     "scenario_display": "Civic Infrastructure Feasibility Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Biju Varghese",
       "relation": "s/o Legal Representative",
@@ -20972,7 +20972,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.2692,
     "scenario": "BUILDING_APPROVAL",
     "scenario_display": "Municipal Building Sanction Active",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Radhakrishnan Nair",
       "relation": "s/o Legal Representative",
@@ -21063,7 +21063,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.273,
     "scenario": "OWNERSHIP_REVIEW",
     "scenario_display": "Multi-Party Share Mutation Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Shaji George",
       "relation": "s/o Legal Representative",
@@ -21148,7 +21148,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.2616,
     "scenario": "CLEAN_PARCEL",
     "scenario_display": "Clean Verified Title",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Anitha Mohan",
       "relation": "s/o Legal Representative",
@@ -21239,7 +21239,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.2654,
     "scenario": "PLANNING_REVIEW",
     "scenario_display": "Statutory Planning Review",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Babychan Paul",
       "relation": "s/o Legal Representative",
@@ -21324,7 +21324,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.2692,
     "scenario": "MORTGAGE_LIEN",
     "scenario_display": "Registered Mortgage / Bank Lien",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Vinod Kumar P.",
       "relation": "s/o Legal Representative",
@@ -21419,7 +21419,7 @@ export const DEMO_PARCELS = [
     "centroid_lng": 76.273,
     "scenario": "ENCUMBERED_PARCEL",
     "scenario_display": "Active Encumbrance Recorded",
-    "sentinel_available": false,
+    "sentinel_available": true,
     "owner": {
       "name": "Valsala Kumari",
       "relation": "s/o Legal Representative",
@@ -21480,6 +21480,14246 @@ export const DEMO_PARCELS = [
         "lng": 76.2741
       }
     ]
+  },
+  {
+    "parcel_id": "P-6001",
+    "ulpin": "IN-HR-GGM-0006001",
+    "survey_no": "1/DEMO",
+    "khata_no": "KH-601",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 0.25,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.21,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.21 m\u00b2",
+    "original_area_display": "0.25 Sq.Yd",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Haryana",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4547,
+    "centroid_lng": 77.0209,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Rajiv Bajaj",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4538,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.022
+      },
+      {
+        "lat": 28.4538,
+        "lng": 77.022
+      }
+    ],
+    "bp": {
+      "id": "BP/GUR/2023/100",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "10 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4001",
+      "status": "Paid",
+      "paid": "\u20b9 12000",
+      "date": "5 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4538,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.022
+      },
+      {
+        "lat": 28.4538,
+        "lng": 77.022
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6002",
+    "ulpin": "IN-HR-GGM-0006002",
+    "survey_no": "2/DEMO",
+    "khata_no": "KH-602",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 0.33,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.28,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.28 m\u00b2",
+    "original_area_display": "0.33 Sq.Yd",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Haryana",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4547,
+    "centroid_lng": 77.0247,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Ananya Singhania",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4538,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0258
+      },
+      {
+        "lat": 28.4538,
+        "lng": 77.0258
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4002",
+      "status": "Paid",
+      "paid": "\u20b9 12850",
+      "date": "6 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4538,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0258
+      },
+      {
+        "lat": 28.4538,
+        "lng": 77.0258
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6003",
+    "ulpin": "IN-HR-GGM-0006003",
+    "survey_no": "3/DEMO",
+    "khata_no": "KH-603",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 0.41,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.34,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.34 m\u00b2",
+    "original_area_display": "0.41 Sq.Yd",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Haryana",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4547,
+    "centroid_lng": 77.0285,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "DLF Horizon Ltd",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4538,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0296
+      },
+      {
+        "lat": 28.4538,
+        "lng": 77.0296
+      }
+    ],
+    "bp": {
+      "id": "BP/GUR/2023/102",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "12 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 45,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-3"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4003",
+      "status": "Paid",
+      "paid": "\u20b9 13700",
+      "date": "7 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4538,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0296
+      },
+      {
+        "lat": 28.4538,
+        "lng": 77.0296
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6004",
+    "ulpin": "IN-HR-GGM-0006004",
+    "survey_no": "4/DEMO",
+    "khata_no": "KH-604",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 0.49,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.41,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.41 m\u00b2",
+    "original_area_display": "0.49 Sq.Yd",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Haryana",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4547,
+    "centroid_lng": 77.0323,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Vikramaditya Roy",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4538,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0334
+      },
+      {
+        "lat": 28.4538,
+        "lng": 77.0334
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 37,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-4"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4004",
+      "status": "Paid",
+      "paid": "\u20b9 14550",
+      "date": "8 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4538,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4556,
+        "lng": 77.0334
+      },
+      {
+        "lat": 28.4538,
+        "lng": 77.0334
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6005",
+    "ulpin": "IN-HR-GGM-0006005",
+    "survey_no": "5/DEMO",
+    "khata_no": "KH-605",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 0.57,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.48,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.48 m\u00b2",
+    "original_area_display": "0.57 Sq.Yd",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Haryana",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4579,
+    "centroid_lng": 77.0209,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Deepak Talwar",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.457,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.022
+      },
+      {
+        "lat": 28.457,
+        "lng": 77.022
+      }
+    ],
+    "bp": {
+      "id": "BP/GUR/2023/104",
+      "status": "Under Scrutiny",
+      "floors": "G + 3",
+      "date": "14 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4005",
+      "status": "Pending",
+      "paid": "\u20b9 15400",
+      "date": "9 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.457,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.022
+      },
+      {
+        "lat": 28.457,
+        "lng": 77.022
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6006",
+    "ulpin": "IN-HR-GGM-0006006",
+    "survey_no": "6/DEMO",
+    "khata_no": "KH-606",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 0.65,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.54,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.54 m\u00b2",
+    "original_area_display": "0.65 Sq.Yd",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Haryana",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4579,
+    "centroid_lng": 77.0247,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Priya Chawla",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.457,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0258
+      },
+      {
+        "lat": 28.457,
+        "lng": 77.0258
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4006",
+      "status": "Paid",
+      "paid": "\u20b9 16250",
+      "date": "10 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.457,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0258
+      },
+      {
+        "lat": 28.457,
+        "lng": 77.0258
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6007",
+    "ulpin": "IN-HR-GGM-0006007",
+    "survey_no": "7/DEMO",
+    "khata_no": "KH-607",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 0.73,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.61,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.61 m\u00b2",
+    "original_area_display": "0.73 Sq.Yd",
+    "land_use": "Special / Buffer",
+    "zoning": "Eco-Sensitive Buffer",
+    "jurisdiction": "Haryana",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4579,
+    "centroid_lng": 77.0285,
+    "scenario": "RESTRICTION_BUFFER",
+    "scenario_display": "Statutory Environmental / Heritage Buffer",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Tarun Khanna",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.457,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0296
+      },
+      {
+        "lat": 28.457,
+        "lng": 77.0296
+      }
+    ],
+    "bp": {
+      "id": "BP/GUR/2023/106",
+      "status": "Approved",
+      "floors": "G + 2",
+      "date": "16 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4007",
+      "status": "Paid",
+      "paid": "\u20b9 17100",
+      "date": "11 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.457,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0296
+      },
+      {
+        "lat": 28.457,
+        "lng": 77.0296
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6008",
+    "ulpin": "IN-HR-GGM-0006008",
+    "survey_no": "8/DEMO",
+    "khata_no": "KH-608",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 0.81,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.68,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.68 m\u00b2",
+    "original_area_display": "0.81 Sq.Yd",
+    "land_use": "Industrial",
+    "zoning": "Light Industrial",
+    "jurisdiction": "Haryana",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4579,
+    "centroid_lng": 77.0323,
+    "scenario": "INFRASTRUCTURE_GAP",
+    "scenario_display": "Civic Infrastructure Feasibility Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Meera Oberoi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.457,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0334
+      },
+      {
+        "lat": 28.457,
+        "lng": 77.0334
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4008",
+      "status": "Paid",
+      "paid": "\u20b9 17950",
+      "date": "12 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.457,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4588,
+        "lng": 77.0334
+      },
+      {
+        "lat": 28.457,
+        "lng": 77.0334
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6009",
+    "ulpin": "IN-HR-GGM-0006009",
+    "survey_no": "9/DEMO",
+    "khata_no": "KH-609",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 0.89,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.74,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.74 m\u00b2",
+    "original_area_display": "0.89 Sq.Yd",
+    "land_use": "Residential",
+    "zoning": "Group Housing (GH-3)",
+    "jurisdiction": "Haryana",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4611,
+    "centroid_lng": 77.0209,
+    "scenario": "BUILDING_APPROVAL",
+    "scenario_display": "Municipal Building Sanction Active",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sunil Munjal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4602,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.022
+      },
+      {
+        "lat": 28.4602,
+        "lng": 77.022
+      }
+    ],
+    "bp": {
+      "id": "BP/GUR/2023/108",
+      "status": "Under Scrutiny",
+      "floors": "G + 4",
+      "date": "18 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4009",
+      "status": "Paid",
+      "paid": "\u20b9 18800",
+      "date": "13 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4602,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.022
+      },
+      {
+        "lat": 28.4602,
+        "lng": 77.022
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6010",
+    "ulpin": "IN-HR-GGM-0006010",
+    "survey_no": "10/DEMO",
+    "khata_no": "KH-610",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 0.97,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.81,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.81 m\u00b2",
+    "original_area_display": "0.97 Sq.Yd",
+    "land_use": "Residential",
+    "zoning": "Residential (R-1)",
+    "jurisdiction": "Haryana",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4611,
+    "centroid_lng": 77.0247,
+    "scenario": "OWNERSHIP_REVIEW",
+    "scenario_display": "Multi-Party Share Mutation Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Rohit Bhargava",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4602,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0258
+      },
+      {
+        "lat": 28.4602,
+        "lng": 77.0258
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4010",
+      "status": "Paid",
+      "paid": "\u20b9 19650",
+      "date": "14 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4602,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0258
+      },
+      {
+        "lat": 28.4602,
+        "lng": 77.0258
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6011",
+    "ulpin": "IN-HR-GGM-0006011",
+    "survey_no": "11/DEMO",
+    "khata_no": "KH-611",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 1.05,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.88,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.88 m\u00b2",
+    "original_area_display": "1.05 Sq.Yd",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Haryana",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4611,
+    "centroid_lng": 77.0285,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Kavita Goel",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4602,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0296
+      },
+      {
+        "lat": 28.4602,
+        "lng": 77.0296
+      }
+    ],
+    "bp": {
+      "id": "BP/GUR/2023/110",
+      "status": "Approved",
+      "floors": "G + 3",
+      "date": "20 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4011",
+      "status": "Paid",
+      "paid": "\u20b9 20500",
+      "date": "15 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4602,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0296
+      },
+      {
+        "lat": 28.4602,
+        "lng": 77.0296
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6012",
+    "ulpin": "IN-HR-GGM-0006012",
+    "survey_no": "12/DEMO",
+    "khata_no": "KH-612",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 1.13,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 0.94,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.94 m\u00b2",
+    "original_area_display": "1.13 Sq.Yd",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Haryana",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4611,
+    "centroid_lng": 77.0323,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Manish Goenka",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4602,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0334
+      },
+      {
+        "lat": 28.4602,
+        "lng": 77.0334
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4012",
+      "status": "Paid",
+      "paid": "\u20b9 21350",
+      "date": "16 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4602,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.462,
+        "lng": 77.0334
+      },
+      {
+        "lat": 28.4602,
+        "lng": 77.0334
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6013",
+    "ulpin": "IN-HR-GGM-0006013",
+    "survey_no": "13/DEMO",
+    "khata_no": "KH-613",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 1.21,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 1.01,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.01 m\u00b2",
+    "original_area_display": "1.21 Sq.Yd",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Haryana",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4643,
+    "centroid_lng": 77.0209,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Rajiv Bajaj",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4634,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.022
+      },
+      {
+        "lat": 28.4634,
+        "lng": 77.022
+      }
+    ],
+    "bp": {
+      "id": "BP/GUR/2023/112",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "22 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 95,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-13"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4013",
+      "status": "Paid",
+      "paid": "\u20b9 22200",
+      "date": "17 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4634,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0198
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.022
+      },
+      {
+        "lat": 28.4634,
+        "lng": 77.022
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6014",
+    "ulpin": "IN-HR-GGM-0006014",
+    "survey_no": "14/DEMO",
+    "khata_no": "KH-614",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 1.29,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 1.08,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.08 m\u00b2",
+    "original_area_display": "1.29 Sq.Yd",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Haryana",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4643,
+    "centroid_lng": 77.0247,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Ananya Singhania",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4634,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0258
+      },
+      {
+        "lat": 28.4634,
+        "lng": 77.0258
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 77,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-14"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4014",
+      "status": "Paid",
+      "paid": "\u20b9 23050",
+      "date": "18 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4634,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0236
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0258
+      },
+      {
+        "lat": 28.4634,
+        "lng": 77.0258
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6015",
+    "ulpin": "IN-HR-GGM-0006015",
+    "survey_no": "15/DEMO",
+    "khata_no": "KH-615",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 1.37,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 1.15,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.15 m\u00b2",
+    "original_area_display": "1.37 Sq.Yd",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Haryana",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4643,
+    "centroid_lng": 77.0285,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "DLF Horizon Ltd",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4634,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0296
+      },
+      {
+        "lat": 28.4634,
+        "lng": 77.0296
+      }
+    ],
+    "bp": {
+      "id": "BP/GUR/2023/114",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "24 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4015",
+      "status": "Pending",
+      "paid": "\u20b9 23900",
+      "date": "19 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4634,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0274
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0296
+      },
+      {
+        "lat": 28.4634,
+        "lng": 77.0296
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6016",
+    "ulpin": "IN-HR-GGM-0006016",
+    "survey_no": "16/DEMO",
+    "khata_no": "KH-616",
+    "location": "Cyber City / Golf Course Rd, Gurugram",
+    "location_id": "gurugram",
+    "state": "Haryana",
+    "district": "Gurugram",
+    "tehsil": "Gurugram",
+    "rural_urban": "Urban",
+    "original_area": 1.45,
+    "original_unit": "Sq.Yd",
+    "standardized_area": 1.21,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.21 m\u00b2",
+    "original_area_display": "1.45 Sq.Yd",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Haryana",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 28.4643,
+    "centroid_lng": 77.0323,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Vikramaditya Roy",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 28.4634,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0334
+      },
+      {
+        "lat": 28.4634,
+        "lng": 77.0334
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUR-2024-4016",
+      "status": "Paid",
+      "paid": "\u20b9 24750",
+      "date": "20 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 28.4634,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0312
+      },
+      {
+        "lat": 28.4652,
+        "lng": 77.0334
+      },
+      {
+        "lat": 28.4634,
+        "lng": 77.0334
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6101",
+    "ulpin": "IN-PB-ASR-0006101",
+    "survey_no": "1/DEMO",
+    "khata_no": "KH-601",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 0.25,
+    "original_unit": "Marla",
+    "standardized_area": 6.32,
+    "standardized_unit": "m\u00b2",
+    "area_display": "6.32 m\u00b2",
+    "original_area_display": "0.25 Marla",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Punjab",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6292,
+    "centroid_lng": 74.8666,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Harpreet Singh Gill",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6283,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8677
+      },
+      {
+        "lat": 31.6283,
+        "lng": 74.8677
+      }
+    ],
+    "bp": {
+      "id": "BP/AMR/2023/100",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "10 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4001",
+      "status": "Paid",
+      "paid": "\u20b9 12000",
+      "date": "5 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6283,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8677
+      },
+      {
+        "lat": 31.6283,
+        "lng": 74.8677
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6102",
+    "ulpin": "IN-PB-ASR-0006102",
+    "survey_no": "2/DEMO",
+    "khata_no": "KH-602",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 0.33,
+    "original_unit": "Marla",
+    "standardized_area": 8.35,
+    "standardized_unit": "m\u00b2",
+    "area_display": "8.35 m\u00b2",
+    "original_area_display": "0.33 Marla",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Punjab",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6292,
+    "centroid_lng": 74.8704,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Maninder Kaur",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6283,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8715
+      },
+      {
+        "lat": 31.6283,
+        "lng": 74.8715
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4002",
+      "status": "Paid",
+      "paid": "\u20b9 12850",
+      "date": "6 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6283,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8715
+      },
+      {
+        "lat": 31.6283,
+        "lng": 74.8715
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6103",
+    "ulpin": "IN-PB-ASR-0006103",
+    "survey_no": "3/DEMO",
+    "khata_no": "KH-603",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 0.41,
+    "original_unit": "Marla",
+    "standardized_area": 10.37,
+    "standardized_unit": "m\u00b2",
+    "area_display": "10.37 m\u00b2",
+    "original_area_display": "0.41 Marla",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Punjab",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6292,
+    "centroid_lng": 74.8742,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Golden City Infra",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6283,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8753
+      },
+      {
+        "lat": 31.6283,
+        "lng": 74.8753
+      }
+    ],
+    "bp": {
+      "id": "BP/AMR/2023/102",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "12 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 45,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-3"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4003",
+      "status": "Paid",
+      "paid": "\u20b9 13700",
+      "date": "7 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6283,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8753
+      },
+      {
+        "lat": 31.6283,
+        "lng": 74.8753
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6104",
+    "ulpin": "IN-PB-ASR-0006104",
+    "survey_no": "4/DEMO",
+    "khata_no": "KH-604",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 0.49,
+    "original_unit": "Marla",
+    "standardized_area": 12.39,
+    "standardized_unit": "m\u00b2",
+    "area_display": "12.39 m\u00b2",
+    "original_area_display": "0.49 Marla",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Punjab",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6292,
+    "centroid_lng": 74.878,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bikramjeet Singh",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6283,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8791
+      },
+      {
+        "lat": 31.6283,
+        "lng": 74.8791
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 37,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-4"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4004",
+      "status": "Paid",
+      "paid": "\u20b9 14550",
+      "date": "8 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6283,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6301,
+        "lng": 74.8791
+      },
+      {
+        "lat": 31.6283,
+        "lng": 74.8791
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6105",
+    "ulpin": "IN-PB-ASR-0006105",
+    "survey_no": "5/DEMO",
+    "khata_no": "KH-605",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 0.57,
+    "original_unit": "Marla",
+    "standardized_area": 14.42,
+    "standardized_unit": "m\u00b2",
+    "area_display": "14.42 m\u00b2",
+    "original_area_display": "0.57 Marla",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Punjab",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6324,
+    "centroid_lng": 74.8666,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Davinder Sandhu",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6315,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8677
+      },
+      {
+        "lat": 31.6315,
+        "lng": 74.8677
+      }
+    ],
+    "bp": {
+      "id": "BP/AMR/2023/104",
+      "status": "Under Scrutiny",
+      "floors": "G + 3",
+      "date": "14 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4005",
+      "status": "Pending",
+      "paid": "\u20b9 15400",
+      "date": "9 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6315,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8677
+      },
+      {
+        "lat": 31.6315,
+        "lng": 74.8677
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6106",
+    "ulpin": "IN-PB-ASR-0006106",
+    "survey_no": "6/DEMO",
+    "khata_no": "KH-606",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 0.65,
+    "original_unit": "Marla",
+    "standardized_area": 16.44,
+    "standardized_unit": "m\u00b2",
+    "area_display": "16.44 m\u00b2",
+    "original_area_display": "0.65 Marla",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Punjab",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6324,
+    "centroid_lng": 74.8704,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Simrat Chahal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6315,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8715
+      },
+      {
+        "lat": 31.6315,
+        "lng": 74.8715
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4006",
+      "status": "Paid",
+      "paid": "\u20b9 16250",
+      "date": "10 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6315,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8715
+      },
+      {
+        "lat": 31.6315,
+        "lng": 74.8715
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6107",
+    "ulpin": "IN-PB-ASR-0006107",
+    "survey_no": "7/DEMO",
+    "khata_no": "KH-607",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 0.73,
+    "original_unit": "Marla",
+    "standardized_area": 18.46,
+    "standardized_unit": "m\u00b2",
+    "area_display": "18.46 m\u00b2",
+    "original_area_display": "0.73 Marla",
+    "land_use": "Special / Buffer",
+    "zoning": "Eco-Sensitive Buffer",
+    "jurisdiction": "Punjab",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6324,
+    "centroid_lng": 74.8742,
+    "scenario": "RESTRICTION_BUFFER",
+    "scenario_display": "Statutory Environmental / Heritage Buffer",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Gurpartap Dhillon",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6315,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8753
+      },
+      {
+        "lat": 31.6315,
+        "lng": 74.8753
+      }
+    ],
+    "bp": {
+      "id": "BP/AMR/2023/106",
+      "status": "Approved",
+      "floors": "G + 2",
+      "date": "16 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4007",
+      "status": "Paid",
+      "paid": "\u20b9 17100",
+      "date": "11 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6315,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8753
+      },
+      {
+        "lat": 31.6315,
+        "lng": 74.8753
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6108",
+    "ulpin": "IN-PB-ASR-0006108",
+    "survey_no": "8/DEMO",
+    "khata_no": "KH-608",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 0.81,
+    "original_unit": "Marla",
+    "standardized_area": 20.48,
+    "standardized_unit": "m\u00b2",
+    "area_display": "20.48 m\u00b2",
+    "original_area_display": "0.81 Marla",
+    "land_use": "Industrial",
+    "zoning": "Light Industrial",
+    "jurisdiction": "Punjab",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6324,
+    "centroid_lng": 74.878,
+    "scenario": "INFRASTRUCTURE_GAP",
+    "scenario_display": "Civic Infrastructure Feasibility Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Jasleen Pannu",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6315,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8791
+      },
+      {
+        "lat": 31.6315,
+        "lng": 74.8791
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4008",
+      "status": "Paid",
+      "paid": "\u20b9 17950",
+      "date": "12 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6315,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6333,
+        "lng": 74.8791
+      },
+      {
+        "lat": 31.6315,
+        "lng": 74.8791
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6109",
+    "ulpin": "IN-PB-ASR-0006109",
+    "survey_no": "9/DEMO",
+    "khata_no": "KH-609",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 0.89,
+    "original_unit": "Marla",
+    "standardized_area": 22.51,
+    "standardized_unit": "m\u00b2",
+    "area_display": "22.51 m\u00b2",
+    "original_area_display": "0.89 Marla",
+    "land_use": "Residential",
+    "zoning": "Group Housing (GH-3)",
+    "jurisdiction": "Punjab",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6356,
+    "centroid_lng": 74.8666,
+    "scenario": "BUILDING_APPROVAL",
+    "scenario_display": "Municipal Building Sanction Active",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Karamjit Randhawa",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6347,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8677
+      },
+      {
+        "lat": 31.6347,
+        "lng": 74.8677
+      }
+    ],
+    "bp": {
+      "id": "BP/AMR/2023/108",
+      "status": "Under Scrutiny",
+      "floors": "G + 4",
+      "date": "18 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4009",
+      "status": "Paid",
+      "paid": "\u20b9 18800",
+      "date": "13 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6347,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8677
+      },
+      {
+        "lat": 31.6347,
+        "lng": 74.8677
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6110",
+    "ulpin": "IN-PB-ASR-0006110",
+    "survey_no": "10/DEMO",
+    "khata_no": "KH-610",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 0.97,
+    "original_unit": "Marla",
+    "standardized_area": 24.53,
+    "standardized_unit": "m\u00b2",
+    "area_display": "24.53 m\u00b2",
+    "original_area_display": "0.97 Marla",
+    "land_use": "Residential",
+    "zoning": "Residential (R-1)",
+    "jurisdiction": "Punjab",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6356,
+    "centroid_lng": 74.8704,
+    "scenario": "OWNERSHIP_REVIEW",
+    "scenario_display": "Multi-Party Share Mutation Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Navjot Brar",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6347,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8715
+      },
+      {
+        "lat": 31.6347,
+        "lng": 74.8715
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4010",
+      "status": "Paid",
+      "paid": "\u20b9 19650",
+      "date": "14 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6347,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8715
+      },
+      {
+        "lat": 31.6347,
+        "lng": 74.8715
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6111",
+    "ulpin": "IN-PB-ASR-0006111",
+    "survey_no": "11/DEMO",
+    "khata_no": "KH-611",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 1.05,
+    "original_unit": "Marla",
+    "standardized_area": 26.55,
+    "standardized_unit": "m\u00b2",
+    "area_display": "26.55 m\u00b2",
+    "original_area_display": "1.05 Marla",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Punjab",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6356,
+    "centroid_lng": 74.8742,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sukhdev Bajwa",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6347,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8753
+      },
+      {
+        "lat": 31.6347,
+        "lng": 74.8753
+      }
+    ],
+    "bp": {
+      "id": "BP/AMR/2023/110",
+      "status": "Approved",
+      "floors": "G + 3",
+      "date": "20 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4011",
+      "status": "Paid",
+      "paid": "\u20b9 20500",
+      "date": "15 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6347,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8753
+      },
+      {
+        "lat": 31.6347,
+        "lng": 74.8753
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6112",
+    "ulpin": "IN-PB-ASR-0006112",
+    "survey_no": "12/DEMO",
+    "khata_no": "KH-612",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 1.13,
+    "original_unit": "Marla",
+    "standardized_area": 28.58,
+    "standardized_unit": "m\u00b2",
+    "area_display": "28.58 m\u00b2",
+    "original_area_display": "1.13 Marla",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Punjab",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6356,
+    "centroid_lng": 74.878,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Inderpreet Sekhon",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6347,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8791
+      },
+      {
+        "lat": 31.6347,
+        "lng": 74.8791
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4012",
+      "status": "Paid",
+      "paid": "\u20b9 21350",
+      "date": "16 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6347,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6365,
+        "lng": 74.8791
+      },
+      {
+        "lat": 31.6347,
+        "lng": 74.8791
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6113",
+    "ulpin": "IN-PB-ASR-0006113",
+    "survey_no": "13/DEMO",
+    "khata_no": "KH-613",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 1.21,
+    "original_unit": "Marla",
+    "standardized_area": 30.6,
+    "standardized_unit": "m\u00b2",
+    "area_display": "30.60 m\u00b2",
+    "original_area_display": "1.21 Marla",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Punjab",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6388,
+    "centroid_lng": 74.8666,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Harpreet Singh Gill",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6379,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8677
+      },
+      {
+        "lat": 31.6379,
+        "lng": 74.8677
+      }
+    ],
+    "bp": {
+      "id": "BP/AMR/2023/112",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "22 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 95,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-13"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4013",
+      "status": "Paid",
+      "paid": "\u20b9 22200",
+      "date": "17 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6379,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8655
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8677
+      },
+      {
+        "lat": 31.6379,
+        "lng": 74.8677
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6114",
+    "ulpin": "IN-PB-ASR-0006114",
+    "survey_no": "14/DEMO",
+    "khata_no": "KH-614",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 1.29,
+    "original_unit": "Marla",
+    "standardized_area": 32.62,
+    "standardized_unit": "m\u00b2",
+    "area_display": "32.62 m\u00b2",
+    "original_area_display": "1.29 Marla",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Punjab",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6388,
+    "centroid_lng": 74.8704,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Maninder Kaur",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6379,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8715
+      },
+      {
+        "lat": 31.6379,
+        "lng": 74.8715
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 77,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-14"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4014",
+      "status": "Paid",
+      "paid": "\u20b9 23050",
+      "date": "18 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6379,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8693
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8715
+      },
+      {
+        "lat": 31.6379,
+        "lng": 74.8715
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6115",
+    "ulpin": "IN-PB-ASR-0006115",
+    "survey_no": "15/DEMO",
+    "khata_no": "KH-615",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 1.37,
+    "original_unit": "Marla",
+    "standardized_area": 34.65,
+    "standardized_unit": "m\u00b2",
+    "area_display": "34.65 m\u00b2",
+    "original_area_display": "1.37 Marla",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Punjab",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6388,
+    "centroid_lng": 74.8742,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Golden City Infra",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6379,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8753
+      },
+      {
+        "lat": 31.6379,
+        "lng": 74.8753
+      }
+    ],
+    "bp": {
+      "id": "BP/AMR/2023/114",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "24 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4015",
+      "status": "Pending",
+      "paid": "\u20b9 23900",
+      "date": "19 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6379,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8731
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8753
+      },
+      {
+        "lat": 31.6379,
+        "lng": 74.8753
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6116",
+    "ulpin": "IN-PB-ASR-0006116",
+    "survey_no": "16/DEMO",
+    "khata_no": "KH-616",
+    "location": "Ranjit Avenue / Heritage Belt, Amritsar",
+    "location_id": "amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "tehsil": "Amritsar-I",
+    "rural_urban": "Urban",
+    "original_area": 1.45,
+    "original_unit": "Marla",
+    "standardized_area": 36.67,
+    "standardized_unit": "m\u00b2",
+    "area_display": "36.67 m\u00b2",
+    "original_area_display": "1.45 Marla",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Punjab",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 31.6388,
+    "centroid_lng": 74.878,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bikramjeet Singh",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 31.6379,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8791
+      },
+      {
+        "lat": 31.6379,
+        "lng": 74.8791
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-AMR-2024-4016",
+      "status": "Paid",
+      "paid": "\u20b9 24750",
+      "date": "20 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 31.6379,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8769
+      },
+      {
+        "lat": 31.6397,
+        "lng": 74.8791
+      },
+      {
+        "lat": 31.6379,
+        "lng": 74.8791
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6201",
+    "ulpin": "IN-WB-KOL-0006201",
+    "survey_no": "1/DEMO",
+    "khata_no": "KH-601",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 0.25,
+    "original_unit": "Kottah",
+    "standardized_area": 16.72,
+    "standardized_unit": "m\u00b2",
+    "area_display": "16.72 m\u00b2",
+    "original_area_display": "0.25 Kottah",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "West Bengal",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5678,
+    "centroid_lng": 88.3582,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Subhashis Banerjee",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5669,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3593
+      },
+      {
+        "lat": 22.5669,
+        "lng": 88.3593
+      }
+    ],
+    "bp": {
+      "id": "BP/KOL/2023/100",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "10 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4001",
+      "status": "Paid",
+      "paid": "\u20b9 12000",
+      "date": "5 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5669,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3593
+      },
+      {
+        "lat": 22.5669,
+        "lng": 88.3593
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6202",
+    "ulpin": "IN-WB-KOL-0006202",
+    "survey_no": "2/DEMO",
+    "khata_no": "KH-602",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 0.33,
+    "original_unit": "Kottah",
+    "standardized_area": 22.07,
+    "standardized_unit": "m\u00b2",
+    "area_display": "22.07 m\u00b2",
+    "original_area_display": "0.33 Kottah",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "West Bengal",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5678,
+    "centroid_lng": 88.362,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Aparna Sen",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5669,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3631
+      },
+      {
+        "lat": 22.5669,
+        "lng": 88.3631
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4002",
+      "status": "Paid",
+      "paid": "\u20b9 12850",
+      "date": "6 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5669,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3631
+      },
+      {
+        "lat": 22.5669,
+        "lng": 88.3631
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6203",
+    "ulpin": "IN-WB-KOL-0006203",
+    "survey_no": "3/DEMO",
+    "khata_no": "KH-603",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 0.41,
+    "original_unit": "Kottah",
+    "standardized_area": 27.42,
+    "standardized_unit": "m\u00b2",
+    "area_display": "27.42 m\u00b2",
+    "original_area_display": "0.41 Kottah",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "West Bengal",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5678,
+    "centroid_lng": 88.3658,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bengal Ambuja Trust",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5669,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3669
+      },
+      {
+        "lat": 22.5669,
+        "lng": 88.3669
+      }
+    ],
+    "bp": {
+      "id": "BP/KOL/2023/102",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "12 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 45,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-3"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4003",
+      "status": "Paid",
+      "paid": "\u20b9 13700",
+      "date": "7 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5669,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3669
+      },
+      {
+        "lat": 22.5669,
+        "lng": 88.3669
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6204",
+    "ulpin": "IN-WB-KOL-0006204",
+    "survey_no": "4/DEMO",
+    "khata_no": "KH-604",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 0.49,
+    "original_unit": "Kottah",
+    "standardized_area": 32.78,
+    "standardized_unit": "m\u00b2",
+    "area_display": "32.78 m\u00b2",
+    "original_area_display": "0.49 Kottah",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "West Bengal",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5678,
+    "centroid_lng": 88.3696,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Debashis Mukherjee",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5669,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3707
+      },
+      {
+        "lat": 22.5669,
+        "lng": 88.3707
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 37,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-4"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4004",
+      "status": "Paid",
+      "paid": "\u20b9 14550",
+      "date": "8 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5669,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5687,
+        "lng": 88.3707
+      },
+      {
+        "lat": 22.5669,
+        "lng": 88.3707
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6205",
+    "ulpin": "IN-WB-KOL-0006205",
+    "survey_no": "5/DEMO",
+    "khata_no": "KH-605",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 0.57,
+    "original_unit": "Kottah",
+    "standardized_area": 38.13,
+    "standardized_unit": "m\u00b2",
+    "area_display": "38.13 m\u00b2",
+    "original_area_display": "0.57 Kottah",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "West Bengal",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.571,
+    "centroid_lng": 88.3582,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Swagata Roy",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5701,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3593
+      },
+      {
+        "lat": 22.5701,
+        "lng": 88.3593
+      }
+    ],
+    "bp": {
+      "id": "BP/KOL/2023/104",
+      "status": "Under Scrutiny",
+      "floors": "G + 3",
+      "date": "14 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4005",
+      "status": "Pending",
+      "paid": "\u20b9 15400",
+      "date": "9 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5701,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3593
+      },
+      {
+        "lat": 22.5701,
+        "lng": 88.3593
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6206",
+    "ulpin": "IN-WB-KOL-0006206",
+    "survey_no": "6/DEMO",
+    "khata_no": "KH-606",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 0.65,
+    "original_unit": "Kottah",
+    "standardized_area": 43.48,
+    "standardized_unit": "m\u00b2",
+    "area_display": "43.48 m\u00b2",
+    "original_area_display": "0.65 Kottah",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "West Bengal",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.571,
+    "centroid_lng": 88.362,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Anirban Bhattacharya",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5701,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3631
+      },
+      {
+        "lat": 22.5701,
+        "lng": 88.3631
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4006",
+      "status": "Paid",
+      "paid": "\u20b9 16250",
+      "date": "10 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5701,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3631
+      },
+      {
+        "lat": 22.5701,
+        "lng": 88.3631
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6207",
+    "ulpin": "IN-WB-KOL-0006207",
+    "survey_no": "7/DEMO",
+    "khata_no": "KH-607",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 0.73,
+    "original_unit": "Kottah",
+    "standardized_area": 48.83,
+    "standardized_unit": "m\u00b2",
+    "area_display": "48.83 m\u00b2",
+    "original_area_display": "0.73 Kottah",
+    "land_use": "Special / Buffer",
+    "zoning": "Eco-Sensitive Buffer",
+    "jurisdiction": "West Bengal",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.571,
+    "centroid_lng": 88.3658,
+    "scenario": "RESTRICTION_BUFFER",
+    "scenario_display": "Statutory Environmental / Heritage Buffer",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Mousumi Ganguly",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5701,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3669
+      },
+      {
+        "lat": 22.5701,
+        "lng": 88.3669
+      }
+    ],
+    "bp": {
+      "id": "BP/KOL/2023/106",
+      "status": "Approved",
+      "floors": "G + 2",
+      "date": "16 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4007",
+      "status": "Paid",
+      "paid": "\u20b9 17100",
+      "date": "11 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5701,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3669
+      },
+      {
+        "lat": 22.5701,
+        "lng": 88.3669
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6208",
+    "ulpin": "IN-WB-KOL-0006208",
+    "survey_no": "8/DEMO",
+    "khata_no": "KH-608",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 0.81,
+    "original_unit": "Kottah",
+    "standardized_area": 54.18,
+    "standardized_unit": "m\u00b2",
+    "area_display": "54.18 m\u00b2",
+    "original_area_display": "0.81 Kottah",
+    "land_use": "Industrial",
+    "zoning": "Light Industrial",
+    "jurisdiction": "West Bengal",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.571,
+    "centroid_lng": 88.3696,
+    "scenario": "INFRASTRUCTURE_GAP",
+    "scenario_display": "Civic Infrastructure Feasibility Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sourav Chatterjee",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5701,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3707
+      },
+      {
+        "lat": 22.5701,
+        "lng": 88.3707
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4008",
+      "status": "Paid",
+      "paid": "\u20b9 17950",
+      "date": "12 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5701,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5719,
+        "lng": 88.3707
+      },
+      {
+        "lat": 22.5701,
+        "lng": 88.3707
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6209",
+    "ulpin": "IN-WB-KOL-0006209",
+    "survey_no": "9/DEMO",
+    "khata_no": "KH-609",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 0.89,
+    "original_unit": "Kottah",
+    "standardized_area": 59.53,
+    "standardized_unit": "m\u00b2",
+    "area_display": "59.53 m\u00b2",
+    "original_area_display": "0.89 Kottah",
+    "land_use": "Residential",
+    "zoning": "Group Housing (GH-3)",
+    "jurisdiction": "West Bengal",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5742,
+    "centroid_lng": 88.3582,
+    "scenario": "BUILDING_APPROVAL",
+    "scenario_display": "Municipal Building Sanction Active",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Rina Bose",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5733,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3593
+      },
+      {
+        "lat": 22.5733,
+        "lng": 88.3593
+      }
+    ],
+    "bp": {
+      "id": "BP/KOL/2023/108",
+      "status": "Under Scrutiny",
+      "floors": "G + 4",
+      "date": "18 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4009",
+      "status": "Paid",
+      "paid": "\u20b9 18800",
+      "date": "13 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5733,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3593
+      },
+      {
+        "lat": 22.5733,
+        "lng": 88.3593
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6210",
+    "ulpin": "IN-WB-KOL-0006210",
+    "survey_no": "10/DEMO",
+    "khata_no": "KH-610",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 0.97,
+    "original_unit": "Kottah",
+    "standardized_area": 64.88,
+    "standardized_unit": "m\u00b2",
+    "area_display": "64.88 m\u00b2",
+    "original_area_display": "0.97 Kottah",
+    "land_use": "Residential",
+    "zoning": "Residential (R-1)",
+    "jurisdiction": "West Bengal",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5742,
+    "centroid_lng": 88.362,
+    "scenario": "OWNERSHIP_REVIEW",
+    "scenario_display": "Multi-Party Share Mutation Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Kalyan Ghosh",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5733,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3631
+      },
+      {
+        "lat": 22.5733,
+        "lng": 88.3631
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4010",
+      "status": "Paid",
+      "paid": "\u20b9 19650",
+      "date": "14 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5733,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3631
+      },
+      {
+        "lat": 22.5733,
+        "lng": 88.3631
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6211",
+    "ulpin": "IN-WB-KOL-0006211",
+    "survey_no": "11/DEMO",
+    "khata_no": "KH-611",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 1.05,
+    "original_unit": "Kottah",
+    "standardized_area": 70.23,
+    "standardized_unit": "m\u00b2",
+    "area_display": "70.23 m\u00b2",
+    "original_area_display": "1.05 Kottah",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "West Bengal",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5742,
+    "centroid_lng": 88.3658,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Indranil Dutta",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5733,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3669
+      },
+      {
+        "lat": 22.5733,
+        "lng": 88.3669
+      }
+    ],
+    "bp": {
+      "id": "BP/KOL/2023/110",
+      "status": "Approved",
+      "floors": "G + 3",
+      "date": "20 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4011",
+      "status": "Paid",
+      "paid": "\u20b9 20500",
+      "date": "15 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5733,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3669
+      },
+      {
+        "lat": 22.5733,
+        "lng": 88.3669
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6212",
+    "ulpin": "IN-WB-KOL-0006212",
+    "survey_no": "12/DEMO",
+    "khata_no": "KH-612",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 1.13,
+    "original_unit": "Kottah",
+    "standardized_area": 75.59,
+    "standardized_unit": "m\u00b2",
+    "area_display": "75.59 m\u00b2",
+    "original_area_display": "1.13 Kottah",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "West Bengal",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5742,
+    "centroid_lng": 88.3696,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sampa Chakraborty",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5733,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3707
+      },
+      {
+        "lat": 22.5733,
+        "lng": 88.3707
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4012",
+      "status": "Paid",
+      "paid": "\u20b9 21350",
+      "date": "16 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5733,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5751,
+        "lng": 88.3707
+      },
+      {
+        "lat": 22.5733,
+        "lng": 88.3707
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6213",
+    "ulpin": "IN-WB-KOL-0006213",
+    "survey_no": "13/DEMO",
+    "khata_no": "KH-613",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 1.21,
+    "original_unit": "Kottah",
+    "standardized_area": 80.94,
+    "standardized_unit": "m\u00b2",
+    "area_display": "80.94 m\u00b2",
+    "original_area_display": "1.21 Kottah",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "West Bengal",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5774,
+    "centroid_lng": 88.3582,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Subhashis Banerjee",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5765,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3593
+      },
+      {
+        "lat": 22.5765,
+        "lng": 88.3593
+      }
+    ],
+    "bp": {
+      "id": "BP/KOL/2023/112",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "22 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 95,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-13"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4013",
+      "status": "Paid",
+      "paid": "\u20b9 22200",
+      "date": "17 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5765,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3571
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3593
+      },
+      {
+        "lat": 22.5765,
+        "lng": 88.3593
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6214",
+    "ulpin": "IN-WB-KOL-0006214",
+    "survey_no": "14/DEMO",
+    "khata_no": "KH-614",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 1.29,
+    "original_unit": "Kottah",
+    "standardized_area": 86.29,
+    "standardized_unit": "m\u00b2",
+    "area_display": "86.29 m\u00b2",
+    "original_area_display": "1.29 Kottah",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "West Bengal",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5774,
+    "centroid_lng": 88.362,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Aparna Sen",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5765,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3631
+      },
+      {
+        "lat": 22.5765,
+        "lng": 88.3631
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 77,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-14"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4014",
+      "status": "Paid",
+      "paid": "\u20b9 23050",
+      "date": "18 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5765,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3609
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3631
+      },
+      {
+        "lat": 22.5765,
+        "lng": 88.3631
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6215",
+    "ulpin": "IN-WB-KOL-0006215",
+    "survey_no": "15/DEMO",
+    "khata_no": "KH-615",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 1.37,
+    "original_unit": "Kottah",
+    "standardized_area": 91.64,
+    "standardized_unit": "m\u00b2",
+    "area_display": "91.64 m\u00b2",
+    "original_area_display": "1.37 Kottah",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "West Bengal",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5774,
+    "centroid_lng": 88.3658,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bengal Ambuja Trust",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5765,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3669
+      },
+      {
+        "lat": 22.5765,
+        "lng": 88.3669
+      }
+    ],
+    "bp": {
+      "id": "BP/KOL/2023/114",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "24 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4015",
+      "status": "Pending",
+      "paid": "\u20b9 23900",
+      "date": "19 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5765,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3647
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3669
+      },
+      {
+        "lat": 22.5765,
+        "lng": 88.3669
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6216",
+    "ulpin": "IN-WB-KOL-0006216",
+    "survey_no": "16/DEMO",
+    "khata_no": "KH-616",
+    "location": "New Town / Salt Lake Sector V, Kolkata",
+    "location_id": "kolkata",
+    "state": "West Bengal",
+    "district": "North 24 Parganas",
+    "tehsil": "Bidhannagar",
+    "rural_urban": "Urban",
+    "original_area": 1.45,
+    "original_unit": "Kottah",
+    "standardized_area": 96.99,
+    "standardized_unit": "m\u00b2",
+    "area_display": "96.99 m\u00b2",
+    "original_area_display": "1.45 Kottah",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "West Bengal",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.5774,
+    "centroid_lng": 88.3696,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Debashis Mukherjee",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.5765,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3707
+      },
+      {
+        "lat": 22.5765,
+        "lng": 88.3707
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-KOL-2024-4016",
+      "status": "Paid",
+      "paid": "\u20b9 24750",
+      "date": "20 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.5765,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3685
+      },
+      {
+        "lat": 22.5783,
+        "lng": 88.3707
+      },
+      {
+        "lat": 22.5765,
+        "lng": 88.3707
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6301",
+    "ulpin": "IN-MP-BHP-0006301",
+    "survey_no": "1/DEMO",
+    "khata_no": "KH-601",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 0.25,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.25,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.25 m\u00b2",
+    "original_area_display": "0.25 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2551,
+    "centroid_lng": 77.4069,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Dharmendra Tiwari",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2542,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.408
+      },
+      {
+        "lat": 23.2542,
+        "lng": 77.408
+      }
+    ],
+    "bp": {
+      "id": "BP/BHO/2023/100",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "10 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4001",
+      "status": "Paid",
+      "paid": "\u20b9 12000",
+      "date": "5 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2542,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.408
+      },
+      {
+        "lat": 23.2542,
+        "lng": 77.408
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6302",
+    "ulpin": "IN-MP-BHP-0006302",
+    "survey_no": "2/DEMO",
+    "khata_no": "KH-602",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 0.33,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.33,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.33 m\u00b2",
+    "original_area_display": "0.33 Sq.Mtr",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2551,
+    "centroid_lng": 77.4107,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Rashmi Chouhan",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2542,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4118
+      },
+      {
+        "lat": 23.2542,
+        "lng": 77.4118
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4002",
+      "status": "Paid",
+      "paid": "\u20b9 12850",
+      "date": "6 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2542,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4118
+      },
+      {
+        "lat": 23.2542,
+        "lng": 77.4118
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6303",
+    "ulpin": "IN-MP-BHP-0006303",
+    "survey_no": "3/DEMO",
+    "khata_no": "KH-603",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 0.41,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.41,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.41 m\u00b2",
+    "original_area_display": "0.41 Sq.Mtr",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2551,
+    "centroid_lng": 77.4145,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bhojpal Township Ltd",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2542,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4156
+      },
+      {
+        "lat": 23.2542,
+        "lng": 77.4156
+      }
+    ],
+    "bp": {
+      "id": "BP/BHO/2023/102",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "12 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 45,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-3"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4003",
+      "status": "Paid",
+      "paid": "\u20b9 13700",
+      "date": "7 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2542,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4156
+      },
+      {
+        "lat": 23.2542,
+        "lng": 77.4156
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6304",
+    "ulpin": "IN-MP-BHP-0006304",
+    "survey_no": "4/DEMO",
+    "khata_no": "KH-604",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 0.49,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.49,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.49 m\u00b2",
+    "original_area_display": "0.49 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2551,
+    "centroid_lng": 77.4183,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Alok Saxena",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2542,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4194
+      },
+      {
+        "lat": 23.2542,
+        "lng": 77.4194
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 37,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-4"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4004",
+      "status": "Paid",
+      "paid": "\u20b9 14550",
+      "date": "8 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2542,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.256,
+        "lng": 77.4194
+      },
+      {
+        "lat": 23.2542,
+        "lng": 77.4194
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6305",
+    "ulpin": "IN-MP-BHP-0006305",
+    "survey_no": "5/DEMO",
+    "khata_no": "KH-605",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 0.57,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.57,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.57 m\u00b2",
+    "original_area_display": "0.57 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2583,
+    "centroid_lng": 77.4069,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Nirmala Jain",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2574,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.408
+      },
+      {
+        "lat": 23.2574,
+        "lng": 77.408
+      }
+    ],
+    "bp": {
+      "id": "BP/BHO/2023/104",
+      "status": "Under Scrutiny",
+      "floors": "G + 3",
+      "date": "14 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4005",
+      "status": "Pending",
+      "paid": "\u20b9 15400",
+      "date": "9 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2574,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.408
+      },
+      {
+        "lat": 23.2574,
+        "lng": 77.408
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6306",
+    "ulpin": "IN-MP-BHP-0006306",
+    "survey_no": "6/DEMO",
+    "khata_no": "KH-606",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 0.65,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.65,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.65 m\u00b2",
+    "original_area_display": "0.65 Sq.Mtr",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2583,
+    "centroid_lng": 77.4107,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sanjay Malviya",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2574,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4118
+      },
+      {
+        "lat": 23.2574,
+        "lng": 77.4118
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4006",
+      "status": "Paid",
+      "paid": "\u20b9 16250",
+      "date": "10 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2574,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4118
+      },
+      {
+        "lat": 23.2574,
+        "lng": 77.4118
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6307",
+    "ulpin": "IN-MP-BHP-0006307",
+    "survey_no": "7/DEMO",
+    "khata_no": "KH-607",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 0.73,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.73,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.73 m\u00b2",
+    "original_area_display": "0.73 Sq.Mtr",
+    "land_use": "Special / Buffer",
+    "zoning": "Eco-Sensitive Buffer",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2583,
+    "centroid_lng": 77.4145,
+    "scenario": "RESTRICTION_BUFFER",
+    "scenario_display": "Statutory Environmental / Heritage Buffer",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Kamal Kant Sharma",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2574,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4156
+      },
+      {
+        "lat": 23.2574,
+        "lng": 77.4156
+      }
+    ],
+    "bp": {
+      "id": "BP/BHO/2023/106",
+      "status": "Approved",
+      "floors": "G + 2",
+      "date": "16 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4007",
+      "status": "Paid",
+      "paid": "\u20b9 17100",
+      "date": "11 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2574,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4156
+      },
+      {
+        "lat": 23.2574,
+        "lng": 77.4156
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6308",
+    "ulpin": "IN-MP-BHP-0006308",
+    "survey_no": "8/DEMO",
+    "khata_no": "KH-608",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 0.81,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.81,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.81 m\u00b2",
+    "original_area_display": "0.81 Sq.Mtr",
+    "land_use": "Industrial",
+    "zoning": "Light Industrial",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2583,
+    "centroid_lng": 77.4183,
+    "scenario": "INFRASTRUCTURE_GAP",
+    "scenario_display": "Civic Infrastructure Feasibility Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Preeti Shrivastava",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2574,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4194
+      },
+      {
+        "lat": 23.2574,
+        "lng": 77.4194
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4008",
+      "status": "Paid",
+      "paid": "\u20b9 17950",
+      "date": "12 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2574,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2592,
+        "lng": 77.4194
+      },
+      {
+        "lat": 23.2574,
+        "lng": 77.4194
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6309",
+    "ulpin": "IN-MP-BHP-0006309",
+    "survey_no": "9/DEMO",
+    "khata_no": "KH-609",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 0.89,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.89,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.89 m\u00b2",
+    "original_area_display": "0.89 Sq.Mtr",
+    "land_use": "Residential",
+    "zoning": "Group Housing (GH-3)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2615,
+    "centroid_lng": 77.4069,
+    "scenario": "BUILDING_APPROVAL",
+    "scenario_display": "Municipal Building Sanction Active",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Vinod Raghuwanshi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2606,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.408
+      },
+      {
+        "lat": 23.2606,
+        "lng": 77.408
+      }
+    ],
+    "bp": {
+      "id": "BP/BHO/2023/108",
+      "status": "Under Scrutiny",
+      "floors": "G + 4",
+      "date": "18 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4009",
+      "status": "Paid",
+      "paid": "\u20b9 18800",
+      "date": "13 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2606,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.408
+      },
+      {
+        "lat": 23.2606,
+        "lng": 77.408
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6310",
+    "ulpin": "IN-MP-BHP-0006310",
+    "survey_no": "10/DEMO",
+    "khata_no": "KH-610",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 0.97,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.97,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.97 m\u00b2",
+    "original_area_display": "0.97 Sq.Mtr",
+    "land_use": "Residential",
+    "zoning": "Residential (R-1)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2615,
+    "centroid_lng": 77.4107,
+    "scenario": "OWNERSHIP_REVIEW",
+    "scenario_display": "Multi-Party Share Mutation Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Deepika Gour",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2606,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4118
+      },
+      {
+        "lat": 23.2606,
+        "lng": 77.4118
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4010",
+      "status": "Paid",
+      "paid": "\u20b9 19650",
+      "date": "14 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2606,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4118
+      },
+      {
+        "lat": 23.2606,
+        "lng": 77.4118
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6311",
+    "ulpin": "IN-MP-BHP-0006311",
+    "survey_no": "11/DEMO",
+    "khata_no": "KH-611",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 1.05,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.05,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.05 m\u00b2",
+    "original_area_display": "1.05 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2615,
+    "centroid_lng": 77.4145,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Pramod Patel",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2606,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4156
+      },
+      {
+        "lat": 23.2606,
+        "lng": 77.4156
+      }
+    ],
+    "bp": {
+      "id": "BP/BHO/2023/110",
+      "status": "Approved",
+      "floors": "G + 3",
+      "date": "20 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4011",
+      "status": "Paid",
+      "paid": "\u20b9 20500",
+      "date": "15 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2606,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4156
+      },
+      {
+        "lat": 23.2606,
+        "lng": 77.4156
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6312",
+    "ulpin": "IN-MP-BHP-0006312",
+    "survey_no": "12/DEMO",
+    "khata_no": "KH-612",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 1.13,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.13,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.13 m\u00b2",
+    "original_area_display": "1.13 Sq.Mtr",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2615,
+    "centroid_lng": 77.4183,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Mamta Pandey",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2606,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4194
+      },
+      {
+        "lat": 23.2606,
+        "lng": 77.4194
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4012",
+      "status": "Paid",
+      "paid": "\u20b9 21350",
+      "date": "16 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2606,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2624,
+        "lng": 77.4194
+      },
+      {
+        "lat": 23.2606,
+        "lng": 77.4194
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6313",
+    "ulpin": "IN-MP-BHP-0006313",
+    "survey_no": "13/DEMO",
+    "khata_no": "KH-613",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 1.21,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.21,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.21 m\u00b2",
+    "original_area_display": "1.21 Sq.Mtr",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2647,
+    "centroid_lng": 77.4069,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Dharmendra Tiwari",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2638,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.408
+      },
+      {
+        "lat": 23.2638,
+        "lng": 77.408
+      }
+    ],
+    "bp": {
+      "id": "BP/BHO/2023/112",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "22 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 95,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-13"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4013",
+      "status": "Paid",
+      "paid": "\u20b9 22200",
+      "date": "17 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2638,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4058
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.408
+      },
+      {
+        "lat": 23.2638,
+        "lng": 77.408
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6314",
+    "ulpin": "IN-MP-BHP-0006314",
+    "survey_no": "14/DEMO",
+    "khata_no": "KH-614",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 1.29,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.29,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.29 m\u00b2",
+    "original_area_display": "1.29 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2647,
+    "centroid_lng": 77.4107,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Rashmi Chouhan",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2638,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4118
+      },
+      {
+        "lat": 23.2638,
+        "lng": 77.4118
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 77,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-14"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4014",
+      "status": "Paid",
+      "paid": "\u20b9 23050",
+      "date": "18 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2638,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4096
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4118
+      },
+      {
+        "lat": 23.2638,
+        "lng": 77.4118
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6315",
+    "ulpin": "IN-MP-BHP-0006315",
+    "survey_no": "15/DEMO",
+    "khata_no": "KH-615",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 1.37,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.37,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.37 m\u00b2",
+    "original_area_display": "1.37 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2647,
+    "centroid_lng": 77.4145,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bhojpal Township Ltd",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2638,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4156
+      },
+      {
+        "lat": 23.2638,
+        "lng": 77.4156
+      }
+    ],
+    "bp": {
+      "id": "BP/BHO/2023/114",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "24 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4015",
+      "status": "Pending",
+      "paid": "\u20b9 23900",
+      "date": "19 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2638,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4134
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4156
+      },
+      {
+        "lat": 23.2638,
+        "lng": 77.4156
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6316",
+    "ulpin": "IN-MP-BHP-0006316",
+    "survey_no": "16/DEMO",
+    "khata_no": "KH-616",
+    "location": "Arera Colony / MP Nagar, Bhopal",
+    "location_id": "bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "tehsil": "Huzur",
+    "rural_urban": "Urban",
+    "original_area": 1.45,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.45,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.45 m\u00b2",
+    "original_area_display": "1.45 Sq.Mtr",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 23.2647,
+    "centroid_lng": 77.4183,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Alok Saxena",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 23.2638,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4194
+      },
+      {
+        "lat": 23.2638,
+        "lng": 77.4194
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHO-2024-4016",
+      "status": "Paid",
+      "paid": "\u20b9 24750",
+      "date": "20 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 23.2638,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4172
+      },
+      {
+        "lat": 23.2656,
+        "lng": 77.4194
+      },
+      {
+        "lat": 23.2638,
+        "lng": 77.4194
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6401",
+    "ulpin": "IN-MP-IND-0006401",
+    "survey_no": "1/DEMO",
+    "khata_no": "KH-601",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 0.25,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.02,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.02 m\u00b2",
+    "original_area_display": "0.25 Sq.Ft",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7148,
+    "centroid_lng": 75.852,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Gaurav Agrawal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7139,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8531
+      },
+      {
+        "lat": 22.7139,
+        "lng": 75.8531
+      }
+    ],
+    "bp": {
+      "id": "BP/IND/2023/100",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "10 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4001",
+      "status": "Paid",
+      "paid": "\u20b9 12000",
+      "date": "5 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7139,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8531
+      },
+      {
+        "lat": 22.7139,
+        "lng": 75.8531
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6402",
+    "ulpin": "IN-MP-IND-0006402",
+    "survey_no": "2/DEMO",
+    "khata_no": "KH-602",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 0.33,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.03,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.03 m\u00b2",
+    "original_area_display": "0.33 Sq.Ft",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7148,
+    "centroid_lng": 75.8558,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Pooja Khandelwal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7139,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8569
+      },
+      {
+        "lat": 22.7139,
+        "lng": 75.8569
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4002",
+      "status": "Paid",
+      "paid": "\u20b9 12850",
+      "date": "6 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7139,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8569
+      },
+      {
+        "lat": 22.7139,
+        "lng": 75.8569
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6403",
+    "ulpin": "IN-MP-IND-0006403",
+    "survey_no": "3/DEMO",
+    "khata_no": "KH-603",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 0.41,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.04,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.04 m\u00b2",
+    "original_area_display": "0.41 Sq.Ft",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7148,
+    "centroid_lng": 75.8596,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Malwa Tech Enclave",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7139,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8607
+      },
+      {
+        "lat": 22.7139,
+        "lng": 75.8607
+      }
+    ],
+    "bp": {
+      "id": "BP/IND/2023/102",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "12 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 45,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-3"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4003",
+      "status": "Paid",
+      "paid": "\u20b9 13700",
+      "date": "7 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7139,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8607
+      },
+      {
+        "lat": 22.7139,
+        "lng": 75.8607
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6404",
+    "ulpin": "IN-MP-IND-0006404",
+    "survey_no": "4/DEMO",
+    "khata_no": "KH-604",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 0.49,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.05,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.05 m\u00b2",
+    "original_area_display": "0.49 Sq.Ft",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7148,
+    "centroid_lng": 75.8634,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Yogesh Patidar",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7139,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8645
+      },
+      {
+        "lat": 22.7139,
+        "lng": 75.8645
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 37,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-4"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4004",
+      "status": "Paid",
+      "paid": "\u20b9 14550",
+      "date": "8 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7139,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7157,
+        "lng": 75.8645
+      },
+      {
+        "lat": 22.7139,
+        "lng": 75.8645
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6405",
+    "ulpin": "IN-MP-IND-0006405",
+    "survey_no": "5/DEMO",
+    "khata_no": "KH-605",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 0.57,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.05,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.05 m\u00b2",
+    "original_area_display": "0.57 Sq.Ft",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.718,
+    "centroid_lng": 75.852,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Kavita Rathi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7171,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8531
+      },
+      {
+        "lat": 22.7171,
+        "lng": 75.8531
+      }
+    ],
+    "bp": {
+      "id": "BP/IND/2023/104",
+      "status": "Under Scrutiny",
+      "floors": "G + 3",
+      "date": "14 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4005",
+      "status": "Pending",
+      "paid": "\u20b9 15400",
+      "date": "9 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7171,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8531
+      },
+      {
+        "lat": 22.7171,
+        "lng": 75.8531
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6406",
+    "ulpin": "IN-MP-IND-0006406",
+    "survey_no": "6/DEMO",
+    "khata_no": "KH-606",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 0.65,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.06,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.06 m\u00b2",
+    "original_area_display": "0.65 Sq.Ft",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.718,
+    "centroid_lng": 75.8558,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sunil Kasliwal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7171,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8569
+      },
+      {
+        "lat": 22.7171,
+        "lng": 75.8569
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4006",
+      "status": "Paid",
+      "paid": "\u20b9 16250",
+      "date": "10 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7171,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8569
+      },
+      {
+        "lat": 22.7171,
+        "lng": 75.8569
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6407",
+    "ulpin": "IN-MP-IND-0006407",
+    "survey_no": "7/DEMO",
+    "khata_no": "KH-607",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 0.73,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.07,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.07 m\u00b2",
+    "original_area_display": "0.73 Sq.Ft",
+    "land_use": "Special / Buffer",
+    "zoning": "Eco-Sensitive Buffer",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.718,
+    "centroid_lng": 75.8596,
+    "scenario": "RESTRICTION_BUFFER",
+    "scenario_display": "Statutory Environmental / Heritage Buffer",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bhupendra Hardia",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7171,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8607
+      },
+      {
+        "lat": 22.7171,
+        "lng": 75.8607
+      }
+    ],
+    "bp": {
+      "id": "BP/IND/2023/106",
+      "status": "Approved",
+      "floors": "G + 2",
+      "date": "16 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4007",
+      "status": "Paid",
+      "paid": "\u20b9 17100",
+      "date": "11 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7171,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8607
+      },
+      {
+        "lat": 22.7171,
+        "lng": 75.8607
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6408",
+    "ulpin": "IN-MP-IND-0006408",
+    "survey_no": "8/DEMO",
+    "khata_no": "KH-608",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 0.81,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.08,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.08 m\u00b2",
+    "original_area_display": "0.81 Sq.Ft",
+    "land_use": "Industrial",
+    "zoning": "Light Industrial",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.718,
+    "centroid_lng": 75.8634,
+    "scenario": "INFRASTRUCTURE_GAP",
+    "scenario_display": "Civic Infrastructure Feasibility Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Jyoti Chordia",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7171,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8645
+      },
+      {
+        "lat": 22.7171,
+        "lng": 75.8645
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4008",
+      "status": "Paid",
+      "paid": "\u20b9 17950",
+      "date": "12 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7171,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7189,
+        "lng": 75.8645
+      },
+      {
+        "lat": 22.7171,
+        "lng": 75.8645
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6409",
+    "ulpin": "IN-MP-IND-0006409",
+    "survey_no": "9/DEMO",
+    "khata_no": "KH-609",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 0.89,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.08,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.08 m\u00b2",
+    "original_area_display": "0.89 Sq.Ft",
+    "land_use": "Residential",
+    "zoning": "Group Housing (GH-3)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7212,
+    "centroid_lng": 75.852,
+    "scenario": "BUILDING_APPROVAL",
+    "scenario_display": "Municipal Building Sanction Active",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Naveen Porwal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7203,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8531
+      },
+      {
+        "lat": 22.7203,
+        "lng": 75.8531
+      }
+    ],
+    "bp": {
+      "id": "BP/IND/2023/108",
+      "status": "Under Scrutiny",
+      "floors": "G + 4",
+      "date": "18 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4009",
+      "status": "Paid",
+      "paid": "\u20b9 18800",
+      "date": "13 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7203,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8531
+      },
+      {
+        "lat": 22.7203,
+        "lng": 75.8531
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6410",
+    "ulpin": "IN-MP-IND-0006410",
+    "survey_no": "10/DEMO",
+    "khata_no": "KH-610",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 0.97,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.09,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.09 m\u00b2",
+    "original_area_display": "0.97 Sq.Ft",
+    "land_use": "Residential",
+    "zoning": "Residential (R-1)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7212,
+    "centroid_lng": 75.8558,
+    "scenario": "OWNERSHIP_REVIEW",
+    "scenario_display": "Multi-Party Share Mutation Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Shweta Tongia",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7203,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8569
+      },
+      {
+        "lat": 22.7203,
+        "lng": 75.8569
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4010",
+      "status": "Paid",
+      "paid": "\u20b9 19650",
+      "date": "14 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7203,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8569
+      },
+      {
+        "lat": 22.7203,
+        "lng": 75.8569
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6411",
+    "ulpin": "IN-MP-IND-0006411",
+    "survey_no": "11/DEMO",
+    "khata_no": "KH-611",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 1.05,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.1,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.10 m\u00b2",
+    "original_area_display": "1.05 Sq.Ft",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7212,
+    "centroid_lng": 75.8596,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Manish Jhanwar",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7203,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8607
+      },
+      {
+        "lat": 22.7203,
+        "lng": 75.8607
+      }
+    ],
+    "bp": {
+      "id": "BP/IND/2023/110",
+      "status": "Approved",
+      "floors": "G + 3",
+      "date": "20 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4011",
+      "status": "Paid",
+      "paid": "\u20b9 20500",
+      "date": "15 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7203,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8607
+      },
+      {
+        "lat": 22.7203,
+        "lng": 75.8607
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6412",
+    "ulpin": "IN-MP-IND-0006412",
+    "survey_no": "12/DEMO",
+    "khata_no": "KH-612",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 1.13,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.1,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.10 m\u00b2",
+    "original_area_display": "1.13 Sq.Ft",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7212,
+    "centroid_lng": 75.8634,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Reena Sethi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7203,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8645
+      },
+      {
+        "lat": 22.7203,
+        "lng": 75.8645
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4012",
+      "status": "Paid",
+      "paid": "\u20b9 21350",
+      "date": "16 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7203,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7221,
+        "lng": 75.8645
+      },
+      {
+        "lat": 22.7203,
+        "lng": 75.8645
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6413",
+    "ulpin": "IN-MP-IND-0006413",
+    "survey_no": "13/DEMO",
+    "khata_no": "KH-613",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 1.21,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.11,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.11 m\u00b2",
+    "original_area_display": "1.21 Sq.Ft",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7244,
+    "centroid_lng": 75.852,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Gaurav Agrawal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7235,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8531
+      },
+      {
+        "lat": 22.7235,
+        "lng": 75.8531
+      }
+    ],
+    "bp": {
+      "id": "BP/IND/2023/112",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "22 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 95,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-13"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4013",
+      "status": "Paid",
+      "paid": "\u20b9 22200",
+      "date": "17 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7235,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8509
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8531
+      },
+      {
+        "lat": 22.7235,
+        "lng": 75.8531
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6414",
+    "ulpin": "IN-MP-IND-0006414",
+    "survey_no": "14/DEMO",
+    "khata_no": "KH-614",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 1.29,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.12,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.12 m\u00b2",
+    "original_area_display": "1.29 Sq.Ft",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7244,
+    "centroid_lng": 75.8558,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Pooja Khandelwal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7235,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8569
+      },
+      {
+        "lat": 22.7235,
+        "lng": 75.8569
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 77,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-14"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4014",
+      "status": "Paid",
+      "paid": "\u20b9 23050",
+      "date": "18 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7235,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8547
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8569
+      },
+      {
+        "lat": 22.7235,
+        "lng": 75.8569
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6415",
+    "ulpin": "IN-MP-IND-0006415",
+    "survey_no": "15/DEMO",
+    "khata_no": "KH-615",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 1.37,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.13,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.13 m\u00b2",
+    "original_area_display": "1.37 Sq.Ft",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7244,
+    "centroid_lng": 75.8596,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Malwa Tech Enclave",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7235,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8607
+      },
+      {
+        "lat": 22.7235,
+        "lng": 75.8607
+      }
+    ],
+    "bp": {
+      "id": "BP/IND/2023/114",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "24 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4015",
+      "status": "Pending",
+      "paid": "\u20b9 23900",
+      "date": "19 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7235,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8585
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8607
+      },
+      {
+        "lat": 22.7235,
+        "lng": 75.8607
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6416",
+    "ulpin": "IN-MP-IND-0006416",
+    "survey_no": "16/DEMO",
+    "khata_no": "KH-616",
+    "location": "Super Corridor / Vijay Nagar, Indore",
+    "location_id": "indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "tehsil": "Indore",
+    "rural_urban": "Urban",
+    "original_area": 1.45,
+    "original_unit": "Sq.Ft",
+    "standardized_area": 0.13,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.13 m\u00b2",
+    "original_area_display": "1.45 Sq.Ft",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Madhya Pradesh",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 22.7244,
+    "centroid_lng": 75.8634,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Yogesh Patidar",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 22.7235,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8645
+      },
+      {
+        "lat": 22.7235,
+        "lng": 75.8645
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-IND-2024-4016",
+      "status": "Paid",
+      "paid": "\u20b9 24750",
+      "date": "20 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 22.7235,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8623
+      },
+      {
+        "lat": 22.7253,
+        "lng": 75.8645
+      },
+      {
+        "lat": 22.7235,
+        "lng": 75.8645
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6501",
+    "ulpin": "IN-BR-PAT-0006501",
+    "survey_no": "1/DEMO",
+    "khata_no": "KH-601",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 0.25,
+    "original_unit": "Katha",
+    "standardized_area": 31.61,
+    "standardized_unit": "m\u00b2",
+    "area_display": "31.61 m\u00b2",
+    "original_area_display": "0.25 Katha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Bihar",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5893,
+    "centroid_lng": 85.1319,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Narendra Prasad Singh",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5884,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.133
+      },
+      {
+        "lat": 25.5884,
+        "lng": 85.133
+      }
+    ],
+    "bp": {
+      "id": "BP/PAT/2023/100",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "10 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4001",
+      "status": "Paid",
+      "paid": "\u20b9 12000",
+      "date": "5 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5884,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.133
+      },
+      {
+        "lat": 25.5884,
+        "lng": 85.133
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6502",
+    "ulpin": "IN-BR-PAT-0006502",
+    "survey_no": "2/DEMO",
+    "khata_no": "KH-602",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 0.33,
+    "original_unit": "Katha",
+    "standardized_area": 41.73,
+    "standardized_unit": "m\u00b2",
+    "area_display": "41.73 m\u00b2",
+    "original_area_display": "0.33 Katha",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Bihar",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5893,
+    "centroid_lng": 85.1357,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sunita Kumari",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5884,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1368
+      },
+      {
+        "lat": 25.5884,
+        "lng": 85.1368
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4002",
+      "status": "Paid",
+      "paid": "\u20b9 12850",
+      "date": "6 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5884,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1368
+      },
+      {
+        "lat": 25.5884,
+        "lng": 85.1368
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6503",
+    "ulpin": "IN-BR-PAT-0006503",
+    "survey_no": "3/DEMO",
+    "khata_no": "KH-603",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 0.41,
+    "original_unit": "Katha",
+    "standardized_area": 51.85,
+    "standardized_unit": "m\u00b2",
+    "area_display": "51.85 m\u00b2",
+    "original_area_display": "0.41 Katha",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Bihar",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5893,
+    "centroid_lng": 85.1395,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Magadh Real Estate",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5884,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1406
+      },
+      {
+        "lat": 25.5884,
+        "lng": 85.1406
+      }
+    ],
+    "bp": {
+      "id": "BP/PAT/2023/102",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "12 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 45,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-3"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4003",
+      "status": "Paid",
+      "paid": "\u20b9 13700",
+      "date": "7 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5884,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1406
+      },
+      {
+        "lat": 25.5884,
+        "lng": 85.1406
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6504",
+    "ulpin": "IN-BR-PAT-0006504",
+    "survey_no": "4/DEMO",
+    "khata_no": "KH-604",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 0.49,
+    "original_unit": "Katha",
+    "standardized_area": 61.97,
+    "standardized_unit": "m\u00b2",
+    "area_display": "61.97 m\u00b2",
+    "original_area_display": "0.49 Katha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Bihar",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5893,
+    "centroid_lng": 85.1433,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Brajesh Kumar",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5884,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1444
+      },
+      {
+        "lat": 25.5884,
+        "lng": 85.1444
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 37,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-4"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4004",
+      "status": "Paid",
+      "paid": "\u20b9 14550",
+      "date": "8 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5884,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5902,
+        "lng": 85.1444
+      },
+      {
+        "lat": 25.5884,
+        "lng": 85.1444
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6505",
+    "ulpin": "IN-BR-PAT-0006505",
+    "survey_no": "5/DEMO",
+    "khata_no": "KH-605",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 0.57,
+    "original_unit": "Katha",
+    "standardized_area": 72.08,
+    "standardized_unit": "m\u00b2",
+    "area_display": "72.08 m\u00b2",
+    "original_area_display": "0.57 Katha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Bihar",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5925,
+    "centroid_lng": 85.1319,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Anita Sinha",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5916,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.133
+      },
+      {
+        "lat": 25.5916,
+        "lng": 85.133
+      }
+    ],
+    "bp": {
+      "id": "BP/PAT/2023/104",
+      "status": "Under Scrutiny",
+      "floors": "G + 3",
+      "date": "14 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4005",
+      "status": "Pending",
+      "paid": "\u20b9 15400",
+      "date": "9 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5916,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.133
+      },
+      {
+        "lat": 25.5916,
+        "lng": 85.133
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6506",
+    "ulpin": "IN-BR-PAT-0006506",
+    "survey_no": "6/DEMO",
+    "khata_no": "KH-606",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 0.65,
+    "original_unit": "Katha",
+    "standardized_area": 82.2,
+    "standardized_unit": "m\u00b2",
+    "area_display": "82.20 m\u00b2",
+    "original_area_display": "0.65 Katha",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Bihar",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5925,
+    "centroid_lng": 85.1357,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Chandan Mishra",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5916,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1368
+      },
+      {
+        "lat": 25.5916,
+        "lng": 85.1368
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4006",
+      "status": "Paid",
+      "paid": "\u20b9 16250",
+      "date": "10 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5916,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1368
+      },
+      {
+        "lat": 25.5916,
+        "lng": 85.1368
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6507",
+    "ulpin": "IN-BR-PAT-0006507",
+    "survey_no": "7/DEMO",
+    "khata_no": "KH-607",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 0.73,
+    "original_unit": "Katha",
+    "standardized_area": 92.32,
+    "standardized_unit": "m\u00b2",
+    "area_display": "92.32 m\u00b2",
+    "original_area_display": "0.73 Katha",
+    "land_use": "Special / Buffer",
+    "zoning": "Eco-Sensitive Buffer",
+    "jurisdiction": "Bihar",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5925,
+    "centroid_lng": 85.1395,
+    "scenario": "RESTRICTION_BUFFER",
+    "scenario_display": "Statutory Environmental / Heritage Buffer",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Abhishek Tiwari",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5916,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1406
+      },
+      {
+        "lat": 25.5916,
+        "lng": 85.1406
+      }
+    ],
+    "bp": {
+      "id": "BP/PAT/2023/106",
+      "status": "Approved",
+      "floors": "G + 2",
+      "date": "16 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4007",
+      "status": "Paid",
+      "paid": "\u20b9 17100",
+      "date": "11 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5916,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1406
+      },
+      {
+        "lat": 25.5916,
+        "lng": 85.1406
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6508",
+    "ulpin": "IN-BR-PAT-0006508",
+    "survey_no": "8/DEMO",
+    "khata_no": "KH-608",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 0.81,
+    "original_unit": "Katha",
+    "standardized_area": 102.43,
+    "standardized_unit": "m\u00b2",
+    "area_display": "102.43 m\u00b2",
+    "original_area_display": "0.81 Katha",
+    "land_use": "Industrial",
+    "zoning": "Light Industrial",
+    "jurisdiction": "Bihar",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5925,
+    "centroid_lng": 85.1433,
+    "scenario": "INFRASTRUCTURE_GAP",
+    "scenario_display": "Civic Infrastructure Feasibility Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sarita Devi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5916,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1444
+      },
+      {
+        "lat": 25.5916,
+        "lng": 85.1444
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4008",
+      "status": "Paid",
+      "paid": "\u20b9 17950",
+      "date": "12 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5916,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5934,
+        "lng": 85.1444
+      },
+      {
+        "lat": 25.5916,
+        "lng": 85.1444
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6509",
+    "ulpin": "IN-BR-PAT-0006509",
+    "survey_no": "9/DEMO",
+    "khata_no": "KH-609",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 0.89,
+    "original_unit": "Katha",
+    "standardized_area": 112.55,
+    "standardized_unit": "m\u00b2",
+    "area_display": "112.55 m\u00b2",
+    "original_area_display": "0.89 Katha",
+    "land_use": "Residential",
+    "zoning": "Group Housing (GH-3)",
+    "jurisdiction": "Bihar",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5957,
+    "centroid_lng": 85.1319,
+    "scenario": "BUILDING_APPROVAL",
+    "scenario_display": "Municipal Building Sanction Active",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Ranjan Pandey",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5948,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.133
+      },
+      {
+        "lat": 25.5948,
+        "lng": 85.133
+      }
+    ],
+    "bp": {
+      "id": "BP/PAT/2023/108",
+      "status": "Under Scrutiny",
+      "floors": "G + 4",
+      "date": "18 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4009",
+      "status": "Paid",
+      "paid": "\u20b9 18800",
+      "date": "13 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5948,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.133
+      },
+      {
+        "lat": 25.5948,
+        "lng": 85.133
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6510",
+    "ulpin": "IN-BR-PAT-0006510",
+    "survey_no": "10/DEMO",
+    "khata_no": "KH-610",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 0.97,
+    "original_unit": "Katha",
+    "standardized_area": 122.67,
+    "standardized_unit": "m\u00b2",
+    "area_display": "122.67 m\u00b2",
+    "original_area_display": "0.97 Katha",
+    "land_use": "Residential",
+    "zoning": "Residential (R-1)",
+    "jurisdiction": "Bihar",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5957,
+    "centroid_lng": 85.1357,
+    "scenario": "OWNERSHIP_REVIEW",
+    "scenario_display": "Multi-Party Share Mutation Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Punam Jha",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5948,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1368
+      },
+      {
+        "lat": 25.5948,
+        "lng": 85.1368
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4010",
+      "status": "Paid",
+      "paid": "\u20b9 19650",
+      "date": "14 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5948,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1368
+      },
+      {
+        "lat": 25.5948,
+        "lng": 85.1368
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6511",
+    "ulpin": "IN-BR-PAT-0006511",
+    "survey_no": "11/DEMO",
+    "khata_no": "KH-611",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 1.05,
+    "original_unit": "Katha",
+    "standardized_area": 132.78,
+    "standardized_unit": "m\u00b2",
+    "area_display": "132.78 m\u00b2",
+    "original_area_display": "1.05 Katha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Bihar",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5957,
+    "centroid_lng": 85.1395,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sanjay Keshri",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5948,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1406
+      },
+      {
+        "lat": 25.5948,
+        "lng": 85.1406
+      }
+    ],
+    "bp": {
+      "id": "BP/PAT/2023/110",
+      "status": "Approved",
+      "floors": "G + 3",
+      "date": "20 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4011",
+      "status": "Paid",
+      "paid": "\u20b9 20500",
+      "date": "15 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5948,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1406
+      },
+      {
+        "lat": 25.5948,
+        "lng": 85.1406
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6512",
+    "ulpin": "IN-BR-PAT-0006512",
+    "survey_no": "12/DEMO",
+    "khata_no": "KH-612",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 1.13,
+    "original_unit": "Katha",
+    "standardized_area": 142.9,
+    "standardized_unit": "m\u00b2",
+    "area_display": "142.90 m\u00b2",
+    "original_area_display": "1.13 Katha",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Bihar",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5957,
+    "centroid_lng": 85.1433,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Archana Verma",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.5948,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1444
+      },
+      {
+        "lat": 25.5948,
+        "lng": 85.1444
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4012",
+      "status": "Paid",
+      "paid": "\u20b9 21350",
+      "date": "16 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.5948,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5966,
+        "lng": 85.1444
+      },
+      {
+        "lat": 25.5948,
+        "lng": 85.1444
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6513",
+    "ulpin": "IN-BR-PAT-0006513",
+    "survey_no": "13/DEMO",
+    "khata_no": "KH-613",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 1.21,
+    "original_unit": "Katha",
+    "standardized_area": 153.02,
+    "standardized_unit": "m\u00b2",
+    "area_display": "153.02 m\u00b2",
+    "original_area_display": "1.21 Katha",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Bihar",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5989,
+    "centroid_lng": 85.1319,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Narendra Prasad Singh",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.598,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.133
+      },
+      {
+        "lat": 25.598,
+        "lng": 85.133
+      }
+    ],
+    "bp": {
+      "id": "BP/PAT/2023/112",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "22 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 95,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-13"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4013",
+      "status": "Paid",
+      "paid": "\u20b9 22200",
+      "date": "17 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.598,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1308
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.133
+      },
+      {
+        "lat": 25.598,
+        "lng": 85.133
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6514",
+    "ulpin": "IN-BR-PAT-0006514",
+    "survey_no": "14/DEMO",
+    "khata_no": "KH-614",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 1.29,
+    "original_unit": "Katha",
+    "standardized_area": 163.13,
+    "standardized_unit": "m\u00b2",
+    "area_display": "163.13 m\u00b2",
+    "original_area_display": "1.29 Katha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Bihar",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5989,
+    "centroid_lng": 85.1357,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sunita Kumari",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.598,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1368
+      },
+      {
+        "lat": 25.598,
+        "lng": 85.1368
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 77,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-14"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4014",
+      "status": "Paid",
+      "paid": "\u20b9 23050",
+      "date": "18 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.598,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1346
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1368
+      },
+      {
+        "lat": 25.598,
+        "lng": 85.1368
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6515",
+    "ulpin": "IN-BR-PAT-0006515",
+    "survey_no": "15/DEMO",
+    "khata_no": "KH-615",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 1.37,
+    "original_unit": "Katha",
+    "standardized_area": 173.25,
+    "standardized_unit": "m\u00b2",
+    "area_display": "173.25 m\u00b2",
+    "original_area_display": "1.37 Katha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Bihar",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5989,
+    "centroid_lng": 85.1395,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Magadh Real Estate",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.598,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1406
+      },
+      {
+        "lat": 25.598,
+        "lng": 85.1406
+      }
+    ],
+    "bp": {
+      "id": "BP/PAT/2023/114",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "24 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4015",
+      "status": "Pending",
+      "paid": "\u20b9 23900",
+      "date": "19 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.598,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1384
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1406
+      },
+      {
+        "lat": 25.598,
+        "lng": 85.1406
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6516",
+    "ulpin": "IN-BR-PAT-0006516",
+    "survey_no": "16/DEMO",
+    "khata_no": "KH-616",
+    "location": "Bailey Road / Ganga Pathway, Patna",
+    "location_id": "patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "tehsil": "Patna Sadar",
+    "rural_urban": "Urban",
+    "original_area": 1.45,
+    "original_unit": "Katha",
+    "standardized_area": 183.37,
+    "standardized_unit": "m\u00b2",
+    "area_display": "183.37 m\u00b2",
+    "original_area_display": "1.45 Katha",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Bihar",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 25.5989,
+    "centroid_lng": 85.1433,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Brajesh Kumar",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 25.598,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1444
+      },
+      {
+        "lat": 25.598,
+        "lng": 85.1444
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAT-2024-4016",
+      "status": "Paid",
+      "paid": "\u20b9 24750",
+      "date": "20 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 25.598,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1422
+      },
+      {
+        "lat": 25.5998,
+        "lng": 85.1444
+      },
+      {
+        "lat": 25.598,
+        "lng": 85.1444
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6601",
+    "ulpin": "IN-OD-BBI-0006601",
+    "survey_no": "1/DEMO",
+    "khata_no": "KH-601",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 0.25,
+    "original_unit": "Decimal",
+    "standardized_area": 10.12,
+    "standardized_unit": "m\u00b2",
+    "area_display": "10.12 m\u00b2",
+    "original_area_display": "0.25 Decimal",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Odisha",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2913,
+    "centroid_lng": 85.8188,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Debabrata Mohanty",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2904,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8199
+      },
+      {
+        "lat": 20.2904,
+        "lng": 85.8199
+      }
+    ],
+    "bp": {
+      "id": "BP/BHU/2023/100",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "10 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4001",
+      "status": "Paid",
+      "paid": "\u20b9 12000",
+      "date": "5 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2904,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8199
+      },
+      {
+        "lat": 20.2904,
+        "lng": 85.8199
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6602",
+    "ulpin": "IN-OD-BBI-0006602",
+    "survey_no": "2/DEMO",
+    "khata_no": "KH-602",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 0.33,
+    "original_unit": "Decimal",
+    "standardized_area": 13.35,
+    "standardized_unit": "m\u00b2",
+    "area_display": "13.35 m\u00b2",
+    "original_area_display": "0.33 Decimal",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Odisha",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2913,
+    "centroid_lng": 85.8226,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Minati Patnaik",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2904,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8237
+      },
+      {
+        "lat": 20.2904,
+        "lng": 85.8237
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4002",
+      "status": "Paid",
+      "paid": "\u20b9 12850",
+      "date": "6 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2904,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8237
+      },
+      {
+        "lat": 20.2904,
+        "lng": 85.8237
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6603",
+    "ulpin": "IN-OD-BBI-0006603",
+    "survey_no": "3/DEMO",
+    "khata_no": "KH-603",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 0.41,
+    "original_unit": "Decimal",
+    "standardized_area": 16.59,
+    "standardized_unit": "m\u00b2",
+    "area_display": "16.59 m\u00b2",
+    "original_area_display": "0.41 Decimal",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Odisha",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2913,
+    "centroid_lng": 85.8264,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Kalinga Infotech Trust",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2904,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8275
+      },
+      {
+        "lat": 20.2904,
+        "lng": 85.8275
+      }
+    ],
+    "bp": {
+      "id": "BP/BHU/2023/102",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "12 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 45,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-3"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4003",
+      "status": "Paid",
+      "paid": "\u20b9 13700",
+      "date": "7 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2904,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8275
+      },
+      {
+        "lat": 20.2904,
+        "lng": 85.8275
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6604",
+    "ulpin": "IN-OD-BBI-0006604",
+    "survey_no": "4/DEMO",
+    "khata_no": "KH-604",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 0.49,
+    "original_unit": "Decimal",
+    "standardized_area": 19.83,
+    "standardized_unit": "m\u00b2",
+    "area_display": "19.83 m\u00b2",
+    "original_area_display": "0.49 Decimal",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Odisha",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2913,
+    "centroid_lng": 85.8302,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Soumya Ranjan Das",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2904,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8313
+      },
+      {
+        "lat": 20.2904,
+        "lng": 85.8313
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 37,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-4"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4004",
+      "status": "Paid",
+      "paid": "\u20b9 14550",
+      "date": "8 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2904,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2922,
+        "lng": 85.8313
+      },
+      {
+        "lat": 20.2904,
+        "lng": 85.8313
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6605",
+    "ulpin": "IN-OD-BBI-0006605",
+    "survey_no": "5/DEMO",
+    "khata_no": "KH-605",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 0.57,
+    "original_unit": "Decimal",
+    "standardized_area": 23.07,
+    "standardized_unit": "m\u00b2",
+    "area_display": "23.07 m\u00b2",
+    "original_area_display": "0.57 Decimal",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Odisha",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2945,
+    "centroid_lng": 85.8188,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Pratap Jena",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2936,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8199
+      },
+      {
+        "lat": 20.2936,
+        "lng": 85.8199
+      }
+    ],
+    "bp": {
+      "id": "BP/BHU/2023/104",
+      "status": "Under Scrutiny",
+      "floors": "G + 3",
+      "date": "14 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4005",
+      "status": "Pending",
+      "paid": "\u20b9 15400",
+      "date": "9 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2936,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8199
+      },
+      {
+        "lat": 20.2936,
+        "lng": 85.8199
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6606",
+    "ulpin": "IN-OD-BBI-0006606",
+    "survey_no": "6/DEMO",
+    "khata_no": "KH-606",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 0.65,
+    "original_unit": "Decimal",
+    "standardized_area": 26.3,
+    "standardized_unit": "m\u00b2",
+    "area_display": "26.30 m\u00b2",
+    "original_area_display": "0.65 Decimal",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Odisha",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2945,
+    "centroid_lng": 85.8226,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Tanushree Nayak",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2936,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8237
+      },
+      {
+        "lat": 20.2936,
+        "lng": 85.8237
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4006",
+      "status": "Paid",
+      "paid": "\u20b9 16250",
+      "date": "10 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2936,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8237
+      },
+      {
+        "lat": 20.2936,
+        "lng": 85.8237
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6607",
+    "ulpin": "IN-OD-BBI-0006607",
+    "survey_no": "7/DEMO",
+    "khata_no": "KH-607",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 0.73,
+    "original_unit": "Decimal",
+    "standardized_area": 29.54,
+    "standardized_unit": "m\u00b2",
+    "area_display": "29.54 m\u00b2",
+    "original_area_display": "0.73 Decimal",
+    "land_use": "Special / Buffer",
+    "zoning": "Eco-Sensitive Buffer",
+    "jurisdiction": "Odisha",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2945,
+    "centroid_lng": 85.8264,
+    "scenario": "RESTRICTION_BUFFER",
+    "scenario_display": "Statutory Environmental / Heritage Buffer",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Subrat Behera",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2936,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8275
+      },
+      {
+        "lat": 20.2936,
+        "lng": 85.8275
+      }
+    ],
+    "bp": {
+      "id": "BP/BHU/2023/106",
+      "status": "Approved",
+      "floors": "G + 2",
+      "date": "16 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4007",
+      "status": "Paid",
+      "paid": "\u20b9 17100",
+      "date": "11 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2936,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8275
+      },
+      {
+        "lat": 20.2936,
+        "lng": 85.8275
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6608",
+    "ulpin": "IN-OD-BBI-0006608",
+    "survey_no": "8/DEMO",
+    "khata_no": "KH-608",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 0.81,
+    "original_unit": "Decimal",
+    "standardized_area": 32.78,
+    "standardized_unit": "m\u00b2",
+    "area_display": "32.78 m\u00b2",
+    "original_area_display": "0.81 Decimal",
+    "land_use": "Industrial",
+    "zoning": "Light Industrial",
+    "jurisdiction": "Odisha",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2945,
+    "centroid_lng": 85.8302,
+    "scenario": "INFRASTRUCTURE_GAP",
+    "scenario_display": "Civic Infrastructure Feasibility Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Itishree Samal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2936,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8313
+      },
+      {
+        "lat": 20.2936,
+        "lng": 85.8313
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4008",
+      "status": "Paid",
+      "paid": "\u20b9 17950",
+      "date": "12 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2936,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2954,
+        "lng": 85.8313
+      },
+      {
+        "lat": 20.2936,
+        "lng": 85.8313
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6609",
+    "ulpin": "IN-OD-BBI-0006609",
+    "survey_no": "9/DEMO",
+    "khata_no": "KH-609",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 0.89,
+    "original_unit": "Decimal",
+    "standardized_area": 36.02,
+    "standardized_unit": "m\u00b2",
+    "area_display": "36.02 m\u00b2",
+    "original_area_display": "0.89 Decimal",
+    "land_use": "Residential",
+    "zoning": "Group Housing (GH-3)",
+    "jurisdiction": "Odisha",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2977,
+    "centroid_lng": 85.8188,
+    "scenario": "BUILDING_APPROVAL",
+    "scenario_display": "Municipal Building Sanction Active",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bibhuti Tripathy",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2968,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8199
+      },
+      {
+        "lat": 20.2968,
+        "lng": 85.8199
+      }
+    ],
+    "bp": {
+      "id": "BP/BHU/2023/108",
+      "status": "Under Scrutiny",
+      "floors": "G + 4",
+      "date": "18 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4009",
+      "status": "Paid",
+      "paid": "\u20b9 18800",
+      "date": "13 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2968,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8199
+      },
+      {
+        "lat": 20.2968,
+        "lng": 85.8199
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6610",
+    "ulpin": "IN-OD-BBI-0006610",
+    "survey_no": "10/DEMO",
+    "khata_no": "KH-610",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 0.97,
+    "original_unit": "Decimal",
+    "standardized_area": 39.25,
+    "standardized_unit": "m\u00b2",
+    "area_display": "39.25 m\u00b2",
+    "original_area_display": "0.97 Decimal",
+    "land_use": "Residential",
+    "zoning": "Residential (R-1)",
+    "jurisdiction": "Odisha",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2977,
+    "centroid_lng": 85.8226,
+    "scenario": "OWNERSHIP_REVIEW",
+    "scenario_display": "Multi-Party Share Mutation Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Manasvi Sahoo",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2968,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8237
+      },
+      {
+        "lat": 20.2968,
+        "lng": 85.8237
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4010",
+      "status": "Paid",
+      "paid": "\u20b9 19650",
+      "date": "14 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2968,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8237
+      },
+      {
+        "lat": 20.2968,
+        "lng": 85.8237
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6611",
+    "ulpin": "IN-OD-BBI-0006611",
+    "survey_no": "11/DEMO",
+    "khata_no": "KH-611",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 1.05,
+    "original_unit": "Decimal",
+    "standardized_area": 42.49,
+    "standardized_unit": "m\u00b2",
+    "area_display": "42.49 m\u00b2",
+    "original_area_display": "1.05 Decimal",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Odisha",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2977,
+    "centroid_lng": 85.8264,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bikash Pradhan",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2968,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8275
+      },
+      {
+        "lat": 20.2968,
+        "lng": 85.8275
+      }
+    ],
+    "bp": {
+      "id": "BP/BHU/2023/110",
+      "status": "Approved",
+      "floors": "G + 3",
+      "date": "20 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4011",
+      "status": "Paid",
+      "paid": "\u20b9 20500",
+      "date": "15 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2968,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8275
+      },
+      {
+        "lat": 20.2968,
+        "lng": 85.8275
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6612",
+    "ulpin": "IN-OD-BBI-0006612",
+    "survey_no": "12/DEMO",
+    "khata_no": "KH-612",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 1.13,
+    "original_unit": "Decimal",
+    "standardized_area": 45.73,
+    "standardized_unit": "m\u00b2",
+    "area_display": "45.73 m\u00b2",
+    "original_area_display": "1.13 Decimal",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Odisha",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.2977,
+    "centroid_lng": 85.8302,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Namrata Roul",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.2968,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8313
+      },
+      {
+        "lat": 20.2968,
+        "lng": 85.8313
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4012",
+      "status": "Paid",
+      "paid": "\u20b9 21350",
+      "date": "16 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.2968,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.2986,
+        "lng": 85.8313
+      },
+      {
+        "lat": 20.2968,
+        "lng": 85.8313
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6613",
+    "ulpin": "IN-OD-BBI-0006613",
+    "survey_no": "13/DEMO",
+    "khata_no": "KH-613",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 1.21,
+    "original_unit": "Decimal",
+    "standardized_area": 48.97,
+    "standardized_unit": "m\u00b2",
+    "area_display": "48.97 m\u00b2",
+    "original_area_display": "1.21 Decimal",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Odisha",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.3009,
+    "centroid_lng": 85.8188,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Debabrata Mohanty",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.3,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8199
+      },
+      {
+        "lat": 20.3,
+        "lng": 85.8199
+      }
+    ],
+    "bp": {
+      "id": "BP/BHU/2023/112",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "22 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 95,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-13"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4013",
+      "status": "Paid",
+      "paid": "\u20b9 22200",
+      "date": "17 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.3,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8177
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8199
+      },
+      {
+        "lat": 20.3,
+        "lng": 85.8199
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6614",
+    "ulpin": "IN-OD-BBI-0006614",
+    "survey_no": "14/DEMO",
+    "khata_no": "KH-614",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 1.29,
+    "original_unit": "Decimal",
+    "standardized_area": 52.2,
+    "standardized_unit": "m\u00b2",
+    "area_display": "52.20 m\u00b2",
+    "original_area_display": "1.29 Decimal",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Odisha",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.3009,
+    "centroid_lng": 85.8226,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Minati Patnaik",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.3,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8237
+      },
+      {
+        "lat": 20.3,
+        "lng": 85.8237
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 77,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-14"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4014",
+      "status": "Paid",
+      "paid": "\u20b9 23050",
+      "date": "18 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.3,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8215
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8237
+      },
+      {
+        "lat": 20.3,
+        "lng": 85.8237
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6615",
+    "ulpin": "IN-OD-BBI-0006615",
+    "survey_no": "15/DEMO",
+    "khata_no": "KH-615",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 1.37,
+    "original_unit": "Decimal",
+    "standardized_area": 55.44,
+    "standardized_unit": "m\u00b2",
+    "area_display": "55.44 m\u00b2",
+    "original_area_display": "1.37 Decimal",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Odisha",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.3009,
+    "centroid_lng": 85.8264,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Kalinga Infotech Trust",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.3,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8275
+      },
+      {
+        "lat": 20.3,
+        "lng": 85.8275
+      }
+    ],
+    "bp": {
+      "id": "BP/BHU/2023/114",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "24 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4015",
+      "status": "Pending",
+      "paid": "\u20b9 23900",
+      "date": "19 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.3,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8253
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8275
+      },
+      {
+        "lat": 20.3,
+        "lng": 85.8275
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6616",
+    "ulpin": "IN-OD-BBI-0006616",
+    "survey_no": "16/DEMO",
+    "khata_no": "KH-616",
+    "location": "Infocity / Chandrasekharpur, Bhubaneswar",
+    "location_id": "bhubaneswar",
+    "state": "Odisha",
+    "district": "Khordha",
+    "tehsil": "Bhubaneswar",
+    "rural_urban": "Urban",
+    "original_area": 1.45,
+    "original_unit": "Decimal",
+    "standardized_area": 58.68,
+    "standardized_unit": "m\u00b2",
+    "area_display": "58.68 m\u00b2",
+    "original_area_display": "1.45 Decimal",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Odisha",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 20.3009,
+    "centroid_lng": 85.8302,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Soumya Ranjan Das",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 20.3,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8313
+      },
+      {
+        "lat": 20.3,
+        "lng": 85.8313
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-BHU-2024-4016",
+      "status": "Paid",
+      "paid": "\u20b9 24750",
+      "date": "20 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 20.3,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8291
+      },
+      {
+        "lat": 20.3018,
+        "lng": 85.8313
+      },
+      {
+        "lat": 20.3,
+        "lng": 85.8313
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6701",
+    "ulpin": "IN-UK-DDN-0006701",
+    "survey_no": "1/DEMO",
+    "khata_no": "KH-601",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 0.25,
+    "original_unit": "Bigha",
+    "standardized_area": 200.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "200.00 m\u00b2",
+    "original_area_display": "0.25 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Uttarakhand",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3117,
+    "centroid_lng": 78.0265,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Virendra Singh Rawat",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3108,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0276
+      },
+      {
+        "lat": 30.3108,
+        "lng": 78.0276
+      }
+    ],
+    "bp": {
+      "id": "BP/DEH/2023/100",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "10 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4001",
+      "status": "Paid",
+      "paid": "\u20b9 12000",
+      "date": "5 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3108,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0276
+      },
+      {
+        "lat": 30.3108,
+        "lng": 78.0276
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6702",
+    "ulpin": "IN-UK-DDN-0006702",
+    "survey_no": "2/DEMO",
+    "khata_no": "KH-602",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 0.33,
+    "original_unit": "Bigha",
+    "standardized_area": 264.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "264.00 m\u00b2",
+    "original_area_display": "0.33 Bigha",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Uttarakhand",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3117,
+    "centroid_lng": 78.0303,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Meenakshi Joshi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3108,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0314
+      },
+      {
+        "lat": 30.3108,
+        "lng": 78.0314
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4002",
+      "status": "Paid",
+      "paid": "\u20b9 12850",
+      "date": "6 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3108,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0314
+      },
+      {
+        "lat": 30.3108,
+        "lng": 78.0314
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6703",
+    "ulpin": "IN-UK-DDN-0006703",
+    "survey_no": "3/DEMO",
+    "khata_no": "KH-603",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 0.41,
+    "original_unit": "Bigha",
+    "standardized_area": 328.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "328.00 m\u00b2",
+    "original_area_display": "0.41 Bigha",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Uttarakhand",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3117,
+    "centroid_lng": 78.0341,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Garhwal Eco Developers",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3108,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0352
+      },
+      {
+        "lat": 30.3108,
+        "lng": 78.0352
+      }
+    ],
+    "bp": {
+      "id": "BP/DEH/2023/102",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "12 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 45,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-3"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4003",
+      "status": "Paid",
+      "paid": "\u20b9 13700",
+      "date": "7 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3108,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0352
+      },
+      {
+        "lat": 30.3108,
+        "lng": 78.0352
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6704",
+    "ulpin": "IN-UK-DDN-0006704",
+    "survey_no": "4/DEMO",
+    "khata_no": "KH-604",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 0.49,
+    "original_unit": "Bigha",
+    "standardized_area": 392.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "392.00 m\u00b2",
+    "original_area_display": "0.49 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Uttarakhand",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3117,
+    "centroid_lng": 78.0379,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Anurag Negi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3108,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.039
+      },
+      {
+        "lat": 30.3108,
+        "lng": 78.039
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 37,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-4"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4004",
+      "status": "Paid",
+      "paid": "\u20b9 14550",
+      "date": "8 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3108,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3126,
+        "lng": 78.039
+      },
+      {
+        "lat": 30.3108,
+        "lng": 78.039
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6705",
+    "ulpin": "IN-UK-DDN-0006705",
+    "survey_no": "5/DEMO",
+    "khata_no": "KH-605",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 0.57,
+    "original_unit": "Bigha",
+    "standardized_area": 456.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "456.00 m\u00b2",
+    "original_area_display": "0.57 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Uttarakhand",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3149,
+    "centroid_lng": 78.0265,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Kiran Bisht",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.314,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0276
+      },
+      {
+        "lat": 30.314,
+        "lng": 78.0276
+      }
+    ],
+    "bp": {
+      "id": "BP/DEH/2023/104",
+      "status": "Under Scrutiny",
+      "floors": "G + 3",
+      "date": "14 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4005",
+      "status": "Pending",
+      "paid": "\u20b9 15400",
+      "date": "9 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.314,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0276
+      },
+      {
+        "lat": 30.314,
+        "lng": 78.0276
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6706",
+    "ulpin": "IN-UK-DDN-0006706",
+    "survey_no": "6/DEMO",
+    "khata_no": "KH-606",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 0.65,
+    "original_unit": "Bigha",
+    "standardized_area": 520.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "520.00 m\u00b2",
+    "original_area_display": "0.65 Bigha",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Uttarakhand",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3149,
+    "centroid_lng": 78.0303,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Pradeep Thapa",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.314,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0314
+      },
+      {
+        "lat": 30.314,
+        "lng": 78.0314
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4006",
+      "status": "Paid",
+      "paid": "\u20b9 16250",
+      "date": "10 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.314,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0314
+      },
+      {
+        "lat": 30.314,
+        "lng": 78.0314
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6707",
+    "ulpin": "IN-UK-DDN-0006707",
+    "survey_no": "7/DEMO",
+    "khata_no": "KH-607",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 0.73,
+    "original_unit": "Bigha",
+    "standardized_area": 584.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "584.00 m\u00b2",
+    "original_area_display": "0.73 Bigha",
+    "land_use": "Special / Buffer",
+    "zoning": "Eco-Sensitive Buffer",
+    "jurisdiction": "Uttarakhand",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3149,
+    "centroid_lng": 78.0341,
+    "scenario": "RESTRICTION_BUFFER",
+    "scenario_display": "Statutory Environmental / Heritage Buffer",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Harish Chandra Pant",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.314,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0352
+      },
+      {
+        "lat": 30.314,
+        "lng": 78.0352
+      }
+    ],
+    "bp": {
+      "id": "BP/DEH/2023/106",
+      "status": "Approved",
+      "floors": "G + 2",
+      "date": "16 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4007",
+      "status": "Paid",
+      "paid": "\u20b9 17100",
+      "date": "11 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.314,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0352
+      },
+      {
+        "lat": 30.314,
+        "lng": 78.0352
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6708",
+    "ulpin": "IN-UK-DDN-0006708",
+    "survey_no": "8/DEMO",
+    "khata_no": "KH-608",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 0.81,
+    "original_unit": "Bigha",
+    "standardized_area": 648.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "648.00 m\u00b2",
+    "original_area_display": "0.81 Bigha",
+    "land_use": "Industrial",
+    "zoning": "Light Industrial",
+    "jurisdiction": "Uttarakhand",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3149,
+    "centroid_lng": 78.0379,
+    "scenario": "INFRASTRUCTURE_GAP",
+    "scenario_display": "Civic Infrastructure Feasibility Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Neelam Semwal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.314,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.039
+      },
+      {
+        "lat": 30.314,
+        "lng": 78.039
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4008",
+      "status": "Paid",
+      "paid": "\u20b9 17950",
+      "date": "12 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.314,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3158,
+        "lng": 78.039
+      },
+      {
+        "lat": 30.314,
+        "lng": 78.039
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6709",
+    "ulpin": "IN-UK-DDN-0006709",
+    "survey_no": "9/DEMO",
+    "khata_no": "KH-609",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 0.89,
+    "original_unit": "Bigha",
+    "standardized_area": 712.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "712.00 m\u00b2",
+    "original_area_display": "0.89 Bigha",
+    "land_use": "Residential",
+    "zoning": "Group Housing (GH-3)",
+    "jurisdiction": "Uttarakhand",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3181,
+    "centroid_lng": 78.0265,
+    "scenario": "BUILDING_APPROVAL",
+    "scenario_display": "Municipal Building Sanction Active",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sohan Lal Uniyal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3172,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0276
+      },
+      {
+        "lat": 30.3172,
+        "lng": 78.0276
+      }
+    ],
+    "bp": {
+      "id": "BP/DEH/2023/108",
+      "status": "Under Scrutiny",
+      "floors": "G + 4",
+      "date": "18 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4009",
+      "status": "Paid",
+      "paid": "\u20b9 18800",
+      "date": "13 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3172,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0276
+      },
+      {
+        "lat": 30.3172,
+        "lng": 78.0276
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6710",
+    "ulpin": "IN-UK-DDN-0006710",
+    "survey_no": "10/DEMO",
+    "khata_no": "KH-610",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 0.97,
+    "original_unit": "Bigha",
+    "standardized_area": 776.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "776.00 m\u00b2",
+    "original_area_display": "0.97 Bigha",
+    "land_use": "Residential",
+    "zoning": "Residential (R-1)",
+    "jurisdiction": "Uttarakhand",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3181,
+    "centroid_lng": 78.0303,
+    "scenario": "OWNERSHIP_REVIEW",
+    "scenario_display": "Multi-Party Share Mutation Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Divya Chauhan",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3172,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0314
+      },
+      {
+        "lat": 30.3172,
+        "lng": 78.0314
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4010",
+      "status": "Paid",
+      "paid": "\u20b9 19650",
+      "date": "14 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3172,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0314
+      },
+      {
+        "lat": 30.3172,
+        "lng": 78.0314
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6711",
+    "ulpin": "IN-UK-DDN-0006711",
+    "survey_no": "11/DEMO",
+    "khata_no": "KH-611",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 1.05,
+    "original_unit": "Bigha",
+    "standardized_area": 840.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "840.00 m\u00b2",
+    "original_area_display": "1.05 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Uttarakhand",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3181,
+    "centroid_lng": 78.0341,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Rajender Nautiyal",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3172,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0352
+      },
+      {
+        "lat": 30.3172,
+        "lng": 78.0352
+      }
+    ],
+    "bp": {
+      "id": "BP/DEH/2023/110",
+      "status": "Approved",
+      "floors": "G + 3",
+      "date": "20 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4011",
+      "status": "Paid",
+      "paid": "\u20b9 20500",
+      "date": "15 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3172,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0352
+      },
+      {
+        "lat": 30.3172,
+        "lng": 78.0352
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6712",
+    "ulpin": "IN-UK-DDN-0006712",
+    "survey_no": "12/DEMO",
+    "khata_no": "KH-612",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 1.13,
+    "original_unit": "Bigha",
+    "standardized_area": 904.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "904.00 m\u00b2",
+    "original_area_display": "1.13 Bigha",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Uttarakhand",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3181,
+    "centroid_lng": 78.0379,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Geeta Bhatt",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3172,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.039
+      },
+      {
+        "lat": 30.3172,
+        "lng": 78.039
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4012",
+      "status": "Paid",
+      "paid": "\u20b9 21350",
+      "date": "16 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3172,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.319,
+        "lng": 78.039
+      },
+      {
+        "lat": 30.3172,
+        "lng": 78.039
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6713",
+    "ulpin": "IN-UK-DDN-0006713",
+    "survey_no": "13/DEMO",
+    "khata_no": "KH-613",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 1.21,
+    "original_unit": "Bigha",
+    "standardized_area": 968.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "968.00 m\u00b2",
+    "original_area_display": "1.21 Bigha",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Uttarakhand",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3213,
+    "centroid_lng": 78.0265,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Virendra Singh Rawat",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3204,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0276
+      },
+      {
+        "lat": 30.3204,
+        "lng": 78.0276
+      }
+    ],
+    "bp": {
+      "id": "BP/DEH/2023/112",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "22 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 95,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-13"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4013",
+      "status": "Paid",
+      "paid": "\u20b9 22200",
+      "date": "17 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3204,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0254
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0276
+      },
+      {
+        "lat": 30.3204,
+        "lng": 78.0276
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6714",
+    "ulpin": "IN-UK-DDN-0006714",
+    "survey_no": "14/DEMO",
+    "khata_no": "KH-614",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 1.29,
+    "original_unit": "Bigha",
+    "standardized_area": 1032.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,032.00 m\u00b2",
+    "original_area_display": "1.29 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Uttarakhand",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3213,
+    "centroid_lng": 78.0303,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Meenakshi Joshi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3204,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0314
+      },
+      {
+        "lat": 30.3204,
+        "lng": 78.0314
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 77,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-14"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4014",
+      "status": "Paid",
+      "paid": "\u20b9 23050",
+      "date": "18 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3204,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0292
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0314
+      },
+      {
+        "lat": 30.3204,
+        "lng": 78.0314
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6715",
+    "ulpin": "IN-UK-DDN-0006715",
+    "survey_no": "15/DEMO",
+    "khata_no": "KH-615",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 1.37,
+    "original_unit": "Bigha",
+    "standardized_area": 1096.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,096.00 m\u00b2",
+    "original_area_display": "1.37 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Uttarakhand",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3213,
+    "centroid_lng": 78.0341,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Garhwal Eco Developers",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3204,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0352
+      },
+      {
+        "lat": 30.3204,
+        "lng": 78.0352
+      }
+    ],
+    "bp": {
+      "id": "BP/DEH/2023/114",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "24 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4015",
+      "status": "Pending",
+      "paid": "\u20b9 23900",
+      "date": "19 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3204,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.033
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0352
+      },
+      {
+        "lat": 30.3204,
+        "lng": 78.0352
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6716",
+    "ulpin": "IN-UK-DDN-0006716",
+    "survey_no": "16/DEMO",
+    "khata_no": "KH-616",
+    "location": "Rajpur Road / Doon Valley, Dehradun",
+    "location_id": "dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "tehsil": "Dehradun",
+    "rural_urban": "Mountain",
+    "original_area": 1.45,
+    "original_unit": "Bigha",
+    "standardized_area": 1160.0,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,160.00 m\u00b2",
+    "original_area_display": "1.45 Bigha",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Uttarakhand",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 30.3213,
+    "centroid_lng": 78.0379,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Anurag Negi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 30.3204,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.039
+      },
+      {
+        "lat": 30.3204,
+        "lng": 78.039
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-DEH-2024-4016",
+      "status": "Paid",
+      "paid": "\u20b9 24750",
+      "date": "20 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 30.3204,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.0368
+      },
+      {
+        "lat": 30.3222,
+        "lng": 78.039
+      },
+      {
+        "lat": 30.3204,
+        "lng": 78.039
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6801",
+    "ulpin": "IN-AS-GHY-0006801",
+    "survey_no": "1/DEMO",
+    "khata_no": "KH-601",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 0.25,
+    "original_unit": "Bigha",
+    "standardized_area": 334.45,
+    "standardized_unit": "m\u00b2",
+    "area_display": "334.45 m\u00b2",
+    "original_area_display": "0.25 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Assam",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1397,
+    "centroid_lng": 91.7305,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bhupen Hazarika Trust",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1388,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7316
+      },
+      {
+        "lat": 26.1388,
+        "lng": 91.7316
+      }
+    ],
+    "bp": {
+      "id": "BP/GUW/2023/100",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "10 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4001",
+      "status": "Paid",
+      "paid": "\u20b9 12000",
+      "date": "5 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1388,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7316
+      },
+      {
+        "lat": 26.1388,
+        "lng": 91.7316
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6802",
+    "ulpin": "IN-AS-GHY-0006802",
+    "survey_no": "2/DEMO",
+    "khata_no": "KH-602",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 0.33,
+    "original_unit": "Bigha",
+    "standardized_area": 441.47,
+    "standardized_unit": "m\u00b2",
+    "area_display": "441.47 m\u00b2",
+    "original_area_display": "0.33 Bigha",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Assam",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1397,
+    "centroid_lng": 91.7343,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Pranab Barua",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1388,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7354
+      },
+      {
+        "lat": 26.1388,
+        "lng": 91.7354
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4002",
+      "status": "Paid",
+      "paid": "\u20b9 12850",
+      "date": "6 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1388,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7354
+      },
+      {
+        "lat": 26.1388,
+        "lng": 91.7354
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6803",
+    "ulpin": "IN-AS-GHY-0006803",
+    "survey_no": "3/DEMO",
+    "khata_no": "KH-603",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 0.41,
+    "original_unit": "Bigha",
+    "standardized_area": 548.5,
+    "standardized_unit": "m\u00b2",
+    "area_display": "548.50 m\u00b2",
+    "original_area_display": "0.41 Bigha",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Assam",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1397,
+    "centroid_lng": 91.7381,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Assam Tea Estates Ltd",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1388,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7392
+      },
+      {
+        "lat": 26.1388,
+        "lng": 91.7392
+      }
+    ],
+    "bp": {
+      "id": "BP/GUW/2023/102",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "12 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 45,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-3"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4003",
+      "status": "Paid",
+      "paid": "\u20b9 13700",
+      "date": "7 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1388,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7392
+      },
+      {
+        "lat": 26.1388,
+        "lng": 91.7392
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6804",
+    "ulpin": "IN-AS-GHY-0006804",
+    "survey_no": "4/DEMO",
+    "khata_no": "KH-604",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 0.49,
+    "original_unit": "Bigha",
+    "standardized_area": 655.52,
+    "standardized_unit": "m\u00b2",
+    "area_display": "655.52 m\u00b2",
+    "original_area_display": "0.49 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Assam",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1397,
+    "centroid_lng": 91.7419,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Ranjit Gogoi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1388,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.743
+      },
+      {
+        "lat": 26.1388,
+        "lng": 91.743
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 37,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-4"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4004",
+      "status": "Paid",
+      "paid": "\u20b9 14550",
+      "date": "8 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1388,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1406,
+        "lng": 91.743
+      },
+      {
+        "lat": 26.1388,
+        "lng": 91.743
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6805",
+    "ulpin": "IN-AS-GHY-0006805",
+    "survey_no": "5/DEMO",
+    "khata_no": "KH-605",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 0.57,
+    "original_unit": "Bigha",
+    "standardized_area": 762.55,
+    "standardized_unit": "m\u00b2",
+    "area_display": "762.55 m\u00b2",
+    "original_area_display": "0.57 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Assam",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1429,
+    "centroid_lng": 91.7305,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Mridula Saikia",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.142,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7316
+      },
+      {
+        "lat": 26.142,
+        "lng": 91.7316
+      }
+    ],
+    "bp": {
+      "id": "BP/GUW/2023/104",
+      "status": "Under Scrutiny",
+      "floors": "G + 3",
+      "date": "14 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4005",
+      "status": "Pending",
+      "paid": "\u20b9 15400",
+      "date": "9 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.142,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7316
+      },
+      {
+        "lat": 26.142,
+        "lng": 91.7316
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6806",
+    "ulpin": "IN-AS-GHY-0006806",
+    "survey_no": "6/DEMO",
+    "khata_no": "KH-606",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 0.65,
+    "original_unit": "Bigha",
+    "standardized_area": 869.57,
+    "standardized_unit": "m\u00b2",
+    "area_display": "869.57 m\u00b2",
+    "original_area_display": "0.65 Bigha",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Assam",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1429,
+    "centroid_lng": 91.7343,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Deepjyoti Kalita",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.142,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7354
+      },
+      {
+        "lat": 26.142,
+        "lng": 91.7354
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4006",
+      "status": "Paid",
+      "paid": "\u20b9 16250",
+      "date": "10 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.142,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7354
+      },
+      {
+        "lat": 26.142,
+        "lng": 91.7354
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6807",
+    "ulpin": "IN-AS-GHY-0006807",
+    "survey_no": "7/DEMO",
+    "khata_no": "KH-607",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 0.73,
+    "original_unit": "Bigha",
+    "standardized_area": 976.59,
+    "standardized_unit": "m\u00b2",
+    "area_display": "976.59 m\u00b2",
+    "original_area_display": "0.73 Bigha",
+    "land_use": "Special / Buffer",
+    "zoning": "Eco-Sensitive Buffer",
+    "jurisdiction": "Assam",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1429,
+    "centroid_lng": 91.7381,
+    "scenario": "RESTRICTION_BUFFER",
+    "scenario_display": "Statutory Environmental / Heritage Buffer",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Partha Sarathi Bora",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.142,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7392
+      },
+      {
+        "lat": 26.142,
+        "lng": 91.7392
+      }
+    ],
+    "bp": {
+      "id": "BP/GUW/2023/106",
+      "status": "Approved",
+      "floors": "G + 2",
+      "date": "16 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4007",
+      "status": "Paid",
+      "paid": "\u20b9 17100",
+      "date": "11 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.142,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7392
+      },
+      {
+        "lat": 26.142,
+        "lng": 91.7392
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6808",
+    "ulpin": "IN-AS-GHY-0006808",
+    "survey_no": "8/DEMO",
+    "khata_no": "KH-608",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 0.81,
+    "original_unit": "Bigha",
+    "standardized_area": 1083.62,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,083.62 m\u00b2",
+    "original_area_display": "0.81 Bigha",
+    "land_use": "Industrial",
+    "zoning": "Light Industrial",
+    "jurisdiction": "Assam",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1429,
+    "centroid_lng": 91.7419,
+    "scenario": "INFRASTRUCTURE_GAP",
+    "scenario_display": "Civic Infrastructure Feasibility Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Anupama Medhi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.142,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.743
+      },
+      {
+        "lat": 26.142,
+        "lng": 91.743
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4008",
+      "status": "Paid",
+      "paid": "\u20b9 17950",
+      "date": "12 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.142,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1438,
+        "lng": 91.743
+      },
+      {
+        "lat": 26.142,
+        "lng": 91.743
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6809",
+    "ulpin": "IN-AS-GHY-0006809",
+    "survey_no": "9/DEMO",
+    "khata_no": "KH-609",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 0.89,
+    "original_unit": "Bigha",
+    "standardized_area": 1190.64,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,190.64 m\u00b2",
+    "original_area_display": "0.89 Bigha",
+    "land_use": "Residential",
+    "zoning": "Group Housing (GH-3)",
+    "jurisdiction": "Assam",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1461,
+    "centroid_lng": 91.7305,
+    "scenario": "BUILDING_APPROVAL",
+    "scenario_display": "Municipal Building Sanction Active",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Himangshu Deka",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1452,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7316
+      },
+      {
+        "lat": 26.1452,
+        "lng": 91.7316
+      }
+    ],
+    "bp": {
+      "id": "BP/GUW/2023/108",
+      "status": "Under Scrutiny",
+      "floors": "G + 4",
+      "date": "18 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4009",
+      "status": "Paid",
+      "paid": "\u20b9 18800",
+      "date": "13 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1452,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7316
+      },
+      {
+        "lat": 26.1452,
+        "lng": 91.7316
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6810",
+    "ulpin": "IN-AS-GHY-0006810",
+    "survey_no": "10/DEMO",
+    "khata_no": "KH-610",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 0.97,
+    "original_unit": "Bigha",
+    "standardized_area": 1297.67,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,297.67 m\u00b2",
+    "original_area_display": "0.97 Bigha",
+    "land_use": "Residential",
+    "zoning": "Residential (R-1)",
+    "jurisdiction": "Assam",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1461,
+    "centroid_lng": 91.7343,
+    "scenario": "OWNERSHIP_REVIEW",
+    "scenario_display": "Multi-Party Share Mutation Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Monoj Phukan",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1452,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7354
+      },
+      {
+        "lat": 26.1452,
+        "lng": 91.7354
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4010",
+      "status": "Paid",
+      "paid": "\u20b9 19650",
+      "date": "14 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1452,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7354
+      },
+      {
+        "lat": 26.1452,
+        "lng": 91.7354
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6811",
+    "ulpin": "IN-AS-GHY-0006811",
+    "survey_no": "11/DEMO",
+    "khata_no": "KH-611",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 1.05,
+    "original_unit": "Bigha",
+    "standardized_area": 1404.69,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,404.69 m\u00b2",
+    "original_area_display": "1.05 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Assam",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1461,
+    "centroid_lng": 91.7381,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Barnali Goswami",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1452,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7392
+      },
+      {
+        "lat": 26.1452,
+        "lng": 91.7392
+      }
+    ],
+    "bp": {
+      "id": "BP/GUW/2023/110",
+      "status": "Approved",
+      "floors": "G + 3",
+      "date": "20 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4011",
+      "status": "Paid",
+      "paid": "\u20b9 20500",
+      "date": "15 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1452,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7392
+      },
+      {
+        "lat": 26.1452,
+        "lng": 91.7392
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6812",
+    "ulpin": "IN-AS-GHY-0006812",
+    "survey_no": "12/DEMO",
+    "khata_no": "KH-612",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 1.13,
+    "original_unit": "Bigha",
+    "standardized_area": 1511.71,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,511.71 m\u00b2",
+    "original_area_display": "1.13 Bigha",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Assam",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1461,
+    "centroid_lng": 91.7419,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Debajit Sarma",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1452,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.743
+      },
+      {
+        "lat": 26.1452,
+        "lng": 91.743
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4012",
+      "status": "Paid",
+      "paid": "\u20b9 21350",
+      "date": "16 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1452,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.147,
+        "lng": 91.743
+      },
+      {
+        "lat": 26.1452,
+        "lng": 91.743
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6813",
+    "ulpin": "IN-AS-GHY-0006813",
+    "survey_no": "13/DEMO",
+    "khata_no": "KH-613",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 1.21,
+    "original_unit": "Bigha",
+    "standardized_area": 1618.74,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,618.74 m\u00b2",
+    "original_area_display": "1.21 Bigha",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Assam",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1493,
+    "centroid_lng": 91.7305,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bhupen Hazarika Trust",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1484,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7316
+      },
+      {
+        "lat": 26.1484,
+        "lng": 91.7316
+      }
+    ],
+    "bp": {
+      "id": "BP/GUW/2023/112",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "22 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 95,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-13"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4013",
+      "status": "Paid",
+      "paid": "\u20b9 22200",
+      "date": "17 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1484,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7294
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7316
+      },
+      {
+        "lat": 26.1484,
+        "lng": 91.7316
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6814",
+    "ulpin": "IN-AS-GHY-0006814",
+    "survey_no": "14/DEMO",
+    "khata_no": "KH-614",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 1.29,
+    "original_unit": "Bigha",
+    "standardized_area": 1725.76,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,725.76 m\u00b2",
+    "original_area_display": "1.29 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Assam",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1493,
+    "centroid_lng": 91.7343,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Pranab Barua",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1484,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7354
+      },
+      {
+        "lat": 26.1484,
+        "lng": 91.7354
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 77,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-14"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4014",
+      "status": "Paid",
+      "paid": "\u20b9 23050",
+      "date": "18 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1484,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7332
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7354
+      },
+      {
+        "lat": 26.1484,
+        "lng": 91.7354
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6815",
+    "ulpin": "IN-AS-GHY-0006815",
+    "survey_no": "15/DEMO",
+    "khata_no": "KH-615",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 1.37,
+    "original_unit": "Bigha",
+    "standardized_area": 1832.79,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,832.79 m\u00b2",
+    "original_area_display": "1.37 Bigha",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Assam",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1493,
+    "centroid_lng": 91.7381,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Assam Tea Estates Ltd",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1484,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7392
+      },
+      {
+        "lat": 26.1484,
+        "lng": 91.7392
+      }
+    ],
+    "bp": {
+      "id": "BP/GUW/2023/114",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "24 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4015",
+      "status": "Pending",
+      "paid": "\u20b9 23900",
+      "date": "19 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1484,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.737
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7392
+      },
+      {
+        "lat": 26.1484,
+        "lng": 91.7392
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6816",
+    "ulpin": "IN-AS-GHY-0006816",
+    "survey_no": "16/DEMO",
+    "khata_no": "KH-616",
+    "location": "GS Road / Brahmaputra Riverside, Guwahati",
+    "location_id": "guwahati",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "tehsil": "Dispur",
+    "rural_urban": "Urban",
+    "original_area": 1.45,
+    "original_unit": "Bigha",
+    "standardized_area": 1939.81,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1,939.81 m\u00b2",
+    "original_area_display": "1.45 Bigha",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Assam",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 26.1493,
+    "centroid_lng": 91.7419,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Ranjit Gogoi",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 26.1484,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.743
+      },
+      {
+        "lat": 26.1484,
+        "lng": 91.743
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-GUW-2024-4016",
+      "status": "Paid",
+      "paid": "\u20b9 24750",
+      "date": "20 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 26.1484,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.7408
+      },
+      {
+        "lat": 26.1502,
+        "lng": 91.743
+      },
+      {
+        "lat": 26.1484,
+        "lng": 91.743
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6901",
+    "ulpin": "IN-GA-PAN-0006901",
+    "survey_no": "1/DEMO",
+    "khata_no": "KH-601",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 0.25,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.25,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.25 m\u00b2",
+    "original_area_display": "0.25 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Goa",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4861,
+    "centroid_lng": 73.8221,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Antonio Fernandes",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4852,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8232
+      },
+      {
+        "lat": 15.4852,
+        "lng": 73.8232
+      }
+    ],
+    "bp": {
+      "id": "BP/PAN/2023/100",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "10 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4001",
+      "status": "Paid",
+      "paid": "\u20b9 12000",
+      "date": "5 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4852,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8232
+      },
+      {
+        "lat": 15.4852,
+        "lng": 73.8232
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6902",
+    "ulpin": "IN-GA-PAN-0006902",
+    "survey_no": "2/DEMO",
+    "khata_no": "KH-602",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 0.33,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.33,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.33 m\u00b2",
+    "original_area_display": "0.33 Sq.Mtr",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Goa",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4861,
+    "centroid_lng": 73.8259,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Maria D'Souza",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4852,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.827
+      },
+      {
+        "lat": 15.4852,
+        "lng": 73.827
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4002",
+      "status": "Paid",
+      "paid": "\u20b9 12850",
+      "date": "6 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4852,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.827
+      },
+      {
+        "lat": 15.4852,
+        "lng": 73.827
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6903",
+    "ulpin": "IN-GA-PAN-0006903",
+    "survey_no": "3/DEMO",
+    "khata_no": "KH-603",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 0.41,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.41,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.41 m\u00b2",
+    "original_area_display": "0.41 Sq.Mtr",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Goa",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4861,
+    "centroid_lng": 73.8297,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Goa Coastal Hospitality LLP",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4852,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8308
+      },
+      {
+        "lat": 15.4852,
+        "lng": 73.8308
+      }
+    ],
+    "bp": {
+      "id": "BP/PAN/2023/102",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "12 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 45,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-3"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4003",
+      "status": "Paid",
+      "paid": "\u20b9 13700",
+      "date": "7 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4852,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8308
+      },
+      {
+        "lat": 15.4852,
+        "lng": 73.8308
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6904",
+    "ulpin": "IN-GA-PAN-0006904",
+    "survey_no": "4/DEMO",
+    "khata_no": "KH-604",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 0.49,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.49,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.49 m\u00b2",
+    "original_area_display": "0.49 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Goa",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4861,
+    "centroid_lng": 73.8335,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Joao Pinto",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4852,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8346
+      },
+      {
+        "lat": 15.4852,
+        "lng": 73.8346
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 37,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-4"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4004",
+      "status": "Paid",
+      "paid": "\u20b9 14550",
+      "date": "8 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4852,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.487,
+        "lng": 73.8346
+      },
+      {
+        "lat": 15.4852,
+        "lng": 73.8346
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6905",
+    "ulpin": "IN-GA-PAN-0006905",
+    "survey_no": "5/DEMO",
+    "khata_no": "KH-605",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 0.57,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.57,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.57 m\u00b2",
+    "original_area_display": "0.57 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Goa",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4893,
+    "centroid_lng": 73.8221,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Fatima Alvares",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4884,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8232
+      },
+      {
+        "lat": 15.4884,
+        "lng": 73.8232
+      }
+    ],
+    "bp": {
+      "id": "BP/PAN/2023/104",
+      "status": "Under Scrutiny",
+      "floors": "G + 3",
+      "date": "14 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4005",
+      "status": "Pending",
+      "paid": "\u20b9 15400",
+      "date": "9 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4884,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8232
+      },
+      {
+        "lat": 15.4884,
+        "lng": 73.8232
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6906",
+    "ulpin": "IN-GA-PAN-0006906",
+    "survey_no": "6/DEMO",
+    "khata_no": "KH-606",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 0.65,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.65,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.65 m\u00b2",
+    "original_area_display": "0.65 Sq.Mtr",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Goa",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4893,
+    "centroid_lng": 73.8259,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Francisco Pereira",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4884,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.827
+      },
+      {
+        "lat": 15.4884,
+        "lng": 73.827
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4006",
+      "status": "Paid",
+      "paid": "\u20b9 16250",
+      "date": "10 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4884,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.827
+      },
+      {
+        "lat": 15.4884,
+        "lng": 73.827
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6907",
+    "ulpin": "IN-GA-PAN-0006907",
+    "survey_no": "7/DEMO",
+    "khata_no": "KH-607",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 0.73,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.73,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.73 m\u00b2",
+    "original_area_display": "0.73 Sq.Mtr",
+    "land_use": "Special / Buffer",
+    "zoning": "Eco-Sensitive Buffer",
+    "jurisdiction": "Goa",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4893,
+    "centroid_lng": 73.8297,
+    "scenario": "RESTRICTION_BUFFER",
+    "scenario_display": "Statutory Environmental / Heritage Buffer",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sunita Naik",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4884,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8308
+      },
+      {
+        "lat": 15.4884,
+        "lng": 73.8308
+      }
+    ],
+    "bp": {
+      "id": "BP/PAN/2023/106",
+      "status": "Approved",
+      "floors": "G + 2",
+      "date": "16 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4007",
+      "status": "Paid",
+      "paid": "\u20b9 17100",
+      "date": "11 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4884,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8308
+      },
+      {
+        "lat": 15.4884,
+        "lng": 73.8308
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6908",
+    "ulpin": "IN-GA-PAN-0006908",
+    "survey_no": "8/DEMO",
+    "khata_no": "KH-608",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 0.81,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.81,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.81 m\u00b2",
+    "original_area_display": "0.81 Sq.Mtr",
+    "land_use": "Industrial",
+    "zoning": "Light Industrial",
+    "jurisdiction": "Goa",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4893,
+    "centroid_lng": 73.8335,
+    "scenario": "INFRASTRUCTURE_GAP",
+    "scenario_display": "Civic Infrastructure Feasibility Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Ramesh Kamat",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4884,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8346
+      },
+      {
+        "lat": 15.4884,
+        "lng": 73.8346
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4008",
+      "status": "Paid",
+      "paid": "\u20b9 17950",
+      "date": "12 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4884,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4902,
+        "lng": 73.8346
+      },
+      {
+        "lat": 15.4884,
+        "lng": 73.8346
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6909",
+    "ulpin": "IN-GA-PAN-0006909",
+    "survey_no": "9/DEMO",
+    "khata_no": "KH-609",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 0.89,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.89,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.89 m\u00b2",
+    "original_area_display": "0.89 Sq.Mtr",
+    "land_use": "Residential",
+    "zoning": "Group Housing (GH-3)",
+    "jurisdiction": "Goa",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4925,
+    "centroid_lng": 73.8221,
+    "scenario": "BUILDING_APPROVAL",
+    "scenario_display": "Municipal Building Sanction Active",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Bernardo Sequeira",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4916,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8232
+      },
+      {
+        "lat": 15.4916,
+        "lng": 73.8232
+      }
+    ],
+    "bp": {
+      "id": "BP/PAN/2023/108",
+      "status": "Under Scrutiny",
+      "floors": "G + 4",
+      "date": "18 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4009",
+      "status": "Paid",
+      "paid": "\u20b9 18800",
+      "date": "13 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4916,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8232
+      },
+      {
+        "lat": 15.4916,
+        "lng": 73.8232
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6910",
+    "ulpin": "IN-GA-PAN-0006910",
+    "survey_no": "10/DEMO",
+    "khata_no": "KH-610",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 0.97,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 0.97,
+    "standardized_unit": "m\u00b2",
+    "area_display": "0.97 m\u00b2",
+    "original_area_display": "0.97 Sq.Mtr",
+    "land_use": "Residential",
+    "zoning": "Residential (R-1)",
+    "jurisdiction": "Goa",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4925,
+    "centroid_lng": 73.8259,
+    "scenario": "OWNERSHIP_REVIEW",
+    "scenario_display": "Multi-Party Share Mutation Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Carmelita Noronha",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4916,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.827
+      },
+      {
+        "lat": 15.4916,
+        "lng": 73.827
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4010",
+      "status": "Paid",
+      "paid": "\u20b9 19650",
+      "date": "14 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4916,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.827
+      },
+      {
+        "lat": 15.4916,
+        "lng": 73.827
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6911",
+    "ulpin": "IN-GA-PAN-0006911",
+    "survey_no": "11/DEMO",
+    "khata_no": "KH-611",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 1.05,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.05,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.05 m\u00b2",
+    "original_area_display": "1.05 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Goa",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4925,
+    "centroid_lng": 73.8297,
+    "scenario": "CLEAN_PARCEL",
+    "scenario_display": "Clean Verified Title",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Sachin Kenkre",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4916,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8308
+      },
+      {
+        "lat": 15.4916,
+        "lng": 73.8308
+      }
+    ],
+    "bp": {
+      "id": "BP/PAN/2023/110",
+      "status": "Approved",
+      "floors": "G + 3",
+      "date": "20 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4011",
+      "status": "Paid",
+      "paid": "\u20b9 20500",
+      "date": "15 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4916,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8308
+      },
+      {
+        "lat": 15.4916,
+        "lng": 73.8308
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6912",
+    "ulpin": "IN-GA-PAN-0006912",
+    "survey_no": "12/DEMO",
+    "khata_no": "KH-612",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 1.13,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.13,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.13 m\u00b2",
+    "original_area_display": "1.13 Sq.Mtr",
+    "land_use": "Mixed Use",
+    "zoning": "Commercial / Residential",
+    "jurisdiction": "Goa",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4925,
+    "centroid_lng": 73.8335,
+    "scenario": "PLANNING_REVIEW",
+    "scenario_display": "Statutory Planning Review",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Lourdes Coutinho",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4916,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8346
+      },
+      {
+        "lat": 15.4916,
+        "lng": 73.8346
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4012",
+      "status": "Paid",
+      "paid": "\u20b9 21350",
+      "date": "16 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4916,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4934,
+        "lng": 73.8346
+      },
+      {
+        "lat": 15.4916,
+        "lng": 73.8346
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6913",
+    "ulpin": "IN-GA-PAN-0006913",
+    "survey_no": "13/DEMO",
+    "khata_no": "KH-613",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 1.21,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.21,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.21 m\u00b2",
+    "original_area_display": "1.21 Sq.Mtr",
+    "land_use": "Residential",
+    "zoning": "Residential (R-2)",
+    "jurisdiction": "Goa",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4957,
+    "centroid_lng": 73.8221,
+    "scenario": "MORTGAGE_LIEN",
+    "scenario_display": "Registered Mortgage / Bank Lien",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Antonio Fernandes",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4948,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8232
+      },
+      {
+        "lat": 15.4948,
+        "lng": 73.8232
+      }
+    ],
+    "bp": {
+      "id": "BP/PAN/2023/112",
+      "status": "Under Scrutiny",
+      "floors": "G + 2",
+      "date": "22 Mar 2024"
+    },
+    "enc": {
+      "status": "Active",
+      "inst": "State Bank of India",
+      "amt": "\u20b9 95,00,000",
+      "noc": true,
+      "ref": "MORT-SBI-13"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4013",
+      "status": "Paid",
+      "paid": "\u20b9 22200",
+      "date": "17 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Pipeline Extension Required",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4948,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.821
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8232
+      },
+      {
+        "lat": 15.4948,
+        "lng": 73.8232
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6914",
+    "ulpin": "IN-GA-PAN-0006914",
+    "survey_no": "14/DEMO",
+    "khata_no": "KH-614",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 1.29,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.29,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.29 m\u00b2",
+    "original_area_display": "1.29 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-2)",
+    "jurisdiction": "Goa",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4957,
+    "centroid_lng": 73.8259,
+    "scenario": "ENCUMBERED_PARCEL",
+    "scenario_display": "Active Encumbrance Recorded",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Maria D'Souza",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4948,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.827
+      },
+      {
+        "lat": 15.4948,
+        "lng": 73.827
+      }
+    ],
+    "enc": {
+      "status": "Active",
+      "inst": "Punjab National Bank",
+      "amt": "\u20b9 77,00,000",
+      "noc": false,
+      "ref": "ENC-PNB-14"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4014",
+      "status": "Paid",
+      "paid": "\u20b9 23050",
+      "date": "18 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4948,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8248
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.827
+      },
+      {
+        "lat": 15.4948,
+        "lng": 73.827
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6915",
+    "ulpin": "IN-GA-PAN-0006915",
+    "survey_no": "15/DEMO",
+    "khata_no": "KH-615",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 1.37,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.37,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.37 m\u00b2",
+    "original_area_display": "1.37 Sq.Mtr",
+    "land_use": "Commercial",
+    "zoning": "Commercial (C-1)",
+    "jurisdiction": "Goa",
+    "status": "Verified",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4957,
+    "centroid_lng": 73.8297,
+    "scenario": "TAX_CASE",
+    "scenario_display": "Property Tax Compliance Case",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Goa Coastal Hospitality LLP",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4948,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8308
+      },
+      {
+        "lat": 15.4948,
+        "lng": 73.8308
+      }
+    ],
+    "bp": {
+      "id": "BP/PAN/2023/114",
+      "status": "Approved",
+      "floors": "G + 4",
+      "date": "24 Mar 2024"
+    },
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4015",
+      "status": "Pending",
+      "paid": "\u20b9 23900",
+      "date": "19 Jul 2024"
+    },
+    "ut": {
+      "elec": "Connected",
+      "water": "Connected",
+      "sewer": "Connected",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4948,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8286
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8308
+      },
+      {
+        "lat": 15.4948,
+        "lng": 73.8308
+      }
+    ]
+  },
+  {
+    "parcel_id": "P-6916",
+    "ulpin": "IN-GA-PAN-0006916",
+    "survey_no": "16/DEMO",
+    "khata_no": "KH-616",
+    "location": "Miramar Coastal Belt, Panaji",
+    "location_id": "panaji",
+    "state": "Goa",
+    "district": "North Goa",
+    "tehsil": "Tiswadi",
+    "rural_urban": "Coastal",
+    "original_area": 1.45,
+    "original_unit": "Sq.Mtr",
+    "standardized_area": 1.45,
+    "standardized_unit": "m\u00b2",
+    "area_display": "1.45 m\u00b2",
+    "original_area_display": "1.45 Sq.Mtr",
+    "land_use": "Agricultural",
+    "zoning": "Green / Agricultural",
+    "jurisdiction": "Goa",
+    "status": "Under Review",
+    "sync_status": "Source Verified",
+    "data_freshness": "Current",
+    "centroid_lat": 15.4957,
+    "centroid_lng": 73.8335,
+    "scenario": "DISPUTED",
+    "scenario_display": "Boundary Demarcation Dispute",
+    "sentinel_available": true,
+    "owner": {
+      "name": "Joao Pinto",
+      "relation": "s/o Legal Representative",
+      "share": "100%"
+    },
+    "coords": [
+      {
+        "lat": 15.4948,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8346
+      },
+      {
+        "lat": 15.4948,
+        "lng": 73.8346
+      }
+    ],
+    "enc": {
+      "status": "Clear"
+    },
+    "tax": {
+      "id": "PT-PAN-2024-4016",
+      "status": "Paid",
+      "paid": "\u20b9 24750",
+      "date": "20 Jul 2024"
+    },
+    "ut": {
+      "elec": "Feasibility Pending",
+      "water": "Connected",
+      "sewer": "Septic Tank",
+      "gas": "Available Nearby"
+    },
+    "polygon": [
+      {
+        "lat": 15.4948,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8324
+      },
+      {
+        "lat": 15.4966,
+        "lng": 73.8346
+      },
+      {
+        "lat": 15.4948,
+        "lng": 73.8346
+      }
+    ]
   }
 ];
 
@@ -21506,7 +35746,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Urban",
     "defaultParcelId": "P-1101",
     "description": "National Capital Territory metropolitan commercial and residential plots under DDA master plan.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "bengaluru",
@@ -21518,7 +35758,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Urban",
     "defaultParcelId": "P-1201",
     "description": "Silicon Valley IT corridors, Whitefield tech parks, and residential layouts integrated with Bhoomi RTC format.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "mumbai",
@@ -21530,7 +35770,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Urban",
     "defaultParcelId": "P-1301",
     "description": "High-density western suburban transit corridors with high-rise building permissions and municipal revenue assessments.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "jaipur",
@@ -21542,7 +35782,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Urban",
     "defaultParcelId": "P-2001",
     "description": "Heritage-buffered commercial sectors and residential colonies evaluated under JDA Master Plan 2025.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "ahmedabad",
@@ -21554,7 +35794,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Urban",
     "defaultParcelId": "P-1401",
     "description": "SG Highway commercial growth zone with verified AnyRoR 7/12 land records and TP scheme integration.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "lucknow",
@@ -21566,7 +35806,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Urban",
     "defaultParcelId": "P-1501",
     "description": "Gomti Nagar planned expansion and Hazratganj heritage conservation zones under LDA regulations.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "hyderabad",
@@ -21578,7 +35818,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Urban",
     "defaultParcelId": "P-1601",
     "description": "Cyberabad HITEC City and financial district parcels with Dharani portal record synchronization.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "chennai",
@@ -21590,7 +35830,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Urban",
     "defaultParcelId": "P-1701",
     "description": "OMR Rajiv Gandhi Salai IT corridor and commercial hubs linked with Patta/Chitta registry.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "pune",
@@ -21602,7 +35842,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Urban",
     "defaultParcelId": "P-4001",
     "description": "Hinjawadi Infotech Zone and suburban residential zones demonstrating Maharashtra 7/12 extract formats.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "varanasi",
@@ -21614,7 +35854,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Rural",
     "defaultParcelId": "P-3001",
     "description": "Rural revenue village and riverfront buffer context illustrating eco-sensitive CRZ and archaeological restrictions.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "anand",
@@ -21626,7 +35866,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Rural",
     "defaultParcelId": "P-1901",
     "description": "Agricultural cooperative dairy belt revenue village showcasing succession mutation and farm land tenure.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "shimla",
@@ -21638,7 +35878,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Mountain",
     "defaultParcelId": "P-1801",
     "description": "Hilly terrain and Shivalik mountain context demonstrating steep slope contour building restrictions.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "solan",
@@ -21650,7 +35890,7 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Mountain",
     "defaultParcelId": "P-1803",
     "description": "Hill transit and industrial corridor evaluating slope stability and utility infrastructure connectivity.",
-    "sentinel_available": false
+    "sentinel_available": true
   },
   {
     "id": "kochi",
@@ -21662,7 +35902,127 @@ export const DEMO_LOCATIONS = [
     "urban_rural": "Coastal",
     "defaultParcelId": "P-5001",
     "description": "Coastal wetlands and port logistics corridor governed by strict CRZ buffer regulations and utility easements.",
-    "sentinel_available": false
+    "sentinel_available": true
+  },
+  {
+    "id": "gurugram",
+    "name": "Gurugram",
+    "state": "Haryana",
+    "jurisdiction": "Haryana",
+    "lat": 28.4595,
+    "lng": 77.0266,
+    "urban_rural": "Urban",
+    "defaultParcelId": "P-6001",
+    "description": "Cyber City IT & commercial hub, Golf Course Road transit-oriented zone under GMDA.",
+    "sentinel_available": true
+  },
+  {
+    "id": "amritsar",
+    "name": "Amritsar",
+    "state": "Punjab",
+    "jurisdiction": "Punjab",
+    "lat": 31.634,
+    "lng": 74.8723,
+    "urban_rural": "Urban",
+    "defaultParcelId": "P-6101",
+    "description": "Ranjit Avenue smart commercial zone and historic walled city heritage buffer.",
+    "sentinel_available": true
+  },
+  {
+    "id": "kolkata",
+    "name": "Kolkata",
+    "state": "West Bengal",
+    "jurisdiction": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "urban_rural": "Urban",
+    "defaultParcelId": "P-6201",
+    "description": "New Town Rajarhat IT corridor and Salt Lake Sector V under WBHIDCO master plan.",
+    "sentinel_available": true
+  },
+  {
+    "id": "bhopal",
+    "name": "Bhopal",
+    "state": "Madhya Pradesh",
+    "jurisdiction": "Madhya Pradesh",
+    "lat": 23.2599,
+    "lng": 77.4126,
+    "urban_rural": "Urban",
+    "defaultParcelId": "P-6301",
+    "description": "Arera Colony and MP Nagar commercial zone with Upper Lake wetland buffer.",
+    "sentinel_available": true
+  },
+  {
+    "id": "indore",
+    "name": "Indore",
+    "state": "Madhya Pradesh",
+    "jurisdiction": "Madhya Pradesh",
+    "lat": 22.7196,
+    "lng": 75.8577,
+    "urban_rural": "Urban",
+    "defaultParcelId": "P-6401",
+    "description": "Super Corridor IT parks and Vijay Nagar commercial hub under IDA master plan.",
+    "sentinel_available": true
+  },
+  {
+    "id": "patna",
+    "name": "Patna",
+    "state": "Bihar",
+    "jurisdiction": "Bihar",
+    "lat": 25.5941,
+    "lng": 85.1376,
+    "urban_rural": "Urban",
+    "defaultParcelId": "P-6501",
+    "description": "Bailey Road corridor and Ganga Riverfront expressway smart zone under PRDA.",
+    "sentinel_available": true
+  },
+  {
+    "id": "bhubaneswar",
+    "name": "Bhubaneswar",
+    "state": "Odisha",
+    "jurisdiction": "Odisha",
+    "lat": 20.2961,
+    "lng": 85.8245,
+    "urban_rural": "Urban",
+    "defaultParcelId": "P-6601",
+    "description": "Infocity IT hub and Chandrasekharpur institutional belt under BDA.",
+    "sentinel_available": true
+  },
+  {
+    "id": "dehradun",
+    "name": "Dehradun",
+    "state": "Uttarakhand",
+    "jurisdiction": "Uttarakhand",
+    "lat": 30.3165,
+    "lng": 78.0322,
+    "urban_rural": "Mountain",
+    "defaultParcelId": "P-6701",
+    "description": "Rajpur Road foothill corridor and Doon Valley eco-sensitive development zone.",
+    "sentinel_available": true
+  },
+  {
+    "id": "guwahati",
+    "name": "Guwahati",
+    "state": "Assam",
+    "jurisdiction": "Assam",
+    "lat": 26.1445,
+    "lng": 91.7362,
+    "urban_rural": "Urban",
+    "defaultParcelId": "P-6801",
+    "description": "Dispur capital complex and Brahmaputra riverfront smart city corridor under GMDA.",
+    "sentinel_available": true
+  },
+  {
+    "id": "panaji",
+    "name": "Panaji",
+    "state": "Goa",
+    "jurisdiction": "Goa",
+    "lat": 15.4909,
+    "lng": 73.8278,
+    "urban_rural": "Coastal",
+    "defaultParcelId": "P-6901",
+    "description": "Miramar coastal residential and Mandovi commercial waterfront governed by strict CRZ buffers.",
+    "sentinel_available": true
   }
 ];
 

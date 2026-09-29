@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BarChart3,
   AlertTriangle,
@@ -10,9 +10,13 @@ import {
   TrendingUp,
   Layers,
   ArrowRight,
-  Sliders
+  Sliders,
+  Copy,
+  RefreshCw
 } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
+import { getAdminConflicts, resolveConflict, getAdminDuplicates } from '../../api/admin';
+import { getAnalyticsOverview } from '../../api/analytics';
 
 export default function AnalyticsAiModule() {
   const {
@@ -20,24 +24,146 @@ export default function AnalyticsAiModule() {
     selectParcel,
     setEvidenceModalOpen,
     setFieldModalOpen,
-    fieldVerificationStatus
+    fieldVerificationStatus,
+    userRole
   } = useApp();
 
   const [activeSection, setActiveSection] = useState('conflicts');
   const [conflictFilter, setConflictFilter] = useState('all');
-  const [selectedConflict, setSelectedConflict] = useState({
-    id: 'CONF-01',
-    parcel_id: 'P-1028',
-    ulpin: 'IN-PB-CHD-0001028',
-    field: 'Parcel Area',
-    sourceA: 'Record of Rights (Jamabandi)',
-    valueA: '1,416.40 m² (0.35 Acre)',
-    sourceB: 'Property Tax Assessment',
-    valueB: '1,530.00 m² (0.38 Acre)',
-    diff: '+113.60 m² discrepancy (+8%)',
-    officer: 'Revenue Officer (Tehsil North)',
-    status: 'OPEN'
-  });
+
+  const fallbackConflicts = [
+    {
+      id: 'CONF-01',
+      conflict_id: 'CONF-01',
+      parcel_id: 'P-1028',
+      ulpin: 'IN-PB-CHD-0001028',
+      field: 'Parcel Area',
+      sourceA: 'Record of Rights (Jamabandi)',
+      valueA: '1,416.40 m² (0.35 Acre)',
+      sourceB: 'Property Tax Assessment',
+      valueB: '1,530.00 m² (0.38 Acre)',
+      diff: '+113.60 m² discrepancy (+8%)',
+      officer: 'Revenue Officer (Tehsil North)',
+      status: 'OPEN'
+    },
+    {
+      id: 'CONF-02',
+      conflict_id: 'CONF-02',
+      parcel_id: 'P-1025',
+      ulpin: 'IN-PB-CHD-0001025',
+      field: 'Land Use Classification',
+      sourceA: 'Town Planning Master Plan',
+      valueA: 'Commercial / Retail',
+      sourceB: 'Property Tax Registry',
+      valueB: 'Residential Zone',
+      diff: 'Statutory land-use mismatch',
+      officer: 'Municipal Planning Officer',
+      status: 'OPEN'
+    },
+    {
+      id: 'CONF-03',
+      conflict_id: 'CONF-03',
+      parcel_id: 'P-1009',
+      ulpin: 'IN-PB-CHD-0001009',
+      field: 'Encumbrance Lien Status',
+      sourceA: 'CERSAI / Bank Registry',
+      valueA: 'Charge Recorded (HDFC)',
+      sourceB: 'Sub-Registrar RoR',
+      valueB: 'Unencumbered',
+      diff: 'Missing encumbrance endorsement',
+      officer: 'Sub-Registrar Officer',
+      status: 'OPEN'
+    }
+  ];
+
+  const [conflictsList, setConflictsList] = useState(fallbackConflicts);
+  const [selectedConflict, setSelectedConflict] = useState(fallbackConflicts[0]);
+  const [resolutionStatus, setResolutionStatus] = useState(null);
+  const [resolutionError, setResolutionError] = useState(null);
+
+  // Live Duplicates & Analytics State
+  const [duplicatesList, setDuplicatesList] = useState([]);
+  const [analyticsData, setAnalyticsData] = useState(null);
+  const [loadingData, setLoadingData] = useState(false);
+
+  useEffect(() => {
+    let isMounted = true;
+    setLoadingData(true);
+
+    // 1. Fetch live conflicts
+    getAdminConflicts()
+      .then((data) => {
+        if (!isMounted) return;
+        if (Array.isArray(data) && data.length > 0) {
+          const mapped = data.map((c, idx) => ({
+            id: c.conflict_id || `CONF-0${idx + 1}`,
+            conflict_id: c.conflict_id || `CONF-0${idx + 1}`,
+            backendId: c.id,
+            parcel_id: c.ulpin ? c.ulpin.split('-').pop() : 'P-1028',
+            ulpin: c.ulpin || 'IN-PB-CHD-0001028',
+            field: c.field || 'Land Parameter',
+            sourceA: c.source_a || 'Record of Rights',
+            valueA: c.value_a || 'Verified Value',
+            sourceB: c.source_b || 'Municipal Registry',
+            valueB: c.value_b || 'Registered Value',
+            diff: c.difference || c.difference_summary || 'Cross-system discrepancy',
+            officer: c.assigned_officer || 'Revenue Officer',
+            status: c.status || 'OPEN'
+          }));
+          setConflictsList(mapped);
+          setSelectedConflict(mapped[0]);
+        }
+      })
+      .catch((err) => {
+        console.warn('Backend conflicts offline or unauthorized, using fallback:', err);
+      });
+
+    // 2. Fetch live duplicates
+    getAdminDuplicates()
+      .then((data) => {
+        if (!isMounted) return;
+        if (Array.isArray(data)) {
+          setDuplicatesList(data);
+        }
+      })
+      .catch((err) => {
+        console.warn('Backend duplicates offline, keeping fallback:', err);
+      });
+
+    // 3. Fetch analytics overview
+    getAnalyticsOverview()
+      .then((data) => {
+        if (!isMounted) return;
+        if (data && data.kpis) {
+          setAnalyticsData(data);
+        }
+      })
+      .catch((err) => {
+        console.warn('Backend analytics offline, keeping fallback:', err);
+      })
+      .finally(() => {
+        if (isMounted) setLoadingData(false);
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const handleResolve = async (newStatus, notes) => {
+    setResolutionStatus(null);
+    setResolutionError(null);
+    try {
+      const targetId = selectedConflict.conflict_id || selectedConflict.id;
+      await resolveConflict(targetId, newStatus, notes);
+      setSelectedConflict(prev => ({ ...prev, status: newStatus }));
+      setConflictsList(prev => prev.map(c => c.id === selectedConflict.id ? { ...c, status: newStatus } : c));
+      setResolutionStatus(`Conflict ${targetId} successfully updated to ${newStatus}`);
+    } catch (err) {
+      const msg = err?.response?.data?.detail || err?.message || 'Resolution could not be saved to backend';
+      setResolutionError(`Action Failed: ${msg}`);
+    }
+  };
 
   // Document Intelligence state
   const [uploadedFile, setUploadedFile] = useState(null);
@@ -176,22 +302,22 @@ export default function AnalyticsAiModule() {
           {/* Conflict Split: List on Left, Detail on Right */}
           <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '14px' }}>
             <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-card)', borderRadius: '12px', padding: '14px' }}>
-              <div style={{ fontSize: '13px', fontWeight: 700, marginBottom: '10px' }}>Active Conflict Queue</div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                {[
-                  { id: 'CONF-01', parcel: 'P-1028', type: 'Area Mismatch', desc: 'RoR 1,416 m² vs Property Tax 1,530 m²', badge: 'red' },
-                  { id: 'CONF-02', parcel: 'P-1025', type: 'Classification Delta', desc: 'Commercial vs Municipal Residential Tax', badge: 'amber' },
-                  { id: 'CONF-03', parcel: 'P-1009', type: 'Missing Encumbrance NOC', desc: 'Bank charge listed without registry entry', badge: 'blue' }
-                ].map(item => (
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+                <div style={{ fontSize: '13px', fontWeight: 700 }}>Active Conflict Queue ({conflictsList.length})</div>
+                {loadingData && <span style={{ fontSize: '11px', color: 'var(--brand-accent-cyan)' }}>Syncing...</span>}
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '340px', overflowY: 'auto' }}>
+                {conflictsList.map(item => (
                   <div
                     key={item.id}
                     onClick={() => {
-                      selectParcel(item.parcel);
+                      setSelectedConflict(item);
+                      if (item.parcel_id) selectParcel(item.parcel_id);
                     }}
                     style={{
                       padding: '10px 12px',
-                      background: activeParcel.parcel_id === item.parcel ? 'var(--bg-card-hover)' : 'var(--bg-card-alt)',
-                      border: `1px solid ${activeParcel.parcel_id === item.parcel ? 'var(--brand-accent-blue)' : 'var(--border-subtle)'}`,
+                      background: selectedConflict.id === item.id ? 'var(--bg-card-hover)' : 'var(--bg-card-alt)',
+                      border: `1px solid ${selectedConflict.id === item.id ? 'var(--brand-accent-blue)' : 'var(--border-subtle)'}`,
                       borderRadius: '8px',
                       cursor: 'pointer',
                       display: 'flex',
@@ -201,12 +327,12 @@ export default function AnalyticsAiModule() {
                   >
                     <div>
                       <div style={{ fontSize: '12.5px', fontWeight: 700 }}>
-                        {item.parcel} <span style={{ fontSize: '10px', color: 'var(--text-muted)' }}>({item.id})</span>
+                        {item.parcel_id} <span style={{ fontSize: '10px', color: 'var(--text-muted)' }}>({item.conflict_id || item.id})</span>
                       </div>
-                      <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '2px' }}>{item.desc}</div>
+                      <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '2px' }}>{item.diff}</div>
                     </div>
-                    <span style={{ fontSize: '10px', fontWeight: 600, padding: '2px 8px', borderRadius: '4px', background: item.badge === 'red' ? 'var(--bg-badge-red)' : 'var(--bg-badge-amber)', color: item.badge === 'red' ? 'var(--status-error)' : 'var(--status-warning)' }}>
-                      {item.type}
+                    <span style={{ fontSize: '10px', fontWeight: 600, padding: '2px 8px', borderRadius: '4px', background: item.status === 'RESOLVED' ? 'var(--bg-badge-green)' : 'var(--bg-badge-red)', color: item.status === 'RESOLVED' ? 'var(--status-success)' : 'var(--status-error)' }}>
+                      {item.status || 'OPEN'}
                     </span>
                   </div>
                 ))}
@@ -217,7 +343,9 @@ export default function AnalyticsAiModule() {
             <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-card)', borderRadius: '12px', padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <h4 style={{ fontSize: '14px', fontWeight: 700 }}>Source Comparison: {selectedConflict.parcel_id}</h4>
-                <span className="status-badge-inline red">CONFLICT FLAGGED</span>
+                <span className={`status-badge-inline ${selectedConflict.status === 'RESOLVED' ? 'green' : 'red'}`}>
+                  {selectedConflict.status === 'RESOLVED' ? 'RESOLVED' : 'CONFLICT FLAGGED'}
+                </span>
               </div>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
@@ -245,15 +373,34 @@ export default function AnalyticsAiModule() {
               <div style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.3)', padding: '10px', borderRadius: '8px', fontSize: '11.5px', color: 'var(--text-secondary)' }}>
                 <strong>Difference Identified:</strong> {selectedConflict.diff}
                 <div style={{ marginTop: '4px', fontSize: '11px', color: 'var(--text-muted)' }}>
-                  Automated record modification prohibited. Physical resurvey ordered for revenue demarcation.
+                  Assigned Authority: <strong>{selectedConflict.officer}</strong>
                 </div>
               </div>
 
+              {resolutionStatus && (
+                <div style={{ fontSize: '11px', color: 'var(--status-success)', padding: '6px 8px', background: 'rgba(16, 185, 129, 0.1)', borderRadius: '6px' }}>
+                  ✓ {resolutionStatus}
+                </div>
+              )}
+              {resolutionError && (
+                <div style={{ fontSize: '11px', color: 'var(--status-danger)', padding: '6px 8px', background: 'rgba(239, 68, 68, 0.1)', borderRadius: '6px' }}>
+                  ⚠ {resolutionError}
+                </div>
+              )}
+
               <div style={{ display: 'flex', gap: '8px', marginTop: 'auto' }}>
-                <button className="btn-primary" style={{ flex: 1 }} onClick={() => alert('Assigned to Revenue Officer for Physical Resurvey')}>
+                <button
+                  className="btn-primary"
+                  style={{ flex: 1 }}
+                  onClick={() => handleResolve('ASSIGNED', 'Assigned to field officer for physical resurvey')}
+                >
                   Assign to Officer
                 </button>
-                <button className="btn-secondary" style={{ flex: 1 }} onClick={() => alert('Marked for joint inter-departmental review')}>
+                <button
+                  className="btn-secondary"
+                  style={{ flex: 1 }}
+                  onClick={() => handleResolve('UNDER_REVIEW', 'Marked for inter-departmental joint review')}
+                >
                   Mark Under Review
                 </button>
               </div>
@@ -370,27 +517,144 @@ export default function AnalyticsAiModule() {
         </div>
       )}
 
-      {/* 4. DUPLICATES & PREDICTIVE ANALYTICS */}
-      {(activeSection === 'duplicates' || activeSection === 'predictive') && (
+      {/* 4. DUPLICATES DETECTION */}
+      {activeSection === 'duplicates' && (
         <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-card)', borderRadius: '12px', padding: '18px' }}>
-          <h3 style={{ fontSize: '15px', fontWeight: 700, marginBottom: '10px' }}>
-            Decision Support & Spatial Hotspots
-          </h3>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+            <div>
+              <h3 style={{ fontSize: '15px', fontWeight: 700 }}>Duplicate Parcel Candidate Queue</h3>
+              <p style={{ fontSize: '11.5px', color: 'var(--text-muted)' }}>
+                Probabilistic cross-matching based on cadastral geometry overlap, survey numbers, and ownership records.
+              </p>
+            </div>
+            <span style={{ fontSize: '11px', color: 'var(--brand-accent-cyan)' }}>
+              {duplicatesList.length > 0 ? `${duplicatesList.length} Candidates Detected` : 'Registry Clean (0 Pending)'}
+            </span>
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            {(duplicatesList.length > 0
+              ? duplicatesList
+              : [
+                  {
+                    id: 1,
+                    parcel_id: 'P-1027',
+                    candidate_parcel_id: 'P-1027-ALT',
+                    similarity_score: 0.94,
+                    matched_fields: 'survey_no, area, owner_name',
+                    reason: 'High spatial and title concordance between legacy Jamabandi and digitized cadastral vector.',
+                    status: 'PENDING_REVIEW'
+                  },
+                  {
+                    id: 2,
+                    parcel_id: 'P-1025',
+                    candidate_parcel_id: 'P-1034',
+                    similarity_score: 0.78,
+                    matched_fields: 'boundary_proximity, survey_khasra',
+                    reason: 'Adjoining boundary overlap detected in municipal building plan overlay.',
+                    status: 'UNDER_REVIEW'
+                  }
+                ]
+            ).map((dup) => (
+              <div
+                key={dup.id}
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: '12px 14px',
+                  background: 'var(--bg-card-alt)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '8px',
+                  fontSize: '12px'
+                }}
+              >
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <strong>{dup.parcel_id}</strong>
+                    <span style={{ color: 'var(--text-muted)' }}>⟷</span>
+                    <strong style={{ color: 'var(--brand-accent-cyan)' }}>{dup.candidate_parcel_id}</strong>
+                    <span style={{ fontSize: '10px', padding: '2px 6px', borderRadius: '4px', background: 'rgba(56, 189, 248, 0.15)', color: 'var(--brand-accent-cyan)', fontWeight: 700 }}>
+                      {Math.round((dup.similarity_score || 0.85) * 100)}% SIMILARITY
+                    </span>
+                  </div>
+                  <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '4px' }}>
+                    Matched Factors: <span style={{ color: 'var(--text-secondary)' }}>{dup.matched_fields}</span>
+                  </div>
+                  <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '2px' }}>
+                    {dup.reason}
+                  </div>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <span style={{ fontSize: '10px', padding: '3px 8px', borderRadius: '4px', background: dup.status === 'CONFIRMED_DUPLICATE' ? 'var(--bg-badge-red)' : 'var(--bg-badge-blue)', color: dup.status === 'CONFIRMED_DUPLICATE' ? 'var(--status-error)' : 'var(--brand-accent-cyan)', fontWeight: 600 }}>
+                    {dup.status}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* 5. PREDICTIVE DECISION SUPPORT */}
+      {activeSection === 'predictive' && (
+        <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-card)', borderRadius: '12px', padding: '18px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+            <h3 style={{ fontSize: '15px', fontWeight: 700 }}>
+              Decision Support &amp; Executive Analytics ({analyticsData?.time_period || 'Live State'})
+            </h3>
+            <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>
+              Source: {analyticsData?.data_basis || 'PLOT360 Real-Time Master Registry'}
+            </span>
+          </div>
+
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
             <div style={{ background: 'var(--bg-card-alt)', padding: '14px', borderRadius: '8px' }}>
-              <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>DEVELOPMENT ACTIVITY INDEX</span>
-              <div style={{ fontSize: '20px', fontWeight: 700, color: 'var(--brand-accent-blue)', marginTop: '4px' }}>+14.8%</div>
-              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Sector 17 & Sector 18 commercial expansion</div>
+              <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>TOTAL MONITORED PARCELS</span>
+              <div style={{ fontSize: '20px', fontWeight: 700, color: 'var(--brand-accent-blue)', marginTop: '4px' }}>
+                {analyticsData?.kpis?.total_parcels || 10}
+              </div>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Cadastral polygons registered with ULPIN</div>
             </div>
+
             <div style={{ background: 'var(--bg-card-alt)', padding: '14px', borderRadius: '8px' }}>
-              <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>RECORD INCONSISTENCY RATE</span>
-              <div style={{ fontSize: '20px', fontWeight: 700, color: 'var(--status-success)', marginTop: '4px' }}>0.33%</div>
-              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Decreased by 12% following ULPIN roll-out</div>
+              <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>VERIFICATION RATE</span>
+              <div style={{ fontSize: '20px', fontWeight: 700, color: 'var(--status-success)', marginTop: '4px' }}>
+                {analyticsData?.kpis?.verification_rate || '98.4%'}
+              </div>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Title &amp; spatial integrity cross-verified</div>
             </div>
+
             <div style={{ background: 'var(--bg-card-alt)', padding: '14px', borderRadius: '8px' }}>
-              <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>INFRASTRUCTURE GAP INDEX</span>
-              <div style={{ fontSize: '20px', fontWeight: 700, color: 'var(--status-warning)', marginTop: '4px' }}>Low (98% Served)</div>
-              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Water and electricity lines fully mapped</div>
+              <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>ACTIVE AI SATELLITE ALERTS</span>
+              <div style={{ fontSize: '20px', fontWeight: 700, color: 'var(--status-warning)', marginTop: '4px' }}>
+                {analyticsData?.kpis?.active_ai_alerts || 3}
+              </div>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Sentinel-2 temporal divergence anomalies</div>
+            </div>
+
+            <div style={{ background: 'var(--bg-card-alt)', padding: '14px', borderRadius: '8px' }}>
+              <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>OPEN CROSS-DEPT CONFLICTS</span>
+              <div style={{ fontSize: '20px', fontWeight: 700, color: 'var(--status-error)', marginTop: '4px' }}>
+                {analyticsData?.kpis?.open_conflicts || 2}
+              </div>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Under joint administrative review</div>
+            </div>
+
+            <div style={{ background: 'var(--bg-card-alt)', padding: '14px', borderRadius: '8px' }}>
+              <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>ACTIVE CITIZEN WORKFLOWS</span>
+              <div style={{ fontSize: '20px', fontWeight: 700, color: 'var(--brand-accent-cyan)', marginTop: '4px' }}>
+                {analyticsData?.kpis?.service_requests_active || 4}
+              </div>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Average turnaround: {analyticsData?.kpis?.avg_service_turnaround_days || 4.2} days</div>
+            </div>
+
+            <div style={{ background: 'var(--bg-card-alt)', padding: '14px', borderRadius: '8px' }}>
+              <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>DATA FRESHNESS &amp; PROVENANCE</span>
+              <div style={{ fontSize: '20px', fontWeight: 700, color: 'var(--status-success)', marginTop: '4px' }}>
+                {analyticsData?.kpis?.data_freshness_score || '96.8%'}
+              </div>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Immutable audit trail: {analyticsData?.kpis?.provenance_traceability || '100%'}</div>
             </div>
           </div>
         </div>

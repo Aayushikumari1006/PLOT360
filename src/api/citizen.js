@@ -11,3 +11,14 @@ export async function createServiceRequest(payload) {
 export async function getApplication(id) {
   return apiGet(`/applications/${encodeURIComponent(id)}`);
 }
+
+export async function getWorkflow(instanceId) {
+  return apiGet(`/workflows/${encodeURIComponent(instanceId)}`);
+}
+
+export async function transitionWorkflow(instanceId, toState, comment = '') {
+  return apiPost(`/workflows/${encodeURIComponent(instanceId)}/transition`, {
+    to_state: toState,
+    comment
+  });
+}

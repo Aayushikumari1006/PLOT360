@@ -1,35 +1,24 @@
-/* PLOT360 Master Layout Architecture - Application Shell First */
+/* PLOT360 Master Layout Architecture - Full Width Reference Layout */
 
 .app-shell {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
   background-color: var(--bg-app);
 }
 
-/* Sidebar Shell */
-.sidebar-container {
-  width: 236px;
-  min-width: 236px;
-  max-width: 236px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bg-sidebar);
-  border-right: 1px solid var(--border-subtle);
-  z-index: 20;
-  user-select: none;
-}
-
-/* Main Application Column */
+/* Main Application Column - Spans full width without left sidebar clutter */
 .main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100vh - 100px);
   min-width: 0;
-  overflow: hidden;
+  min-height: 0;
+  overflow-y: auto; /* Enable natural vertical scrolling */
+  overflow-x: hidden;
 }
 
 /* Topbar Fixed Height */
@@ -54,9 +43,10 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  padding: 12px 18px 16px;
-  gap: 12px;
-  min-height: 0;
+  padding: 12px 18px 24px;
+  gap: 14px;
+  min-height: min-content;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Page Header */

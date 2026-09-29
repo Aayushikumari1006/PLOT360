@@ -16,19 +16,22 @@ import {
 import { useApp } from '../../context/AppContext';
 
 export default function Sidebar() {
-  const { activeModule, setActiveModule, t, setHelpModalOpen } = useApp();
+  const { activeModule, setActiveModule, t, setHelpModalOpen, canAccessModule } = useApp();
 
   const navItems = [
     { id: 'explorer', label: 'Land Explorer', icon: LayoutGrid },
     { id: 'intelligence', label: 'Parcel Intelligence', icon: Box },
-    { id: 'records', label: 'Governance & Records', icon: Landmark },
-    { id: 'planning', label: 'Planning & Development', icon: Compass },
-    { id: 'citizen', label: 'Citizen Services', icon: Users },
-    { id: 'analytics', label: 'Analytics & AI', icon: BarChart3 },
-    { id: 'integrations', label: 'Integration Hub', icon: Share2 },
-    { id: 'admin', label: 'Administration & Security', icon: ShieldCheck },
-    { id: 'health', label: 'System / Data Health', icon: Activity }
+    { id: 'workflows', label: 'Services & Workflows', icon: Users },
+    { id: 'analytics', label: 'Analytics & Admin', icon: BarChart3 }
   ];
+
+  const isItemActive = (itemId) => {
+    if (activeModule === itemId) return true;
+    if (itemId === 'intelligence' && ['records', 'planning'].includes(activeModule)) return true;
+    if (itemId === 'workflows' && ['citizen', 'services'].includes(activeModule)) return true;
+    if (itemId === 'analytics' && ['admin', 'integrations', 'health'].includes(activeModule)) return true;
+    return false;
+  };
 
   return (
     <aside className="sidebar-container">
@@ -43,20 +46,29 @@ export default function Sidebar() {
         </div>
       </div>
 
-      {/* Primary Navigation */}
+      {/* Primary Navigation (Maximum 4 Primary Toggles per Specification Section 4) */}
       <nav className="sidebar-nav">
         {navItems.map(item => {
           const Icon = item.icon;
-          const isActive = activeModule === item.id;
+          const isActive = isItemActive(item.id);
+          const isAllowed = canAccessModule ? canAccessModule(item.id) : true;
           return (
             <button
               key={item.id}
-              className={`nav-item ${isActive ? 'active' : ''}`}
+              className={`nav-item ${isActive ? 'active' : ''} ${!isAllowed ? 'restricted-item' : ''}`}
               onClick={() => setActiveModule(item.id)}
-              title={t ? t('nav.' + item.id, item.label) : item.label}
+              style={!isAllowed ? { opacity: 0.65 } : {}}
+              title={
+                !isAllowed
+                  ? `${t ? t('nav.' + item.id, item.label) : item.label} (Restricted for current role)`
+                  : t ? t('nav.' + item.id, item.label) : item.label
+              }
             >
               <Icon className="nav-item-icon" />
-              <span className="sidebar-label">{t ? t('nav.' + item.id, item.label) : item.label}</span>
+              <span className="sidebar-label" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                <span>{t ? t('nav.' + item.id, item.label) : item.label}</span>
+                {!isAllowed && <span style={{ fontSize: '9px', padding: '1px 4px', borderRadius: '3px', background: 'var(--border-subtle)', color: 'var(--text-muted)' }}>Locked</span>}
+              </span>
             </button>
           );
         })}

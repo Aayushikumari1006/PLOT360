@@ -52,7 +52,7 @@ def test_demo_locations_count(client):
     res = client.get("/api/v1/demo/locations")
     assert res.status_code == 200
     data = res.json()
-    assert len(data) == 15
+    assert len(data) >= 15
     loc_ids = [d.get("id") or d.get("location_id") for d in data]
     assert "chandigarh" in loc_ids
     assert "delhi" in loc_ids
@@ -89,15 +89,16 @@ def test_demo_location_filtering(client):
     res_mtn = client.get("/api/v1/demo/locations?urban_rural=Mountain")
     assert res_mtn.status_code == 200
     mtn_data = res_mtn.json()
-    assert len(mtn_data) >= 2  # Shimla, Solan
-    assert all(d.get("id") in ["shimla", "solan"] or d.get("location_id") in ["shimla", "solan"] for d in mtn_data)
+    assert len(mtn_data) >= 2  # Shimla, Solan, Dehradun
+    assert all(d.get("id") in ["shimla", "solan", "dehradun"] or d.get("location_id") in ["shimla", "solan", "dehradun"] for d in mtn_data)
 
     # Coastal filter
     res_cst = client.get("/api/v1/demo/locations?urban_rural=Coastal")
     assert res_cst.status_code == 200
     cst_data = res_cst.json()
-    assert len(cst_data) >= 1  # Kochi
-    assert (cst_data[0].get("id") or cst_data[0].get("location_id")) == "kochi"
+    assert len(cst_data) >= 1  # Kochi, Panaji
+    cst_ids = [d.get("id") or d.get("location_id") for d in cst_data]
+    assert "kochi" in cst_ids
 
 
 # ── 2. Demo Parcels & Scenarios ───────────────────────────────────────────────

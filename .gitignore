@@ -24,3 +24,21 @@ cloudflared.exe
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated test documents
+backend/data/documents/*_test_deed.pdf
+data/documents/*_test_deed.pdf
+
+# Temporary local workspace
+scratch/
+
+# Vite temporary files
+vite.config.js.timestamp-*.mjs
+
+# Production build output
+dist/

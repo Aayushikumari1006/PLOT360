@@ -256,6 +256,126 @@ DEMO_LOCATIONS_DATA = [
         "defaultParcelId": "P-5001",
         "description": "Coastal wetlands and port logistics corridor governed by strict CRZ buffer regulations and utility easements.",
         "sentinel_available": False
+    },
+    {
+        "id": "gurugram",
+        "name": "Gurugram",
+        "state": "Haryana",
+        "jurisdiction": "Haryana",
+        "lat": 28.4595,
+        "lng": 77.0266,
+        "urban_rural": "Urban",
+        "defaultParcelId": "P-6001",
+        "description": "Cyber City IT & commercial hub, Golf Course Road transit-oriented zone under GMDA.",
+        "sentinel_available": False
+    },
+    {
+        "id": "amritsar",
+        "name": "Amritsar",
+        "state": "Punjab",
+        "jurisdiction": "Punjab",
+        "lat": 31.6340,
+        "lng": 74.8723,
+        "urban_rural": "Urban",
+        "defaultParcelId": "P-6101",
+        "description": "Ranjit Avenue smart commercial zone and historic walled city heritage buffer.",
+        "sentinel_available": False
+    },
+    {
+        "id": "kolkata",
+        "name": "Kolkata",
+        "state": "West Bengal",
+        "jurisdiction": "West Bengal",
+        "lat": 22.5726,
+        "lng": 88.3639,
+        "urban_rural": "Urban",
+        "defaultParcelId": "P-6201",
+        "description": "New Town Rajarhat IT corridor and Salt Lake Sector V under WBHIDCO master plan.",
+        "sentinel_available": False
+    },
+    {
+        "id": "bhopal",
+        "name": "Bhopal",
+        "state": "Madhya Pradesh",
+        "jurisdiction": "Madhya Pradesh",
+        "lat": 23.2599,
+        "lng": 77.4126,
+        "urban_rural": "Urban",
+        "defaultParcelId": "P-6301",
+        "description": "Arera Colony and MP Nagar commercial zone with Upper Lake wetland buffer.",
+        "sentinel_available": False
+    },
+    {
+        "id": "indore",
+        "name": "Indore",
+        "state": "Madhya Pradesh",
+        "jurisdiction": "Madhya Pradesh",
+        "lat": 22.7196,
+        "lng": 75.8577,
+        "urban_rural": "Urban",
+        "defaultParcelId": "P-6401",
+        "description": "Super Corridor IT parks and Vijay Nagar commercial hub under IDA master plan.",
+        "sentinel_available": False
+    },
+    {
+        "id": "patna",
+        "name": "Patna",
+        "state": "Bihar",
+        "jurisdiction": "Bihar",
+        "lat": 25.5941,
+        "lng": 85.1376,
+        "urban_rural": "Urban",
+        "defaultParcelId": "P-6501",
+        "description": "Bailey Road corridor and Ganga Riverfront expressway smart zone under PRDA.",
+        "sentinel_available": False
+    },
+    {
+        "id": "bhubaneswar",
+        "name": "Bhubaneswar",
+        "state": "Odisha",
+        "jurisdiction": "Odisha",
+        "lat": 20.2961,
+        "lng": 85.8245,
+        "urban_rural": "Urban",
+        "defaultParcelId": "P-6601",
+        "description": "Infocity IT hub and Chandrasekharpur institutional belt under BDA.",
+        "sentinel_available": False
+    },
+    {
+        "id": "dehradun",
+        "name": "Dehradun",
+        "state": "Uttarakhand",
+        "jurisdiction": "Uttarakhand",
+        "lat": 30.3165,
+        "lng": 78.0322,
+        "urban_rural": "Mountain",
+        "defaultParcelId": "P-6701",
+        "description": "Rajpur Road foothill corridor and Doon Valley eco-sensitive development zone.",
+        "sentinel_available": False
+    },
+    {
+        "id": "guwahati",
+        "name": "Guwahati",
+        "state": "Assam",
+        "jurisdiction": "Assam",
+        "lat": 26.1445,
+        "lng": 91.7362,
+        "urban_rural": "Urban",
+        "defaultParcelId": "P-6801",
+        "description": "Dispur capital complex and Brahmaputra riverfront smart city corridor under GMDA.",
+        "sentinel_available": False
+    },
+    {
+        "id": "panaji",
+        "name": "Panaji",
+        "state": "Goa",
+        "jurisdiction": "Goa",
+        "lat": 15.4909,
+        "lng": 73.8278,
+        "urban_rural": "Coastal",
+        "defaultParcelId": "P-6901",
+        "description": "Miramar coastal residential and Mandovi commercial waterfront governed by strict CRZ buffers.",
+        "sentinel_available": False
     }
 ]
 
@@ -1706,6 +1826,66 @@ LOCATION_CONFIG = {
         "state": "Kerala", "jurisdiction": "Kerala", "district": "Ernakulam", "tehsil": "Kanayannur",
         "loc_label": "Kakkanad / Infopark Expressway, Kochi", "unit": "Cent", "factor": 40.4686,
         "owners": ["K. P. Kurian", "Thomas Varghese", "Cochin Tech Venture Trust", "Abdul Rahman K.", "Mary Varghese", "Suresh Menon", "Mathew Joseph", "Biju Varghese", "Radhakrishnan Nair", "Shaji George", "Anitha Mohan", "Babychan Paul", "Vinod Kumar P.", "Valsala Kumari"]
+    },
+    "gurugram": {
+        "prefix": "P-60", "start_idx": 1, "ulpin_prefix": "IN-HR-GGM-00060",
+        "state": "Haryana", "jurisdiction": "Haryana", "district": "Gurugram", "tehsil": "Gurugram",
+        "loc_label": "Cyber City / Golf Course Rd, Gurugram", "unit": "Sq.Yd", "factor": 0.836127,
+        "owners": ["Rajiv Bajaj", "Ananya Singhania", "DLF Horizon Ltd", "Vikramaditya Roy", "Deepak Talwar", "Priya Chawla", "Tarun Khanna", "Meera Oberoi", "Sunil Munjal", "Rohit Bhargava", "Kavita Goel", "Manish Goenka"]
+    },
+    "amritsar": {
+        "prefix": "P-61", "start_idx": 1, "ulpin_prefix": "IN-PB-ASR-00061",
+        "state": "Punjab", "jurisdiction": "Punjab", "district": "Amritsar", "tehsil": "Amritsar-I",
+        "loc_label": "Ranjit Avenue / Heritage Belt, Amritsar", "unit": "Marla", "factor": 25.29,
+        "owners": ["Harpreet Singh Gill", "Maninder Kaur", "Golden City Infra", "Bikramjeet Singh", "Davinder Sandhu", "Simrat Chahal", "Gurpartap Dhillon", "Jasleen Pannu", "Karamjit Randhawa", "Navjot Brar", "Sukhdev Bajwa", "Inderpreet Sekhon"]
+    },
+    "kolkata": {
+        "prefix": "P-62", "start_idx": 1, "ulpin_prefix": "IN-WB-KOL-00062",
+        "state": "West Bengal", "jurisdiction": "West Bengal", "district": "North 24 Parganas", "tehsil": "Bidhannagar",
+        "loc_label": "New Town / Salt Lake Sector V, Kolkata", "unit": "Kottah", "factor": 66.89,
+        "owners": ["Subhashis Banerjee", "Aparna Sen", "Bengal Ambuja Trust", "Debashis Mukherjee", "Swagata Roy", "Anirban Bhattacharya", "Mousumi Ganguly", "Sourav Chatterjee", "Rina Bose", "Kalyan Ghosh", "Indranil Dutta", "Sampa Chakraborty"]
+    },
+    "bhopal": {
+        "prefix": "P-63", "start_idx": 1, "ulpin_prefix": "IN-MP-BHP-00063",
+        "state": "Madhya Pradesh", "jurisdiction": "Madhya Pradesh", "district": "Bhopal", "tehsil": "Huzur",
+        "loc_label": "Arera Colony / MP Nagar, Bhopal", "unit": "Sq.Mtr", "factor": 1.0,
+        "owners": ["Dharmendra Tiwari", "Rashmi Chouhan", "Bhojpal Township Ltd", "Alok Saxena", "Nirmala Jain", "Sanjay Malviya", "Kamal Kant Sharma", "Preeti Shrivastava", "Vinod Raghuwanshi", "Deepika Gour", "Pramod Patel", "Mamta Pandey"]
+    },
+    "indore": {
+        "prefix": "P-64", "start_idx": 1, "ulpin_prefix": "IN-MP-IND-00064",
+        "state": "Madhya Pradesh", "jurisdiction": "Madhya Pradesh", "district": "Indore", "tehsil": "Indore",
+        "loc_label": "Super Corridor / Vijay Nagar, Indore", "unit": "Sq.Ft", "factor": 0.092903,
+        "owners": ["Gaurav Agrawal", "Pooja Khandelwal", "Malwa Tech Enclave", "Yogesh Patidar", "Kavita Rathi", "Sunil Kasliwal", "Bhupendra Hardia", "Jyoti Chordia", "Naveen Porwal", "Shweta Tongia", "Manish Jhanwar", "Reena Sethi"]
+    },
+    "patna": {
+        "prefix": "P-65", "start_idx": 1, "ulpin_prefix": "IN-BR-PAT-00065",
+        "state": "Bihar", "jurisdiction": "Bihar", "district": "Patna", "tehsil": "Patna Sadar",
+        "loc_label": "Bailey Road / Ganga Pathway, Patna", "unit": "Katha", "factor": 126.46,
+        "owners": ["Narendra Prasad Singh", "Sunita Kumari", "Magadh Real Estate", "Brajesh Kumar", "Anita Sinha", "Chandan Mishra", "Abhishek Tiwari", "Sarita Devi", "Ranjan Pandey", "Punam Jha", "Sanjay Keshri", "Archana Verma"]
+    },
+    "bhubaneswar": {
+        "prefix": "P-66", "start_idx": 1, "ulpin_prefix": "IN-OD-BBI-00066",
+        "state": "Odisha", "jurisdiction": "Odisha", "district": "Khordha", "tehsil": "Bhubaneswar",
+        "loc_label": "Infocity / Chandrasekharpur, Bhubaneswar", "unit": "Decimal", "factor": 40.4686,
+        "owners": ["Debabrata Mohanty", "Minati Patnaik", "Kalinga Infotech Trust", "Soumya Ranjan Das", "Pratap Jena", "Tanushree Nayak", "Subrat Behera", "Itishree Samal", "Bibhuti Tripathy", "Manasvi Sahoo", "Bikash Pradhan", "Namrata Roul"]
+    },
+    "dehradun": {
+        "prefix": "P-67", "start_idx": 1, "ulpin_prefix": "IN-UK-DDN-00067",
+        "state": "Uttarakhand", "jurisdiction": "Uttarakhand", "district": "Dehradun", "tehsil": "Dehradun",
+        "loc_label": "Rajpur Road / Doon Valley, Dehradun", "unit": "Bigha", "factor": 800.0,
+        "owners": ["Virendra Singh Rawat", "Meenakshi Joshi", "Garhwal Eco Developers", "Anurag Negi", "Kiran Bisht", "Pradeep Thapa", "Harish Chandra Pant", "Neelam Semwal", "Sohan Lal Uniyal", "Divya Chauhan", "Rajender Nautiyal", "Geeta Bhatt"]
+    },
+    "guwahati": {
+        "prefix": "P-68", "start_idx": 1, "ulpin_prefix": "IN-AS-GHY-00068",
+        "state": "Assam", "jurisdiction": "Assam", "district": "Kamrup Metropolitan", "tehsil": "Dispur",
+        "loc_label": "GS Road / Brahmaputra Riverside, Guwahati", "unit": "Bigha", "factor": 1337.8,
+        "owners": ["Bhupen Hazarika Trust", "Pranab Barua", "Assam Tea Estates Ltd", "Ranjit Gogoi", "Mridula Saikia", "Deepjyoti Kalita", "Partha Sarathi Bora", "Anupama Medhi", "Himangshu Deka", "Monoj Phukan", "Barnali Goswami", "Debajit Sarma"]
+    },
+    "panaji": {
+        "prefix": "P-69", "start_idx": 1, "ulpin_prefix": "IN-GA-PAN-00069",
+        "state": "Goa", "jurisdiction": "Goa", "district": "North Goa", "tehsil": "Tiswadi",
+        "loc_label": "Miramar Coastal Belt, Panaji", "unit": "Sq.Mtr", "factor": 1.0,
+        "owners": ["Antonio Fernandes", "Maria D'Souza", "Goa Coastal Hospitality LLP", "Joao Pinto", "Fatima Alvares", "Francisco Pereira", "Sunita Naik", "Ramesh Kamat", "Bernardo Sequeira", "Carmelita Noronha", "Sachin Kenkre", "Lourdes Coutinho"]
     }
 }
 

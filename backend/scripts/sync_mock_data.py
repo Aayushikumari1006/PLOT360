@@ -2,7 +2,11 @@ import json
 import sys
 import os
 
-sys.path.insert(0, r'd:\Aayushi\Plot360\backend')
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, '..', '..'))
+BACKEND_DIR = os.path.join(PROJECT_ROOT, 'backend')
+sys.path.insert(0, BACKEND_DIR)
+
 from app.services.demo_catalog_data import DEMO_LOCATIONS_DATA, DEMO_PARCELS_DATA
 
 # Format into JS
@@ -84,7 +88,8 @@ export const QUICK_ACTIONS = [
 ];
 '''
 
-with open(r'd:\Aayushi\Plot360\src\data\mockData.js', 'w', encoding='utf-8') as f:
+target_mock = os.path.join(PROJECT_ROOT, 'src', 'data', 'mockData.js')
+with open(target_mock, 'w', encoding='utf-8') as f:
     f.write(js_content)
 
-print(f'Successfully synchronized src/data/mockData.js with {len(DEMO_LOCATIONS_DATA)} locations and {len(DEMO_PARCELS_DATA)} parcels.')
+print(f'Successfully synchronized {target_mock} with {len(DEMO_LOCATIONS_DATA)} locations and {len(DEMO_PARCELS_DATA)} parcels.')

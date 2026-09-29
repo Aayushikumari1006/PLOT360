@@ -9,9 +9,11 @@ import json
 from typing import Dict, Any, List, Optional
 import numpy as np
 import torch
+import rasterio
 from shapely.geometry import Polygon, mapping
 from sqlalchemy.orm import Session
 
+from app.config import settings
 from app.models.parcel import Parcel
 from app.models.planning import PlanningRecord, BuildingPermission, Restriction
 from app.models.ai_models import ChangeEvent, AIAlert, SatelliteObservation
@@ -45,20 +47,79 @@ def run_change_detection_pipeline(
     weights_path: Optional[str] = None
 ) -> Dict[str, Any]:
     """
-    Executes the end-to-end change detection inference pipeline for a parcel.
+    Executes the end-to-end change detection inference pipeline for a parcel
+    using real Sentinel-2 GeoTIFF rasters from PLOT360_Sentinel2_2020_2025.
     """
     model = get_loaded_model(weights_path)
-
-    # 1. Simulate aligned 256x256 patches around parcel centroid
     patch_size = 256
-    np.random.seed(parcel.id + 42)
-    t1_np = np.random.uniform(0.1, 0.4, (1, 3, patch_size, patch_size)).astype(np.float32)
-    # T2 introduces spectral shift in center
-    t2_np = t1_np.copy()
-    cx, cy = patch_size // 2, patch_size // 2
-    r = 35
-    t2_np[0, :, cy-r:cy+r, cx-r:cx+r] += np.random.uniform(0.3, 0.5, (3, 2*r, 2*r)).astype(np.float32)
-    t2_np = np.clip(t2_np, 0.0, 1.0)
+
+    # 1. Resolve real Sentinel-2 temporal raster pair
+    sentinel_dir = settings.resolve_sentinel_dir()
+    lu = (parcel.land_use or "").upper()
+    if "AGRI" in lu:
+        zone = "AGR_01"
+    elif "INDUS" in lu:
+        zone = "IND_01"
+    elif "RUR" in lu or "VILLAGE" in lu:
+        zone = "RUR_01"
+    else:
+        zone = "URB_01"
+
+    t1_filename = f"PLOT360_{zone}_2020.tif"
+    t2_filename = f"PLOT360_{zone}_2025.tif"
+    t1_path = os.path.join(sentinel_dir, t1_filename)
+    t2_path = os.path.join(sentinel_dir, t2_filename)
+
+    t1_np = None
+    t2_np = None
+    evidence_source = "REAL_SENTINEL2_GEOTIFF"
+    spectral_shift = 0.0
+
+    if os.path.exists(t1_path) and os.path.exists(t2_path):
+        try:
+            with rasterio.open(t1_path) as s1, rasterio.open(t2_path) as s2:
+                w = min(s1.width, patch_size)
+                h = min(s1.height, patch_size)
+                win = rasterio.windows.Window(0, 0, w, h)
+
+                # Read bands 1, 2, 3 (RGB equivalent)
+                arr1 = s1.read([1, 2, 3], window=win).astype(np.float32)
+                arr2 = s2.read([1, 2, 3], window=win).astype(np.float32)
+
+                # Clean NaNs and NoData
+                arr1 = np.nan_to_num(arr1, nan=0.0, posinf=1.0, neginf=0.0)
+                arr2 = np.nan_to_num(arr2, nan=0.0, posinf=1.0, neginf=0.0)
+
+                # Normalize to [0.0, 1.0]
+                p1 = float(np.nanpercentile(arr1, 98))
+                m1 = p1 if (not np.isnan(p1) and p1 > 0.0) else 1.0
+                p2 = float(np.nanpercentile(arr2, 98))
+                m2 = p2 if (not np.isnan(p2) and p2 > 0.0) else 1.0
+
+                arr1 = np.clip(arr1 / m1, 0.0, 1.0)
+                arr2 = np.clip(arr2 / m2, 0.0, 1.0)
+
+                t1_np = np.zeros((1, 3, patch_size, patch_size), dtype=np.float32)
+                t2_np = np.zeros((1, 3, patch_size, patch_size), dtype=np.float32)
+                t1_np[0, :, :h, :w] = arr1
+                t2_np[0, :, :h, :w] = arr2
+
+                raw_shift = float(np.nanmean(np.abs(arr2 - arr1)))
+                spectral_shift = raw_shift if not np.isnan(raw_shift) else 0.25
+        except Exception:
+            t1_np = None
+            t2_np = None
+
+    if t1_np is None:
+        evidence_source = "FALLBACK_CALIBRATION_SYNTHESIS"
+        np.random.seed(parcel.id + 42)
+        t1_np = np.random.uniform(0.1, 0.4, (1, 3, patch_size, patch_size)).astype(np.float32)
+        t2_np = t1_np.copy()
+        cx, cy = patch_size // 2, patch_size // 2
+        r = 35
+        t2_np[0, :, cy-r:cy+r, cx-r:cx+r] += np.random.uniform(0.3, 0.5, (3, 2*r, 2*r)).astype(np.float32)
+        t2_np = np.clip(t2_np, 0.0, 1.0)
+        spectral_shift = 0.38
 
     t1_tensor = torch.from_numpy(t1_np)
     t2_tensor = torch.from_numpy(t2_np)
@@ -175,6 +236,11 @@ def run_change_detection_pipeline(
             "building_permission_id": bp_id,
             "active_restrictions": active_restrictions
         },
+        "evidence_source": evidence_source,
+        "t1_raster": t1_filename if evidence_source == "REAL_SENTINEL2_GEOTIFF" else None,
+        "t2_raster": t2_filename if evidence_source == "REAL_SENTINEL2_GEOTIFF" else None,
+        "spectral_shift_magnitude": round(spectral_shift, 4),
+        "is_simulated": evidence_source != "REAL_SENTINEL2_GEOTIFF",
         "model_version": "Siamese-UNet-v1",
         "recommended_next_step": "Field officer site verification",
         "human_review_status": alert.review_status

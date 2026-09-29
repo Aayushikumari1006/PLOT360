@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   ShieldCheck,
   Lock,
@@ -11,12 +11,14 @@ import {
   FileText
 } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
+import { getAdminAuditLogs } from '../../api/admin';
 
 export default function AdminSecurityModule() {
   const { currentRole, setCurrentRole, roles, activeParcel } = useApp();
   const [auditFilter, setAuditFilter] = useState('');
+  const [loadingAudit, setLoadingAudit] = useState(false);
 
-  const auditLogs = [
+  const fallbackLogs = [
     {
       id: 'AUD-9021',
       who: 'Officer R. K. Singh (Admin)',
@@ -58,6 +60,40 @@ export default function AdminSecurityModule() {
       when: '1 day ago'
     }
   ];
+
+  const [auditLogs, setAuditLogs] = useState(fallbackLogs);
+
+  useEffect(() => {
+    let isMounted = true;
+    setLoadingAudit(true);
+    getAdminAuditLogs(50)
+      .then((data) => {
+        if (!isMounted) return;
+        if (Array.isArray(data) && data.length > 0) {
+          const mapped = data.map((l) => ({
+            id: `AUD-${l.id}`,
+            who: `${l.user_name || 'System'} (${l.role || 'Officer'})`,
+            what: l.action ? l.action.replace(/_/g, ' ') : 'System Audit Event',
+            parcel: l.parcel_id ? `P-${l.parcel_id}` : (l.ulpin || 'Global'),
+            oldVal: l.old_value || 'None',
+            newVal: l.new_value || 'Applied',
+            source: l.entity || 'Core Registry',
+            when: l.timestamp ? new Date(l.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'Recent'
+          }));
+          setAuditLogs(mapped);
+        }
+      })
+      .catch((err) => {
+        console.warn('Live audit logs unavailable or permission denied, using fallback:', err);
+      })
+      .finally(() => {
+        if (isMounted) setLoadingAudit(false);
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const filteredLogs = auditFilter
     ? auditLogs.filter(
